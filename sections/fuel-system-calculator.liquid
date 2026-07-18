@@ -1,209 +1,205 @@
 {%- style -%}
-  .fuel-calculator-section-{{ section.id }} {
+  .fuel-calc-wrapper-{{ section.id }} {
     background-color: #000000;
-    padding: 50px 20px;
+    padding: 60px 20px;
     font-family: inherit;
     text-align: center;
     color: #ffffff;
     box-sizing: border-box;
   }
-  .fuel-calculator-section-{{ section.id }} .section-title {
-    color: #ffcc00;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-bottom: 5px;
-  }
-  .fuel-calculator-section-{{ section.id }} .section-subtitle {
-    color: #ffffff;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
   
-  /* Desktop Typography */
-  @media screen and (min-width: 750px) {
-    .fuel-calculator-section-{{ section.id }} .section-title {
-      font-size: {{ section.settings.title_size_desktop }}px;
-    }
-    .fuel-calculator-section-{{ section.id }} .section-subtitle {
-      font-size: {{ section.settings.subtitle_size_desktop }}px;
-    }
-  }
-  
-  /* Mobile Typography */
-  @media screen and (max-width: 749px) {
-    .fuel-calculator-section-{{ section.id }} .section-title {
-      font-size: {{ section.settings.title_size_mobile }}px;
-    }
-    .fuel-calculator-section-{{ section.id }} .section-subtitle {
-      font-size: {{ section.settings.subtitle_size_mobile }}px;
-    }
-  }
-
-  /* Selector Wrapper Bar */
-  .fuel-selector-bar {
+  /* Top Selector Container Bar */
+  .fuel-calc-container {
     background-color: #111111;
     border: 1px solid #333333;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    padding: 20px 15px;
     max-width: 1200px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
   }
 
-  .fuel-dropdown-wrapper {
+  /* Dropdown Styles */
+  .fuel-dropdown-box {
     flex: 1;
-    min-width: 160px;
     position: relative;
   }
 
-  .fuel-dropdown-wrapper select {
+  .fuel-dropdown-box select {
     width: 100%;
-    padding: 12px 30px 12px 15px;
+    height: 48px;
+    background-color: #ffffff;
+    color: #222222;
+    border: none;
+    padding: 0 35px 0 15px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #333333;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333333' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%23222222' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
     background-repeat: no-repeat;
-    background-position: calc(100% - 12px) center;
+    background-position: calc(100% - 15px) center;
+    border-radius: 0;
   }
 
-  /* Disabled State Styling */
-  .fuel-dropdown-wrapper.disabled-select {
-    opacity: 0.4;
+  /* Conditional Lock/Disabled state */
+  .fuel-dropdown-box.disabled-state {
+    opacity: 0.3;
     pointer-events: none;
   }
-  .fuel-dropdown-wrapper.disabled-select select {
-    background-color: #e0e0e0;
-    color: #888888;
+  .fuel-dropdown-box.disabled-state select {
+    background-color: #ffffff;
+    color: #aaaaaa;
   }
 
-  /* Search & Reset Buttons */
-  .fuel-search-btn {
+  /* Search Button Style */
+  .fuel-search-action-btn {
     background-color: #ffcc00;
     color: #000000;
     border: none;
-    padding: 12px 25px;
-    font-size: 14px;
+    height: 48px;
+    padding: 0 30px;
+    font-size: 15px;
     font-weight: 700;
-    cursor: pointer;
     text-transform: uppercase;
-    transition: background 0.2s ease;
-    height: 45px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
   }
-  .fuel-search-btn:hover {
+  .fuel-search-action-btn:hover {
     background-color: #e6b800;
   }
 
-  .fuel-reset-btn {
+  /* Refresh Button Style */
+  .fuel-refresh-action-btn {
     background-color: transparent;
-    border: 1px solid #ffcc00;
+    border: 1px solid #333333;
     color: #ffcc00;
-    width: 45px;
-    height: 45px;
-    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s;
+    box-sizing: border-box;
   }
-  .fuel-reset-btn:hover {
-    background-color: #ffcc00;
-    color: #000000;
+  .fuel-refresh-action-btn:hover {
+    border-color: #ffcc00;
+    background-color: rgba(255,204,0,0.1);
   }
-  .fuel-reset-btn svg {
-    width: 20px;
-    height: 20px;
+  .fuel-refresh-action-btn svg {
+    width: 22px;
+    height: 22px;
     fill: currentColor;
   }
 
-  /* Calculate Action Button */
-  .calculate-now-btn {
+  /* Typography / Text Content */
+  .fuel-calc-wrapper-{{ section.id }} .calc-main-heading {
+    color: #ffcc00;
+    font-weight: 800;
+    text-transform: none;
+    margin: 0 0 10px 0;
+    letter-spacing: 0.5px;
+  }
+  .fuel-calc-wrapper-{{ section.id }} .calc-sub-heading {
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+  }
+
+  /* Desktop Text Size Control */
+  @media screen and (min-width: 750px) {
+    .fuel-calc-wrapper-{{ section.id }} .calc-main-heading {
+      font-size: {{ section.settings.d_title_size }}px;
+    }
+    .fuel-calc-wrapper-{{ section.id }} .calc-sub-heading {
+      font-size: {{ section.settings.d_sub_size }}px;
+    }
+  }
+
+  /* Mobile Text Size Control */
+  @media screen and (max-width: 749px) {
+    .fuel-calc-wrapper-{{ section.id }} .calc-main-heading {
+      font-size: {{ section.settings.m_title_size }}px;
+    }
+    .fuel-calc-wrapper-{{ section.id }} .calc-sub-heading {
+      font-size: {{ section.settings.m_sub_size }}px;
+    }
+  }
+
+  /* Bottom Calculate Button Style */
+  .fuel-submit-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background-color: #ffcc00;
     color: #000000;
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 12px 28px;
+    font-size: 15px;
     font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
     border: none;
+    text-transform: capitalize;
     cursor: pointer;
-    transition: transform 0.2s ease;
-    margin-top: 10px;
+    transition: background 0.2s;
   }
-  .calculate-now-btn:hover {
-    transform: scale(1.03);
+  .fuel-submit-btn:hover {
+    background-color: #e6b800;
   }
-  .calculate-now-btn svg {
-    width: 18px;
-    height: 18px;
+  .fuel-submit-btn svg {
+    width: 16px;
+    height: 16px;
     fill: #000000;
   }
 
-  /* Responsive Adjustments for Mobile View */
-  @media screen and (max-width: 768px) {
-    .fuel-selector-bar {
+  /* Responsive Panel View for Small Devices */
+  @media screen and (max-width: 991px) {
+    .fuel-calc-container {
       flex-direction: column;
       align-items: stretch;
+      gap: 12px;
     }
-    .fuel-dropdown-wrapper {
+    .fuel-dropdown-box, .fuel-search-action-btn, .fuel-refresh-action-btn {
       width: 100%;
     }
-    .fuel-search-btn {
-      width: 100%;
-    }
-    .fuel-reset-btn {
-      width: 100%;
-      height: 45px;
+    .fuel-refresh-action-btn {
+      height: 48px;
     }
   }
 {%- endstyle -%}
 
-<div class="fuel-calculator-section-{{ section.id }}">
+<div class="fuel-calc-wrapper-{{ section.id }}">
   
-  <!-- Header Text Section -->
-  <h2 class="section-title">{{ section.settings.title_text }}</h2>
-  <p class="section-subtitle">{{ section.settings.subtitle_text }}</p>
-
-  <!-- Dropdowns Selection Engine -->
-  <div class="fuel-selector-bar">
+  <!-- Dropdowns Selection Panel Area -->
+  <div class="fuel-calc-container">
     
-    <!-- 1. CARB OR EFI -->
-    <div class="fuel-dropdown-wrapper">
-      <select id="fuel-select-1">
+    <!-- 1. CARB OR EFI Dropdown -->
+    <div class="fuel-dropdown-box">
+      <select id="drop-1">
         <option value="" disabled selected hidden>CARB OR EFI</option>
         <option value="Carbureted">Carbureted</option>
         <option value="Fuel Injected">Fuel Injected</option>
       </select>
     </div>
 
-    <!-- 2. INDUCTION -->
-    <div class="fuel-dropdown-wrapper disabled-select" id="wrapper-select-2">
-      <select id="fuel-select-2">
+    <!-- 2. INDUCTION Dropdown -->
+    <div class="fuel-dropdown-box disabled-state" id="box-2">
+      <select id="drop-2">
         <option value="" disabled selected hidden>INDUCTION</option>
         <option value="Forced Induction">Forced Induction</option>
         <option value="Naturally Aspirated">Naturally Aspirated</option>
       </select>
     </div>
 
-    <!-- 3. FUEL TYPE -->
-    <div class="fuel-dropdown-wrapper disabled-select" id="wrapper-select-3">
-      <select id="fuel-select-3">
+    <!-- 3. FUEL TYPE Dropdown -->
+    <div class="fuel-dropdown-box disabled-state" id="box-3">
+      <select id="drop-3">
         <option value="" disabled selected hidden>FUEL TYPE</option>
         <option value="Diesel">Diesel</option>
         <option value="E85">E85</option>
@@ -212,18 +208,18 @@
       </select>
     </div>
 
-    <!-- 4. MOUNTING CONFIG -->
-    <div class="fuel-dropdown-wrapper disabled-select" id="wrapper-select-4">
-      <select id="fuel-select-4">
+    <!-- 4. MOUNTING CONFIG Dropdown -->
+    <div class="fuel-dropdown-box disabled-state" id="box-4">
+      <select id="drop-4">
         <option value="" disabled selected hidden>MOUNTING CONFIG</option>
         <option value="External">External</option>
         <option value="In-Tank">In-Tank</option>
       </select>
     </div>
 
-    <!-- 5. HORSEPOWER -->
-    <div class="fuel-dropdown-wrapper disabled-select" id="wrapper-select-5">
-      <select id="fuel-select-5">
+    <!-- 5. HORSEPOWER Dropdown -->
+    <div class="fuel-dropdown-box disabled-state" id="box-5">
+      <select id="drop-5">
         <option value="" disabled selected hidden>HORSEPOWER</option>
         <option value="0-1000">0-1000</option>
         <option value="1001-2000">1001-2000</option>
@@ -231,21 +227,24 @@
       </select>
     </div>
 
-    <!-- Search Button -->
-    <button type="button" class="fuel-search-btn" id="fuel-search-trigger">Search</button>
+    <!-- Action Action: Search -->
+    <button type="button" class="fuel-search-action-btn" id="search-click">Search</button>
 
-    <!-- Reset Button -->
-    <button type="button" class="fuel-reset-btn" id="fuel-reset-trigger" title="Reset Filters">
+    <!-- Action Action: Reset Icon -->
+    <button type="button" class="fuel-refresh-action-btn" id="refresh-click">
       <svg viewBox="0 0 24 24">
-        <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+        <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
       </svg>
     </button>
   </div>
 
-  <!-- Bottom Action Button -->
+  <!-- Lower Content Section -->
+  <h2 class="calc-main-heading">{{ section.settings.heading_text }}</h2>
+  <p class="calc-sub-heading">{{ section.settings.subheading_text }}</p>
+
   <div>
-    <button type="button" class="calculate-now-btn" id="calculate-now-trigger">
-      {{ section.settings.btn_text }}
+    <button type="button" class="fuel-submit-btn" id="calc-submit-click">
+      {{ section.settings.action_btn_text }}
       <svg viewBox="0 0 24 24">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
       </svg>
@@ -256,117 +255,103 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const s1 = document.getElementById("fuel-select-1");
-  const s2 = document.getElementById("fuel-select-2");
-  const s3 = document.getElementById("fuel-select-3");
-  const s4 = document.getElementById("fuel-select-4");
-  const s5 = document.getElementById("fuel-select-5");
+  const d1 = document.getElementById("drop-1");
+  const d2 = document.getElementById("drop-2");
+  const d3 = document.getElementById("drop-3");
+  const d4 = document.getElementById("drop-4");
+  const d5 = document.getElementById("drop-5");
 
-  const w2 = document.getElementById("wrapper-select-2");
-  const w3 = document.getElementById("wrapper-select-3");
-  const w4 = document.getElementById("wrapper-select-4");
-  const w5 = document.getElementById("wrapper-select-5");
+  const b2 = document.getElementById("box-2");
+  const b3 = document.getElementById("box-3");
+  const b4 = document.getElementById("box-4");
+  const b5 = document.getElementById("box-5");
 
-  const searchBtn = document.getElementById("fuel-search-trigger");
-  const resetBtn = document.getElementById("fuel-reset-trigger");
-  const calcBtn = document.getElementById("calculate-now-trigger");
+  const btnSearch = document.getElementById("search-click");
+  const btnRefresh = document.getElementById("refresh-click");
+  const btnCalc = document.getElementById("calc-submit-click");
 
-  // Sequential Visibility Logic
-  s1.addEventListener("change", function() {
-    if(s1.value) { w2.classList.remove("disabled-select"); }
+  // Step-by-step Conditional Flow Trigger
+  d1.addEventListener("change", function() { if(d1.value) b2.classList.remove("disabled-state"); });
+  d2.addEventListener("change", function() { if(d2.value) b3.classList.remove("disabled-state"); });
+  d3.addEventListener("change", function() { if(d3.value) b4.classList.remove("disabled-state"); });
+  d4.addEventListener("change", function() { if(d4.value) b5.classList.remove("disabled-state"); });
+
+  // Refresh Trigger Functionality
+  btnRefresh.addEventListener("click", function() {
+    d1.selectedIndex = 0;
+    d2.selectedIndex = 0;
+    d3.selectedIndex = 0;
+    d4.selectedIndex = 0;
+    d5.selectedIndex = 0;
+    
+    b2.classList.add("disabled-state");
+    b3.classList.add("disabled-state");
+    b4.classList.add("disabled-state");
+    b5.classList.add("disabled-state");
   });
 
-  s2.addEventListener("change", function() {
-    if(s2.value) { w3.classList.remove("disabled-select"); }
-  });
+  // Search Submission Engine
+  function runSearchRedirect() {
+    let terms = [];
+    if(d1.value) terms.push(encodeURIComponent(d1.value));
+    if(d2.value) terms.push(encodeURIComponent(d2.value));
+    if(d3.value) terms.push(encodeURIComponent(d3.value));
+    if(d4.value) terms.push(encodeURIComponent(d4.value));
+    if(d5.value) terms.push(encodeURIComponent(d5.value));
 
-  s3.addEventListener("change", function() {
-    if(s3.value) { w4.classList.remove("disabled-select"); }
-  });
-
-  s4.addEventListener("change", function() {
-    if(s4.value) { w5.classList.remove("disabled-select"); }
-  });
-
-  // Reset Functionality
-  function resetForm() {
-    s1.selectedIndex = 0;
-    s2.selectedIndex = 0;
-    s3.selectedIndex = 0;
-    s4.selectedIndex = 0;
-    s5.selectedIndex = 0;
-
-    w2.classList.add("disabled-select");
-    w3.classList.add("disabled-select");
-    w4.classList.add("disabled-select");
-    w5.classList.add("disabled-select");
-  }
-
-  resetBtn.addEventListener("click", resetForm);
-
-  // Redirect / Search Action Logic
-  function executeSearch() {
-    let queryParts = [];
-    if(s1.value) queryParts.push(encodeURIComponent(s1.value));
-    if(s2.value) queryParts.push(encodeURIComponent(s2.value));
-    if(s3.value) queryParts.push(encodeURIComponent(s3.value));
-    if(s4.value) queryParts.push(encodeURIComponent(s4.value));
-    if(s5.value) queryParts.push(encodeURIComponent(s5.value));
-
-    if(queryParts.length === 0) {
-      alert("Please select at least one option before searching.");
+    if(terms.length === 0) {
+      alert("Please select categories first.");
       return;
     }
 
-    // Shopify default search standard query parameters
-    let searchURL = "/search?type=product&q=" + queryParts.join("+");
-    window.location.href = searchURL;
+    // Direct redirection logic to shopify catalog search results
+    window.location.href = "/search?type=product&q=" + terms.join("+");
   }
 
-  searchBtn.addEventListener("click", executeSearch);
-  calcBtn.addEventListener("click", executeSearch);
+  btnSearch.addEventListener("click", runSearchRedirect);
+  btnCalc.addEventListener("click", runSearchRedirect);
 });
 </script>
 
 {% schema %}
 {
-  "name": "Fuel System Calculator",
+  "name": "Fuel System Calculator V2",
   "settings": [
     {
       "type": "text",
-      "id": "title_text",
+      "id": "heading_text",
       "label": "Heading Text",
       "default": "Power-Flow Capacity Calculator"
     },
     {
       "type": "range",
-      "id": "title_size_desktop",
+      "id": "d_title_size",
       "min": 16,
       "max": 60,
       "step": 2,
       "unit": "px",
       "label": "Heading Font Size (Desktop)",
-      "default": 36
+      "default": 38
     },
     {
       "type": "range",
-      "id": "title_size_mobile",
+      "id": "m_title_size",
       "min": 14,
       "max": 40,
       "step": 2,
       "unit": "px",
       "label": "Heading Font Size (Mobile)",
-      "default": 24
+      "default": 26
     },
     {
       "type": "text",
-      "id": "subtitle_text",
+      "id": "subheading_text",
       "label": "Subheading Text",
       "default": "Calculate flow rate required given horsepower"
     },
     {
       "type": "range",
-      "id": "subtitle_size_desktop",
+      "id": "d_sub_size",
       "min": 12,
       "max": 30,
       "step": 1,
@@ -376,7 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       "type": "range",
-      "id": "subtitle_size_mobile",
+      "id": "m_sub_size",
       "min": 10,
       "max": 24,
       "step": 1,
@@ -386,14 +371,14 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       "type": "text",
-      "id": "btn_text",
-      "label": "Button Text",
+      "id": "action_btn_text",
+      "label": "Calculate Button Text",
       "default": "Calculate Now"
     }
   ],
   "presets": [
     {
-      "name": "Fuel System Calculator",
+      "name": "Fuel System Calculator V2",
       "category": "Custom Sections"
     }
   ]
