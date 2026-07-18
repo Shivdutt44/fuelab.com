@@ -1,0 +1,298 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_slideshow_egzBtY": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_bQMV9g": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "align-center text-center",
+            "title": "<h1>Videos</h1>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_bQMV9g"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width_banner": "boxed",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "1/1",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_promo_gallery_rbntpN": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_UKN6pW": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/Derek Madison and his Fuelab sponsored Pro2 S14(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Derek Madison and his Fuelab sponsored Pro2 S14</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Here's an inside look at Derek Madison and his team's Formula Drift efforts.<br/></p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": false,
+            "overlay_url": "https://youtu.be/Uny00D64D00?si=dYD3qWs81uZKwi3S"
+          }
+        },
+        "image_jkABzJ": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/Drag Race Burn Out _ Diesel Sled Pull by FUELAB Performance_(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "<strong>Drag Race Burn Out Video & Diesel Sled Pull Video</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Drag Race Burn Out Video & Diesel Sled Pull<br/></p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_cQwhC6": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/Fielding Shredder and his Fuelab Sponsored S14(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "<strong>Drifting With Fuelab</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Take a ride along as we showcase the amazing talents of Fuelab sponsored drifting expert, and...<br/></p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_qfNEt6": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/Eric _Dewey_ DeWitt _GRIDLIFE Track Battle Time Attack in his Fuelab Equipped Subaru WRX_(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "<strong>Eric 'Dewey' Dewitt #GRIDLIFE Track Battle Time</strong>",
+            "title_underline_style": "none",
+            "text": "<p>FUELAB-Racer Eric \"Dewey\" DeWitt takes on Mid Ohio in the #GRIDLIFE Track Battle Time Attack...</p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_zXpjN9": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/Brushless Lift Pumps with No Shaft Seal to Fail - FUELAB Velocity(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Fuelab Brushless Diesel Lift Pumps</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Fuelab's Velocity Diesel Brushless Lift Pumps Offer Unmatched Reliability<br/></p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_kBUmaK": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/The Best Racing _ Street Performance Fuel Pressure Regulators - FUELAB(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Fuelab Fuel Pressure Regulators</strong>",
+            "title_underline_style": "none",
+            "text": "<p>The Best Racing & Street Performance Fuel Pressure Regulators<br/></p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_XMbjT8": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/Quality Fuel System Accessories – Gauges_ Filters_ Brackets - FUELAB(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Fuelab Fuel System Accessories</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Quality Fuel System Accessories: Gauges, Filters, Brackets</p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_hJF4Ma": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/High Performance In Tank Fuel Pumps _ Custom Mounting Flanges(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Fuelab In Tank Fuel Pumps & Custom Mounting Flanges</strong>",
+            "title_underline_style": "none",
+            "text": "<p>High Performance In Tank Fuel Pumps & Custom Mounting Flanges</p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_mqqnxC": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/Before Fuel Pump and After Fuel Pump Fuel Filters - FUELAB(720P_HD).mp4",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-2",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Fuelab In-Line Fuel Filters</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Before Fuel Pump and After Fuel Pump Fuel Filters</p>",
+            "show_link": true,
+            "link_text": "GO",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_UKN6pW",
+        "image_jkABzJ",
+        "image_cQwhC6",
+        "image_qfNEt6",
+        "image_zXpjN9",
+        "image_kBUmaK",
+        "image_XMbjT8",
+        "image_hJF4Ma",
+        "image_mqqnxC"
+      ],
+      "name": "t:sections.promo_gallery.presets.name",
+      "settings": {
+        "items_width": 3,
+        "height": "16/9",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": false,
+        "shadow": false,
+        "title_size_blocks": "h2",
+        "layout_mobile": "rows",
+        "height_mobile": "16/9",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_slideshow_egzBtY",
+    "main-page",
+    "section_promo_gallery_rbntpN"
+  ]
+}

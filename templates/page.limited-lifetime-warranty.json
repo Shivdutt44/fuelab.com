@@ -1,0 +1,133 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_slideshow_4Etb7G": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_JxfDmP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Vehicle_Specific_Fuel_SYstem.png",
+            "layout": "background",
+            "overlay_opacity": 65,
+            "color_palette": "scheme-2",
+            "text_position": "align-center text-center",
+            "title": "<h1>Limited Lifetime Warranty</h1>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_JxfDmP"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width_banner": "wide",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "1/1",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_rich_text_GMC8RJ": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_PKG6xm": {
+          "type": "title",
+          "settings": {
+            "title": "<h2><strong>LIMITED LIFETIME WARRANTY</strong></h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "content_Rx6wU6": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>FUELAB, a division of FCP, Inc., having its principal place of business at 3443 Petroff Plaza Building A, Pontoon Beach, IL 62040, USA (\"Manufacturer\") warrants its FUELAB products (the \"Products\") as follows:</p><p><strong> 1. Limited Lifetime Warranty</strong></p><p>Manufacturer warrants that the Products sold hereunder will be free from defects in material and workmanship from the date of purchase for so long as the original purchaser owns the Products. This Limited Lifetime Warranty does not extend to any subsequent owner or transferee of the Products. If the Products do not conform to this Limited Lifetime Warranty during the warranty period (as herein above specified), Buyer shall notify Manufacturer in writing of the claimed defects and demonstrate to Manufacturer’s satisfaction that said defects are covered by this Limited Lifetime Warranty. If the defects are properly reported to Manufacturer within the warranty period, and the defects are of such type and nature as to be covered by this Limited Lifetime Warranty, Manufacturer shall, at its option and own expense, furnish replacement Products or replacement parts for the defective Products or refund the purchase price. Removal of Products from vehicle, shipping to Manufacturer and installation of the replacement Products or replacement parts shall be at purchaser’s expense. (Vehicle means any automotive, bike or marine transportation device powered by an internal combustion engine to which the Product is attached. This Product is NOT intended or designed for use on aircraft, experimental or otherwise.)</p><p><strong> 2. Other Limits</strong></p><p>THE FOREGOING IS IN LIEU OF ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. This Limited Lifetime Warranty does not cover any damage due to: (a) transportation; (b) storage; (c) improper use; (d) failure to follow instructions for the Products or to perform any preventive maintenance; (e) modification; (f) unauthorized repair; (g) normal wear and tear; or (h) external causes such as accidents, abuse, or other actions beyond Manufacturer’s reasonable control. This Limited Lifetime Warranty also does not apply to Products upon which repairs have been effected or attempted by persons other than pursuant to written authorization by Manufacturer. This Limited Lifetime Warranty is not extended if we repair or replace the Products.</p><p><strong>3. Exclusive Obligation</strong></p><p>THIS LIMITED LIFETIME WARRANTY IS EXCLUSIVE. The sole and exclusive obligation of Manufacturer shall at its option be to repair or replace the defective Products in the manner and for the period provided above or to refund the purchase price. Manufacturer shall not have any other obligation with respect to the Products or any part thereof, whether based on contract, tort, strict liability or otherwise.</p><p><strong>4. Other Statements</strong></p><p>ORAL OR OTHER WRITTEN STATEMENTS BY MANUFACTURER’S EMPLOYEES, REPRESENTATIVES AND/OR RESELLERS DO NOT CONSTITUTE WARRANTIES, SHALL NOT BE RELIED UPON BY BUYER, AND ARE NOT A PART OF THE CONTRACT FOR SALE OR THIS LIMITED LIFETIME WARRANTY.</p><p><strong>5. Entire Obligation</strong></p><p>his Limited Lifetime Warranty states the entire obligation of Manufacturer with respect to the Products. If any part of this Limited Lifetime Warranty is determined to be void or illegal, the remainder shall remain in full force and effect.</p><p><strong>6. Warranty Service</strong></p><p>How Do You Get Service? If something goes wrong with your Product, contact FUELAB at 618-344-3300, or send an e-mail with proof of purchase to: info@fuelab.com for a Return Authorization Number (RMA). After receiving your RMA send the product postage paid, fully insured, with a brief written description of the problem to:</p><p><strong>FUELAB Warranty Department, 3443 Petroff Plaza Building A, Pontoon Beach, IL  62040</strong></p><p>We will inspect your Product and contact you within three business days of receipt to give the results of our inspection and an estimate of the labor and/or parts charges required to fix the Product, if applicable. If covered under this Limited Lifetime Warranty, Manufacturer will repair or replace the Product and return it to you at no cost or refund the purchase price. If the Product is NOT covered under this warranty and if you authorize repairs, we will return the repaired Product to you COD, or prepaid via credit card, within three business days. If we find no issues with the returned product and it meets all performance specifications, there will be a $25 charge to cover technician labor and inspection time. Additional return shipping charges will apply. We will return the repaired Product to you COD, or prepaid via credit card, within three business days.</p><p>Limitation of Liability THE REMEDIES DESCRIBED ABOVE ARE YOUR SOLE AND EXCLUSIVE REMEDIES AND OUR ENTIRE LIABILITY FOR ANY BREACH OF THIS LIMITED LIFETIME WARRANTY, OUR LIABILITY SHALL UNDER NO CIRCUMSTANCES EXCEED THE ACTUAL AMOUNT PAID BY YOU FOR THE DEFECTIVE PRODUCT, NOR SHALL WE UNDER ANY CIRCUMSTANCES BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, SPECIAL OR PUNITIVE DAMAGES OR LOSSES, WHETHER DIRECT OR INDIRECT. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_PKG6xm",
+        "content_Rx6wU6"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "text_alignment": "start",
+        "content_width": 1280,
+        "height": "size-s",
+        "width_banner": "wide",
+        "width": "wide",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_slideshow_4Etb7G",
+    "main-page",
+    "section_rich_text_GMC8RJ"
+  ]
+}

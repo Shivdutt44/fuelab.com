@@ -1,0 +1,693 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "1653481755602a92ab": {
+      "type": "section-slideshow",
+      "blocks": {
+        "16534817559e4372f4-0": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 10,
+            "color_palette": "scheme-2",
+            "text_position": "text-start",
+            "title": "<h1>Frequently asked questions</h1>",
+            "title_underline_style": "none",
+            "text": "<p>Can't find what you are looking for? Please contact us.</p>",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "16534817559e4372f4-0"
+      ],
+      "settings": {
+        "height": "32/9",
+        "width_banner": "boxed",
+        "width": "boxed",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "4/5",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "16534836035233544d": {
+      "type": "section-spacer",
+      "settings": {
+        "height": 50,
+        "height_mobile": 20
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "1653482236cd744a0f": {
+      "type": "section-icon-text-blocks",
+      "blocks": {
+        "165348223644882a56-0": {
+          "type": "text",
+          "settings": {
+            "icon": "email",
+            "image_svg": "",
+            "image_height": 55,
+            "title": "You can email us anytime",
+            "text": "<p>Give your We try to respond within 24 hours more details</p>",
+            "link_color": "inherit",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "165348223644882a56-1": {
+          "type": "text",
+          "settings": {
+            "icon": "24_7_call",
+            "image_svg": "",
+            "image_height": 55,
+            "title": "Do you need help?",
+            "text": "<p>You can call us at: 123 456 789</p>",
+            "link_color": "inherit",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "165348223644882a56-2": {
+          "type": "text",
+          "settings": {
+            "icon": "truck",
+            "image_svg": "",
+            "image_height": 55,
+            "title": "Free shipping on all orders",
+            "text": "<p>Worldwide shipping</p>",
+            "link_color": "inherit",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "165348223644882a56-3": {
+          "type": "text",
+          "settings": {
+            "icon": "delivery_box_2",
+            "image_svg": "",
+            "image_height": 55,
+            "title": "Next day delivery",
+            "text": "<p><a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">Read more</a> about shipping</p>",
+            "link_color": "inherit",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "165348223644882a56-0",
+        "165348223644882a56-1",
+        "165348223644882a56-2",
+        "165348223644882a56-3"
+      ],
+      "settings": {
+        "items_width": 4,
+        "text_alignment": "center",
+        "width": "boxed",
+        "title": "",
+        "title_underline_style": "none",
+        "text": "",
+        "font_size": "16px",
+        "show_link": false,
+        "link_text": "",
+        "link_url": "",
+        "button_style": "primary plain",
+        "blocks_text_alignment": "center",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h3",
+        "layout_mobile": "slider",
+        "mobile_blocks_text_alignment": "center",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "16534818921d9da639": {
+      "type": "section-faq",
+      "blocks": {
+        "1653481892aca601d3-0": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Where is the Best Place to Use a Check Valve?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>A check valve can have many functions: hold rail pressure, shorten the pump priming time, and help with hot starts. Emissions are more important than ever these days as well. Holding rail pressure while the engine is cooling, prevents the fuel from boiling off, thus cutting back on evaporative emissions. The EPA is all over the motorsports industry these days, so its up to all of us to do our part.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "1653481892aca601d3-1": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Where is the best place to mount my Surge Tank?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Where you should mount your Surge Tank depends on your application. We always recommend that it’s mounted in a safe space so that it can’t be damaged in case of an impact and nowhere near an ignition source. The most common mounting areas are in the trunk/hatch/bed near the fuel tank. We recommend somewhere easily accessible.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "1653481892aca601d3-2": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What size lift pump should I use?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>We recommend a lift pump that provides at least 2/3 the flow rate of your Surge Tank Pump. Often your factory pump is sufficient to feed your Surge tank with the help of the return line. Please refer to our Technical Data Sheets for flow rates or contact Tech Support.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "19bffed1-f52f-4d9c-877f-5374d9a41f2b": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What size inlets are on Fuelab Regulators?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>We have several different options for inlet/outlet sizes to match different applications! Please contact Tech Support for more information!<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "432c0efd-c93e-48f4-b507-204ff1d1ee9f": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What size Fuel Pump should I use?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Fuel pump size requirements depend on Fuel Pressure, Fuel Type, and Induction type. We recommend that you refer to our Fuel Pump Calculator and input your desired power rating and setup to best decide your flow needs.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_WD4MUP": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What Micron rating should I use?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Although all systems are different, a basic rule of thumb to follow is: 100-micron for pre filtering, 40-micron for carbureted use, 10-micron, and 6-micron for EFI, and 6-mcron for direction injection. *Note* (Be sure that the filter element you choose is compatible with the fuel you are running).</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_fgrVtb": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What is the Warranty on Fuelab Fuel Pumps?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>All our Fuelab branded products carry a “Forever Fixed” Limited Lifetime Warranty for the original purchaser. Just send it in for testing and we will assess the damage and come up with a solution!<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_7bfQD9": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What is the service interval of my Fuel Filter?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Service intervals all depend on your use, volume, and contamination. The base recommended time is 12 months or 12,000 miles. For more extensive use or unideal conditions we recommend replacing the element every 3-6 months.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_7wLwtE": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What is the advantage of using a Surge Tank over multiple in-tank pumps?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>The biggest benefit is eliminating fuel slosh that can happen in low fuel conditions. It is often more cost effective to run one lift pump and a surge tank than a multiple pump hanger.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_h6xTHL": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What fuel types are Fuelab Fuel Filters good for?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>The 6-micron, 40-micron and 100-micron filter elements are compatible with gas, ethanol, methanol, and diesel, whereas our 10-micron filter elements are only compatible with gas and diesel.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_zkLGgx": {
+          "type": "text",
+          "settings": {
+            "faq_question": "What Are The Common Types of Fittings",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Adapter Fittings</strong> – also known as <strong>Standard Fittings</strong> or <strong>Union Fittings</strong> – are commonly used to connect fuel line tubes and hoses to fuel pumps, fuel regulators, and fuel filters. While Adapter Fittings are available in SAE size configurations, most high-end racing and performance fuel systems use those manufactured to AN standards (document AN815, defines standard union fittings). With AN versions, the fitting ends typically use a 37° cone on each end (as per Military Standard MS33656). AN standards dictate use of Straight Thread for Adapters, requiring use of O-rings. Special port machining is done to \"capture\" and properly compress the O-ring, as too much stress can damage the O-ring, and too little can cause leakage.  These port standards are designed to precisely \"load\" the O-ring automatically during installation. Use of The O-ring seals allow for greater sealing ability with very high reliability of installation as compared to Tapered Thread using sealing compounds or Teflon tape.</p><p><strong>Pipe Fittings</strong> - Pipe Fittings can be used to connect fuel lines to the port on a fuel pump or fuel pressure regulator, as well as connect fuel pressure gauges to gauge ports. One end (the port end) of the fitting can be described as a male open-ended cylinder with Tapered Thread (also called Pipe Thread) on the outer diameter. This fits into a female port of corresponding size and thread pitch. The other end typically uses a 37° cone and Straight Thread. The Tapered Thread on the port end of the fitting must use sealing compound or Teflon tape to help avoid leakage. However, in high-pressure fuel system applications this method has proven more leak prone than the O-ring seal method used with Straight Thread fittings. As well, Teflon tape has the potential to leave debris in the fuel systemWhich leads us to the description of Port Fittings.</p><p><strong>Port Fittings</strong> - Port Fittings (also known as O-Ring Base or ORB fittings) function just like Pipe Fittings, but with the following distinctions. Port Fittings conform to AN standards - typically per Military Standard MS33649. The cone end uses Straight Thread and a 37° cone. The male port end of the fitting uses Straight Thread, and is received by a female port of corresponding size and thread pitch. Port Fittings require use of O-rings. Like AN Adapters, special port machining is done to \"capture\" and properly compress the O-ring which allows for greater sealing ability with very high reliability of installation as compared to Tapered Threads using sealing compounds or Teflon tape. This reliability makes Port Fittings the preferred choice over Pipe Fittings for high-end racing and performance fuel system applications. It should be noted that while manufacturers of high performance fuel delivery systems often specify Port Fittings for connections to fuel pumps and fuel pump regulators, the connections to <a href=\"https://www.fuelab.com/gauges/c12\">fuel pressure gauges</a>, via gauge ports, most often utilize Pipe Fittings. This is because the vast majority of the in-line fuel pressure gauges on the market use Pipe Fittings for connection.</p><p>We hope this overview has provided a better understanding of the differences and uses of Straight Thread versus Pipe Thread, as well as the types of fittings used. If you have further questions about fuel delivery system plumbing, please contact Fuelab Technical Support.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_JGbqKL": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Understanding Fuel Line Fittings: Straight Thread (and AN) vs. Tapered Thread?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Before we get into the types of fittings we’ll first define the thread types used on the fittings, as well as discuss applicable AN standards.</p><p><strong>Thread Types:</strong></p><p><strong>Straight Thread</strong> - With straight thread the threads run parallel. Port Fittings and Adapter fittings using straight thread require use of an O-ring Boss Seal technique to seal against leakage. NPSC - American Standard Straight Coupling Pipe Thread are the standards for Straight Thread in the US.</p><p><strong>Tapered Thread</strong> – Tapered thread, also known as Pipe Thread, typically uses a 2° angle on the threads (instead of running parallel).  This allows the threads to interfere and seal off.  Threads must be clean and precise, to make up for gaps between threads that allow for leakage.  Pipe Fittings, which use Tapered Thread, don’t use O-rings, but rather must use compounds or Teflon Tape to help seal the threads. National Pipe Thread Taper (NPT) is a U.S. standard for tapered threads used on threaded pipes and fittings.</p><p><strong>AN Standards - </strong>High-end racing and performance fuel delivery systems most frequently implement fuel lines and fittings manufactured to AN Standards. During WWII the US military set specification standards for fasteners and fluid fittings used on military equipment. These standards are headed under “AN” which is the abbreviation for “Army-Navy\", but is also known as \"Air Force - Navy Aeronautical Standard\".  After the war many used surplus aerospace parts were used for racing, and thus introduced the AN standard into the racing and performance world. AN Standards as Applied to Fluid Carrying Tubes and Flexible Hoses In the case of tubes and flexible hoses used to carry fluid, “AN Size” designates the outer diameter of the hose or tubing in 1/16” increments.  For example an AN size 2 designates a tube OD of 1/8” (2 x 1/16”), the tube OD of AN size 3 is 3/16” (3 x 1/16”). Note: The AN size number is correctly displayed with a dash before the number.</p><ul><li>FYI: Popular fuel line sizes:-6AN      (=3/8\" OD)-8AN      (=1/2\" OD)-10AN   (=5/8\" OD)-12AN   (=3/4\" OD)</li></ul><p></p><ul><li>Use of -3AN and -4AN line:Typically, these 1/4\" and 5/16\" line sizes are in use for low flow or OEM systems, but are commonly used in high performance applications for pressure gauges as well as plumbing between the Regulator and Intake Manifold.  These two lines do not involve significant amounts of flow, and therefore do not require larger sizes.Typically, the port sizes used with these smaller sizes use a 1/8\"- NPT.  1/8\"-NPT fittings are very common and can easily be used to adapt to -3AN or -4AN line.</li></ul><p></p><p>AN Standards as Applied to Fluid Carrying Fittings Each AN size also references a standard male and female thread size that is used on fittings - such as hose end fittings, adapters, and port fittings. This is known as “AN Thread Size”.   AN fittings have Straight Thread, and use O-ring seals. The O-ring size is typically defined by the \"AS\" standard.  Dash Numbers are typically assigned based on the size.  Boss-Seal style O-rings are typically in the \"900\" Series. For example -906 is for -6AN ports, and -908 is for -8AN ports. AN Size and AN Thread Size Reference Chart The chart below references the tube (or flexible hose) OD and thread size for each AN size.</p><p><strong>AN SizeTube or Hose ODTube or Hose IDFitting Thread Size(SAE) </strong>- 21/8”.062”5/16-24-33/16”.125”3/8-24-4¼”.172”7/16-20-55/16”.062”1/2-20-63/8”.297”9/16-18-81/2”.391”3/4-16-105/8”.484”7/8-14-12¾”.609”1-1/16-12-161”.844”1-5/16-12-201 ¼”1.078”1-5/8-12-241 ½”1.312”1-7/8-12-281 ¾”1.547”2-1/4-12-322”1.781”2-1/2-12<br/>*Note: While these measurement s reflect AN standards, actual ID and OD can vary slightly from AN specification depending on supplier. BE SURE TO USE COMPATIBLE FITTINGS ONLY!  Mismatched lines can come apart under pressure.  Verify that inner diameters match!</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_ABbrLC": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Loose Wires?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>If you’re having problems with anything electrical, take the simple steps below along with a simple visual check before assuming your ________ (insert random part name here) has failed. In many cases, simply jiggling some wires is all the troubleshooting you’ll need to do in order to find the problem – no fancy meter or tedious steps required!</p><p>Often I get a tech call from someone that suspects they have a pump failure. One of my first questions is whether or not they’ve checked their wiring. I almost always get some version of “Yeah, it looks fine!”. There’s more to wiring than just how it looks, and I experienced that firsthand as I found myself on the side of the road last Friday morning with a suspected pump failure. Granted, this was with an OEM pump on an S10 that has experienced 23 years’ worth of Midwest rain and road salt, but it still serves as a good example to my point. At first glance, the shared ground for the fuel pump and rear signal light looked OK – light corrosion/rust but nothing outside the norm for a daily driver, the ground bolt was tight, the ring terminal was in good shape and the crimp was still tight. It seems over the years, the wire finally broke inside the insulation. From the outside everything looked fine, but it wasn’t until the wire was moved that the problem presented itself. Simply cutting the wire and installing a new ring terminal got me back in action….after a 3mi walk home and a tow bill. I’d have been awfully frustrated had I went through the expense and hassle of installing a new pump, only to have the same issues I had previously. More times than not, the fix is something simple – don’t just “check” the basics, actually CHECK them. </p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_g4arAH": {
+          "type": "text",
+          "settings": {
+            "faq_question": "How do I know if I need to upgrade my OEM Fuel Pressure Regulator?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Any time you upgrade your fuel pump from stock to a higher flow unit, you should upgrade your Fuel Pressure Regulator. Another good reason to upgrade is if you want to be able to adjust your Fuel Pressure.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_rHC8J7": {
+          "type": "text",
+          "settings": {
+            "faq_question": "How do I know if I need a Surge tank?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Fuel Surge tanks are a must in high G force applications. Surge tanks are mostly found in road race and drift applications, but they are also great for drag racing and off-road applications! A surge tank provides a reserve fuel supply to ensure that your primary fuel pump never has fuel starvation issues. The surge tank gets filled by a lift pump in your fuel tank and is assisted by your return line to ensure it always stays full.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_WmxpmQ": {
+          "type": "text",
+          "settings": {
+            "faq_question": "How big of a Fuel Filter do I need?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Fuel Filter cannisters have different flow rate limitations. The bigger the filter body, the more flow it can handle without restricted flow. 818/848-Series up to 200GPH, 828/858-Series up to 350GPH, and 868-Series up to 10GPM.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_bT8znC": {
+          "type": "text",
+          "settings": {
+            "faq_question": "How and Why should I Winterize?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Winter is fast approaching. That means it’s time to remove the summer air from your tires, fill them with winter air, and do a little fuel system winterization on the race car!</p><p>Contrary to popular belief, your car’s fuel tank is not a long-term fuel storage vessel. For those of you that just run pump gas, this is as easy and draining the fuel out or just dumping a little Sta-bil (or equivalent) in the tank.</p><p>For those of you that are running a something a bit more spicy than pump gas, the process is just a little more involved, but not much.</p><p>Start with draining the good stuff. After that, cycle the system with pump gas (bonus points if you add some Sta-bil or similar) to flush the pump, filters, lines, and the carb or EFI bits that are downstream. Some folks will even go the extra mile and remove the pump completely after flushing and spray lube (WD-40, light oil, 2-stroke oil, top end lube, etc.) down the inlet of the pump and manually spin it by hand a bit to work it around.</p><p>Whatever you do, don’t do what this guy did, which was nothing at all. A few minutes of post-season prep work will save you a ton of headaches, time, and money come that first spring day when it’s time to dust off your car and blow the winter cobwebs out.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_BNKCwK": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Do I need to use a Check Valve in my Fuel System?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Although it is not required, we do recommend the use of a check valve in most Fuel Systems. Most in-tank pumps already have an integrated check valve, but for those that don’t and for in-line Fuel Pumps, we recommend that you run a check valve AFTER the fuel pump. This will help maintain rail pressure, shorten priming time, and help with hot starts!<br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_qTteBT": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Do I need to Pre Filter my fuel pump?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>YES! All Fuel Pumps need some kind of pre-filter as they are crucial to maintaining Fuel Pump Life. All our In-Tank Fuel Pumps come with an in-tank strainer. All In-Line Fuel Pumps require the purchase of a separate Pre-Filter. We recommend a 100-micron Filter to properly filter and not cause a restriction.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_6WdA7i": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Do I need a bypass or blocking style Fuel Pressure Regulator?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Most modern EFI Fuel Systems utilize a bypass style regulator with a return line to the fuel tank. Blocking style regulators are most seen on carbureted engines using an internally/externally bypassed fuel pump. Please call our tech line if you are unsure of which product to choose.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_NKpmU6": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Do Fuelab Regulators come with Fittings?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>To minimize cost and maximize universality we do not supply fittings. You can buy fittings separately through our accessories tab!</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_FQQPeM": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Do Fuelab Regulators come with a Gauge?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>For simplicity, our regulators do not come with gauges. We have multiple different options available for purchase.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_tMKALH": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Do Fuelab Fuel Filters come with fittings?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>All Fuelab Fuel Filters come with male AN Flare Fittings in 6AN, 8AN, 10AN, or 12AN sizes. Optional end caps available to change inlet/outlet size.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_Fqqwri": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Can I use a Surge Tank as a Fuel Cell?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>A Surge tank can be a great alternate to a fuel cell! This is common in drag racing and motorcycle applications. Refer to your race regulations.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_X6aC7q": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Can I mount my Fuel Pressure Regulator Upside Down?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Yes, you can mount your regulator in any orientation as long as it is plumbed correctly! Refer to instructions for proper plumbing!</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_W3UhfA": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Can I clean my filter element?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>The Stainless Steel 40-micron and 100-micron can be cleaned by backflowing them with an aerosol solvent. We do not recommend cleaning or reusing the 6-micron micro fiberglass or the 10-micron cellulose.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_6PVcGt": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Are Fuelab Regulators compatible with boosted setups?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Yes! Our bypass style regulators are good for boost and have a 1:1 ratio for increased fuel pressure under increased manifold pressure.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_t398YG": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Are Fuelab Fuel Pumps PWM (Pulse-Width Modulation) compatible?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>All Fuelab Brushless fuel pumps are capable of PWM control. We also have controllers that run full speed and 0-5 volt controllable.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_hjDRtq": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Are Fuelab Fuel Pumps Ethanol Compatible?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>YES! All our products are Gas and Ethanol compatible!</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_WLCbEP": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Looking for Troubleshooting guide?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Check out <a href=\"https://fuelab.com/ft-2435-troubleshooting.html\"><strong>Troubleshooting</strong></a> page for details</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "1653481892aca601d3-0",
+        "1653481892aca601d3-1",
+        "1653481892aca601d3-2",
+        "19bffed1-f52f-4d9c-877f-5374d9a41f2b",
+        "432c0efd-c93e-48f4-b507-204ff1d1ee9f",
+        "text_WD4MUP",
+        "text_fgrVtb",
+        "text_7bfQD9",
+        "text_7wLwtE",
+        "text_h6xTHL",
+        "text_zkLGgx",
+        "text_JGbqKL",
+        "text_ABbrLC",
+        "text_g4arAH",
+        "text_rHC8J7",
+        "text_WmxpmQ",
+        "text_bT8znC",
+        "text_BNKCwK",
+        "text_qTteBT",
+        "text_6WdA7i",
+        "text_NKpmU6",
+        "text_FQQPeM",
+        "text_tMKALH",
+        "text_Fqqwri",
+        "text_X6aC7q",
+        "text_W3UhfA",
+        "text_6PVcGt",
+        "text_t398YG",
+        "text_hjDRtq",
+        "text_WLCbEP"
+      ],
+      "settings": {
+        "alignment": "left",
+        "compact": true,
+        "width": "boxed",
+        "title": "",
+        "title_underline_style": "none",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "1653481755602a92ab",
+    "16534836035233544d",
+    "main-page",
+    "1653482236cd744a0f",
+    "16534818921d9da639"
+  ]
+}

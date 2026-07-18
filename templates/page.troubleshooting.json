@@ -1,0 +1,354 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_slideshow_VB7tYz": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_Cc7CRK": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "align-center text-center",
+            "title": "<h1>Troubleshooting</h1>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_Cc7CRK"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width_banner": "boxed",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "1/1",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_faq_PmxP4D": {
+      "type": "section-faq",
+      "blocks": {
+        "text_VCgXHz": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Speed of Fuel Pump changes up and down very noticeably and erratically",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong><br/><br/>If your Fuel Pump is changing speed and acting erratically, your issue could be a loose terminal or a failed circuit in your Fuel Pump wiring. <br/><br/><strong>Possible Solutions:</strong></p><p>Check the voltage to your fuel pump at the power terminals. If the voltage is steady and consistent (within ½ Volt of battery) then contact Fuelab for repair. If voltage is inconsistent as described, repair or replace the electrical components as needed. </p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_bXdPdg": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Loss of fuel pressure or erratic pressure pulsation after several minutes of Fuel Pump operation",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong>One possible and most common issue of fuel pressure loss or erratic fuel pressure pulsation is often cavitation or otherwise known as vapor lock, due to overheating or restricted inlet.<br/><br/><strong>Possible Solutions:</strong>Check the temperature of pump right after failure. If pump is hot to touch (cannot leave hand on pump due to it being too hot, or above 120°F), then look for sources of heat such as exhaust or fuel rail mountings that could be conducting too much heat. If pump is not hot to the touch, check for inlet restrictions such as improperly vented tank, kinks in the fuel line, or too small of plumbing for application. Contact Fuelab, as pump may be damaged due to improper operating condition for repair or consultation. Consider speed control scheme to allow pump to operate at reduced speeds during long periods of operation under low demand. Contact Fuelab for more details.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_WPTTF8": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Leakage of fuel at inlet or outlet fuel ports in Fuel Pump",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong><br/><br/>Improper type of fitting used for fuel system.<br/><br/><strong>Possible Solutions:</strong><br/><br/></p><p>If leakage occurs at fitting, be sure that the proper fitting style is used (AN o-ring seal type ONLY!) Pipe threaded style fittings are NOT to be used with Fuelab fuel pumps. If proper style of fittings are being used, be sure that o-ring is being used on fitting orreplace o-ring.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_DjFjbe": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Leakage of fuel at inlet and outlet ports",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong></p><p>Damage to 37 degree flare of male fitting ends.</p><p><strong>Possible Solutions:<br/><br/></strong>Inspect for damage and replace if necessary.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_xRqDji": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Leakage of fuel at filter body and inlet/outlet",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:<br/><br/></strong>Loose assembly of inlet/outlet to body. Damaged o-ring.</p><p><strong>Possible Solutions:</strong></p><p>Make sure that inlet and outlet are tightened to between 13-17 Ft/lbs. Inspect o-rings for any possible damage. Replace as needed.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_9FH8je": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel Pump with internal controller not operating or slight \"clicking\" sound when turned on",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong></p><p>Faulty fuel pump relay. Faulty, dirty, or corroded terminals or improperly sized wire. Debris from tank or plumbing lodged inside pump.</p><p> </p><p><strong>Possible Solutions: </strong></p><p>Check voltage to controller, at power terminals. If voltage is steady and consistent (within 1/2 Volt of battery) then contact Fuelab for assistance or repair. If voltage is inconsistent as described, repair or replace electrical components as required.<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_GxgDTM": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel Pump with external controller is not operating or \"clicking\" sound when turned on",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong><br/><br/>If your Fuel Pump that is controlled by an external controller is not operating correctly or is making a clicking sound, your issue could be poor wiring quality or poor connections between pump and controller (motor phase wiring) or a warranty issue with the pump.</p><p><strong>Possible Solutions:</strong><br/><br/>Check all motor phase wiring connections. DC Brushless Fuel Pump wiring is especially sensitive to resistance. Please contact Fuelab for any issues with warranties on your Fuelab Fuel Pump.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_GwniGf": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel Pump not building fuel pressure",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong></p><p>The possible issue with your fuel pump not building fuel pressure can be due to an incorrect fuel system initial priming procedure.</p><p> </p><p><strong>Possible Solutions: </strong></p><p>To fix the issue of your fuel pump not building pressure, loosen your inlet fittings or leaking plumbing on inlet side (letting in air) repeat this procedure for proper priming. If condition continues, check all plumbing upstream (on inlet side) of fuel pump. <br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_FNJVHW": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel Pump is operating in a reverse flow direction",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong><br/><br/>The possible issue for your Fuel Pump operating in a reverse flow direction is improper motor phase wiring order.<br/><br/><strong>Possible Solutions:</strong></p><p>Swap two of the three motor phase wires with each other (leave the third wire connected). Any two of the three wires can be swapped, color does not matter.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_qEDYxi": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel Pressure Regulator does not hold pressure after engine is shut off",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong></p><p>A potential issue in this case could be a lack of check valve to prevent flow back thru the pump and into the tank or poor seating of regulator diaphragm.</p><p><strong>Possible Solutions:</strong></p><p>Verify that the fuel pump has a check valve. If not, we recommend and external check valve to hold line pressure. If bleed down continues, contact FUELAB for further assistance.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_pzKqJm": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel Pressure Regulator does not build pressure",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:<br/><br/></strong>Fuel Pressure Regulator plumbed incorrectly. Faulty fuel pump. Faulty pressure gauge.</p><p><strong>Possible Solutions:</strong></p><p>Verify that the Fuel Pressure Regulator is plumbed properly. Bypass style and blocking style have opposite inlet/outlet configurations. Verify that the fuel pump is able to build enough flow to open diaphragm or poppet assembly. Verify fuel pressure gauge is in working order.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_fDRqgp": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel Pressure is unstable",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:<br/></strong><br/>Air induction into fuel, faulty fuel pump.</p><p><strong>Possible Solutions:</strong></p><p>Check for loose fittings at all points in the system. Ensure the return line to the tank is not splash filling into the inlet area of the fuel pump. Use an extension from the top of the fuel cell or fuel tank to approximately 1/2\" from bottom, being careful to not restrict return line. Verify pump is in working order.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_rEPRib": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel pressure drops off under heavy engine load",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong><br/><br/>Fuel pressure drop can be caused by incorrect wiring of your Fuelab speed control, a loose terminal or wiring or insufficient fuel capacity.<br/><br/><strong>Possible Solutions:</strong></p><p>To fix your fuel pressure drop, make sure that your fuel pump is operating at full speed while under high engine load. Check your voltage to fuel pump and at the power terminals. If your fuel pump voltage is steady and consistent (within ½ Volt of battery) then contact Fuelab for support. If your fuel pump voltage is inconsistent as described, you will want to repair or replace some electrical components as required. If condition continues, an upgraded pump capacity may be required. Please contact Fuelab for any further questions!</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_87W9RW": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Fuel Pressure Drop",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p><strong>Possible Causes:</strong></p><p>Dirty Filters!</p><p><strong>Possible Solutions:</strong></p><p>Replace filters as needed. Inspect at least annually for debris. Changes in fuel pump pitch may indicate restrictions that require immediate attention.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_yrDq8c": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Looking for answers to Frequently Asked Questions?",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Check out <strong>FAQ </strong>page for details<br/><br/></p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "text_VCgXHz",
+        "text_bXdPdg",
+        "text_WPTTF8",
+        "text_DjFjbe",
+        "text_xRqDji",
+        "text_9FH8je",
+        "text_GxgDTM",
+        "text_GwniGf",
+        "text_FNJVHW",
+        "text_qEDYxi",
+        "text_pzKqJm",
+        "text_fDRqgp",
+        "text_rEPRib",
+        "text_87W9RW",
+        "text_yrDq8c"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "alignment": "left",
+        "compact": false,
+        "width": "boxed",
+        "title": "",
+        "title_underline_style": "none",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_slideshow_VB7tYz",
+    "section_faq_PmxP4D"
+  ]
+}

@@ -1,0 +1,291 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_slideshow_wWdaYn": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_MFr4rJ": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "align-center text-center",
+            "title": "<h1>Become A Dealer</h1>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_MFr4rJ"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width_banner": "boxed",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "1/1",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_contact_form_6XYiRY": {
+      "type": "section-contact-form",
+      "blocks": {
+        "text_FgQk3W": {
+          "type": "text",
+          "settings": {
+            "title": "Business Name",
+            "placeholder": "Name",
+            "required": false
+          }
+        },
+        "text_T86eH8": {
+          "type": "text",
+          "settings": {
+            "title": "Year Established",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_Cpa9CP": {
+          "type": "text",
+          "settings": {
+            "title": "Address Line 1",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_9wgdGL": {
+          "type": "text",
+          "settings": {
+            "title": "Address Line 2",
+            "placeholder": "Text",
+            "required": false
+          }
+        },
+        "text_4jMpHn": {
+          "type": "text",
+          "settings": {
+            "title": "City",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_CgdGgY": {
+          "type": "text",
+          "settings": {
+            "title": "State",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_NnTHJp": {
+          "type": "text",
+          "settings": {
+            "title": "Zip / Postal Code",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_YJaGi3": {
+          "type": "text",
+          "settings": {
+            "title": "Business Phone # ",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_WDfxUt": {
+          "type": "text",
+          "settings": {
+            "title": "Contact Name",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "email_6nAPCM": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "Email"
+          }
+        },
+        "tel_AXfpgb": {
+          "type": "tel",
+          "settings": {
+            "title": "Contact Phone # ",
+            "placeholder": "Phone number",
+            "required": true
+          }
+        },
+        "text_BfnXrM": {
+          "type": "text",
+          "settings": {
+            "title": "Website",
+            "placeholder": "Text",
+            "required": false
+          }
+        },
+        "text_iyMVFq": {
+          "type": "text",
+          "settings": {
+            "title": "Brief Description of Business",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_R3hbU8": {
+          "type": "text",
+          "settings": {
+            "title": "Number of Employees",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_Dyy9dA": {
+          "type": "text",
+          "settings": {
+            "title": "Facility Size (Sq/Ft) ",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_kmCcak": {
+          "type": "text",
+          "settings": {
+            "title": "Annual Sales",
+            "placeholder": "Text",
+            "required": false
+          }
+        },
+        "text_nTheat": {
+          "type": "text",
+          "settings": {
+            "title": "Are you currently using Fuelab Products? ",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_UKtKWL": {
+          "type": "text",
+          "settings": {
+            "title": "What vendors are you currently buying from? ",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "select_d4LD7P": {
+          "type": "select",
+          "settings": {
+            "title": "Sales Strategy",
+            "option_1": "Inventory",
+            "option_2": "Drop Ship",
+            "option_3": "",
+            "option_4": "",
+            "option_5": "",
+            "option_6": "",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "text_FgQk3W",
+        "text_T86eH8",
+        "text_Cpa9CP",
+        "text_9wgdGL",
+        "text_4jMpHn",
+        "text_CgdGgY",
+        "text_NnTHJp",
+        "text_YJaGi3",
+        "text_WDfxUt",
+        "email_6nAPCM",
+        "tel_AXfpgb",
+        "text_BfnXrM",
+        "text_iyMVFq",
+        "text_R3hbU8",
+        "text_Dyy9dA",
+        "text_kmCcak",
+        "text_nTheat",
+        "text_UKtKWL",
+        "select_d4LD7P"
+      ],
+      "name": "t:sections.contact_form.presets.name",
+      "settings": {
+        "alignment": "center",
+        "compact": true,
+        "width": "boxed",
+        "title": "",
+        "title_underline_style": "none",
+        "button_style": "primary plain",
+        "show_placeholder": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_slideshow_wWdaYn",
+    "main-page",
+    "section_contact_form_6XYiRY"
+  ]
+}

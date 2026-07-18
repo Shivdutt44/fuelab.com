@@ -1,0 +1,432 @@
+{%- style -%}
+.sitemap-section-{{ section.id }} {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  background-color: #ffffff;
+}
+.sitemap-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.sitemap-main-heading {
+  font-size: var(--desktop-size) !important;
+  text-align: var(--heading-align) !important;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #000000;
+  line-height: 1.2;
+}
+.sitemap-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+.sitemap-column {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+.sitemap-column-heading {
+  font-size: {{ section.settings.column_heading_size }}px !important;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #000000;
+  line-height: 1.2;
+}
+.sitemap-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sitemap-links-list li {
+  margin-bottom: 12px;
+}
+.sitemap-links-list a {
+  text-decoration: none;
+  color: #333333;
+  font-size: {{ section.settings.links_font_size }}px !important;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+.sitemap-links-list a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* 100% Fully Responsive Layout for Mobile and Tablets */
+@media screen and (max-width: 991px) {
+  .sitemap-container {
+    gap: 30px;
+  }
+  .sitemap-column {
+    flex: 1 1 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sitemap-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 1.5 | round }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 1.5 | round }}px;
+  }
+  .sitemap-wrapper {
+    padding: 0 15px;
+  }
+  .sitemap-main-heading {
+    font-size: var(--mobile-size) !important;
+    margin-bottom: 25px;
+  }
+  .sitemap-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .sitemap-column {
+    flex: 1 1 100%;
+  }
+  .sitemap-column-heading {
+    font-size: {{ section.settings.column_heading_size | divided_by: 1.2 | round }}px !important;
+    margin-bottom: 12px;
+  }
+  .sitemap-links-list li {
+    margin-bottom: 10px;
+  }
+  .sitemap-links-list a {
+    font-size: {{ section.settings.links_font_size | divided_by: 1.1 | round }}px !important;
+  }
+}
+{%- endstyle -%}
+
+<div class="sitemap-section-{{ section.id }}">
+  <div class="sitemap-wrapper">
+    
+    {%- if section.settings.main_heading != blank -%}
+      {%- assign mobile_heading_size = section.settings.main_heading_size | divided_by: 1.2 | round -%}
+      <h2 class="sitemap-main-heading" 
+          style="--desktop-size: {{ section.settings.main_heading_size }}px; --mobile-size: {{ mobile_heading_size }}px; --heading-align: {{ section.settings.heading_alignment }};">
+        {{ section.settings.main_heading | escape }}
+      </h2>
+    {%- endif -%}
+
+    <div class="sitemap-container">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'sitemap_column' -%}
+          <div class="sitemap-column" {{ block.shopify_attributes }}>
+            
+            {%- if block.settings.heading != blank -%}
+              <h3 class="sitemap-column-heading">{{ block.settings.heading | escape }}</h3>
+            {%- endif -%}
+            
+            <ul class="sitemap-links-list">
+              {%- if block.settings.link_text_1 != blank -%}
+                <li><a href="{{ block.settings.link_url_1 | default: '#' }}">{{ block.settings.link_text_1 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_2 != blank -%}
+                <li><a href="{{ block.settings.link_url_2 | default: '#' }}">{{ block.settings.link_text_2 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_3 != blank -%}
+                <li><a href="{{ block.settings.link_url_3 | default: '#' }}">{{ block.settings.link_text_3 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_4 != blank -%}
+                <li><a href="{{ block.settings.link_url_4 | default: '#' }}">{{ block.settings.link_text_4 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_5 != blank -%}
+                <li><a href="{{ block.settings.link_url_5 | default: '#' }}">{{ block.settings.link_text_5 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_6 != blank -%}
+                <li><a href="{{ block.settings.link_url_6 | default: '#' }}">{{ block.settings.link_text_6 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_7 != blank -%}
+                <li><a href="{{ block.settings.link_url_7 | default: '#' }}">{{ block.settings.link_text_7 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_8 != blank -%}
+                <li><a href="{{ block.settings.link_url_8 | default: '#' }}">{{ block.settings.link_text_8 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_9 != blank -%}
+                <li><a href="{{ block.settings.link_url_9 | default: '#' }}">{{ block.settings.link_text_9 }}</a></li>
+              {%- endif -%}
+              {%- if block.settings.link_text_10 != blank -%}
+                <li><a href="{{ block.settings.link_url_10 | default: '#' }}">{{ block.settings.link_text_10 }}</a></li>
+              {%- endif -%}
+            </ul>
+            
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Site Map Fully Dynamic",
+  "max_blocks": 4,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Main Section Heading"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Heading Text",
+      "default": "Website Directory"
+    },
+    {
+      "type": "range",
+      "id": "main_heading_size",
+      "min": 18,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading Font Size",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Columns Content Typography"
+    },
+    {
+      "type": "range",
+      "id": "column_heading_size",
+      "min": 14,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Column Headings Size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "links_font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Links Text Size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing (Padding)"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "sitemap_column",
+      "name": "Sitemap Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Column Heading",
+          "default": "Shop Online"
+        },
+        {
+          "type": "header",
+          "content": "Link 1"
+        },
+        {
+          "type": "text",
+          "id": "link_text_1",
+          "label": "Link Text 1"
+        },
+        {
+          "type": "url",
+          "id": "link_url_1",
+          "label": "Link URL 1"
+        },
+        {
+          "type": "header",
+          "content": "Link 2"
+        },
+        {
+          "type": "text",
+          "id": "link_text_2",
+          "label": "Link Text 2"
+        },
+        {
+          "type": "url",
+          "id": "link_url_2",
+          "label": "Link URL 2"
+        },
+        {
+          "type": "header",
+          "content": "Link 3"
+        },
+        {
+          "type": "text",
+          "id": "link_text_3",
+          "label": "Link Text 3"
+        },
+        {
+          "type": "url",
+          "id": "link_url_3",
+          "label": "Link URL 3"
+        },
+        {
+          "type": "header",
+          "content": "Link 4"
+        },
+        {
+          "type": "text",
+          "id": "link_text_4",
+          "label": "Link Text 4"
+        },
+        {
+          "type": "url",
+          "id": "link_url_4",
+          "label": "Link URL 4"
+        },
+        {
+          "type": "header",
+          "content": "Link 5"
+        },
+        {
+          "type": "text",
+          "id": "link_text_5",
+          "label": "Link Text 5"
+        },
+        {
+          "type": "url",
+          "id": "link_url_5",
+          "label": "Link URL 5"
+        },
+        {
+          "type": "header",
+          "content": "Link 6"
+        },
+        {
+          "type": "text",
+          "id": "link_text_6",
+          "label": "Link Text 6"
+        },
+        {
+          "type": "url",
+          "id": "link_url_6",
+          "label": "Link URL 6"
+        },
+        {
+          "type": "header",
+          "content": "Link 7"
+        },
+        {
+          "type": "text",
+          "id": "link_text_7",
+          "label": "Link Text 7"
+        },
+        {
+          "type": "url",
+          "id": "link_url_7",
+          "label": "Link URL 7"
+        },
+        {
+          "type": "header",
+          "content": "Link 8"
+        },
+        {
+          "type": "text",
+          "id": "link_text_8",
+          "label": "Link Text 8"
+        },
+        {
+          "type": "url",
+          "id": "link_url_8",
+          "label": "Link URL 8"
+        },
+        {
+          "type": "header",
+          "content": "Link 9"
+        },
+        {
+          "type": "text",
+          "id": "link_text_9",
+          "label": "Link Text 9"
+        },
+        {
+          "type": "url",
+          "id": "link_url_9",
+          "label": "Link URL 9"
+        },
+        {
+          "type": "header",
+          "content": "Link 10"
+        },
+        {
+          "type": "text",
+          "id": "link_text_10",
+          "label": "Link Text 10"
+        },
+        {
+          "type": "url",
+          "id": "link_url_10",
+          "label": "Link URL 10"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Site Map Fully Dynamic",
+      "blocks": [
+        {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Shop Online"
+          }
+        },
+        {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Policies"
+          }
+        },
+        {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "About"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,459 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_slideshow_JthT4x": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_QTPiXt": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "align-center text-center",
+            "title": "<h1>Custom Gallery</h1>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_QTPiXt"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width_banner": "wide",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "1/1",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_promo_gallery_9bL4eg": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_aKHYcQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650815.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>9-Time NMCA World Champion Andy Warren</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Fuelab has been a part of our program since 2010, and has been there for 8 of the 9..<br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_YE3VPz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198645188.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Becerra Motorsports</strong>",
+            "title_underline_style": "none",
+            "text": "<p>This is our shop race car for Becerra Motorsports, a Mustang Foxbody with a LS moto..<br/><br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_KenzDz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198645207.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Chris Singime</strong>",
+            "title_underline_style": "none",
+            "text": "<p>This is my turbo Suzuki GSXR drag bike. It has a Fuelab 91901 module pump with the 20902..<br/><br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_7tKCVK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650807.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>David Hearn</strong>",
+            "title_underline_style": "none",
+            "text": "<p>1969 Chevy Camaro, Jerry Bickle 4 link chassis, 434 all aluminum small block on alcohol, power..<br/><br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_4znR3N": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650808.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Doug Duell</strong>",
+            "title_underline_style": "none",
+            "text": "<p>1968 Plymouth Barracuda: NHRA Super Stock<br/><br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_JKxcTk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650809.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Doug Duell</strong>",
+            "title_underline_style": "none",
+            "text": "<p>1964 Plymouth Fury Wagon: NMCA Nostalgia Super Stock 5-time Champion!<br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_gdypJV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650814.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Doug Duell</strong>",
+            "title_underline_style": "none",
+            "text": "<p>1964 Plymouth Fury Wagon: NMCA Nostalgia Super Stock 5-time Champion!<br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_AC7pcP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650800.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Gary Parker</strong>",
+            "title_underline_style": "none",
+            "text": "<p>2002 Ford Mustang with Gen 1 Coyote engine<br/><br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_aKHYcQ",
+        "image_YE3VPz",
+        "image_KenzDz",
+        "image_7tKCVK",
+        "image_4znR3N",
+        "image_JKxcTk",
+        "image_gdypJV",
+        "image_AC7pcP"
+      ],
+      "name": "t:sections.promo_gallery.presets.name",
+      "settings": {
+        "items_width": 4,
+        "height": "adapt",
+        "width": "boxed",
+        "space_between": 12,
+        "image_zoom": true,
+        "shadow": true,
+        "title_size_blocks": "h4",
+        "layout_mobile": "rows",
+        "height_mobile": "adapt",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_promo_gallery_U4xbwB": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_JUGDtL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198645209.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Jeremy Lyons</strong>",
+            "title_underline_style": "none",
+            "text": "<p>82 Pro Street Camaro. 565 BBC single stage nitrous with powerglide. We count on out Fuela..<br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_3tjyXe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650783.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Jordan Payne</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Fuelab has been involved with our UK based team since 2011, back when my father Nigel use..<br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_FXMDNx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198645208.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Michael Slaviero</strong>",
+            "title_underline_style": "none",
+            "text": "<p>1976 Pontiac Grand Prix with a 535 CI All Pontiac N/A. Fuelab 41404 pump & 58501 regulator. This..<br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_9QbkLd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650789.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Rob's Ford Mustang GT</strong>",
+            "title_underline_style": "none",
+            "text": "<p>I bought this Mustang when it was two years old. It was a daily driver and progressed into a daily driver/street race car. A few years later it..<br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_9Vaygz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650797.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Subaru Impreza L \"Boogeyman\"</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Boogeyman is an STI swapped 1995 Impreza L Time Attack car competing mostly in Gridlife\\'s..<br/></p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_ecpCAA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T198650894.jpg",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "<strong>Team Infamous</strong>",
+            "title_underline_style": "none",
+            "text": "<p>Nissan 240sx S14.5 - Supercharged Chevrolet LS3 Engine, 730WHP, 750ft/lbs torque</p>",
+            "show_link": true,
+            "link_text": "More",
+            "link_url": "#",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_MWdrFR": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_eBKqxN": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JUGDtL",
+        "image_3tjyXe",
+        "image_FXMDNx",
+        "image_9QbkLd",
+        "image_9Vaygz",
+        "image_ecpCAA",
+        "image_MWdrFR",
+        "image_eBKqxN"
+      ],
+      "name": "t:sections.promo_gallery.presets.name",
+      "settings": {
+        "items_width": 4,
+        "height": "adapt",
+        "width": "boxed",
+        "space_between": 12,
+        "image_zoom": true,
+        "shadow": true,
+        "title_size_blocks": "h3",
+        "layout_mobile": "rows",
+        "height_mobile": "16/9",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_slideshow_JthT4x",
+    "main-page",
+    "section_promo_gallery_9bL4eg",
+    "section_promo_gallery_U4xbwB"
+  ]
+}

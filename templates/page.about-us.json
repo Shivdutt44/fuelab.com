@@ -1,0 +1,479 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "16534637855a1536b8": {
+      "type": "section-slideshow",
+      "blocks": {
+        "1653463785b75d0fb8-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/253_universal_Series.png",
+            "layout": "background",
+            "overlay_opacity": 70,
+            "color_palette": "scheme-2",
+            "text_position": "align-center text-center",
+            "title": "<h1>About Us</h1>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "View collections",
+            "first_link_url": "/",
+            "first_button_style": "secondary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1653463785b75d0fb8-0"
+      ],
+      "settings": {
+        "height": "32/9",
+        "width_banner": "boxed",
+        "width": "wide",
+        "autoplay": true,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "4/5",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "16552050441a8cdfa5": {
+      "type": "section-gallery",
+      "blocks": {
+        "16552050441176bcdf-0": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 25,
+            "color_palette": "scheme-4",
+            "text_position": "center",
+            "title": "<h3>Theme Xtra provide a good user experience for your online store</h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": true,
+            "link_text": "Learn more",
+            "link_url": "/",
+            "button_style": "secondary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "16552050441176bcdf-1": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 25,
+            "color_palette": "scheme-8",
+            "text_position": "center",
+            "title": "<h3>Our services have the power to get the most out of your online store</h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "16552050441176bcdf-2": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "color_palette": "scheme-8",
+            "text_position": "center start",
+            "title": "<h1>We are there to help you</h1>",
+            "title_underline_style": "none",
+            "text": "<p>Together we make your online store a success</p>",
+            "show_link": true,
+            "link_text": "Discover more",
+            "link_url": "/",
+            "button_style": "secondary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "16552050441176bcdf-0",
+        "16552050441176bcdf-1",
+        "16552050441176bcdf-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "items_layout": "playful-grid-inv",
+        "items_width": 2,
+        "height": "1/1",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "show_content_below": false,
+        "content_on_hover_color_palette": "",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "165346385457f0044f": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "1653463854c4d6293d-0": {
+          "type": "title",
+          "settings": {
+            "title": "<h2><strong>THE SMART CHOICE</strong></h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "1653463854c4d6293d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For over a decade, Fuelab has pushed technology and innovation forward, manufacturing the most innovative fuel systems found anywhere. At the center of this development, our Prodigy line of brushless fuel pumps were born. Efficient, high-flow fuel pumps designed to handle multiple fuels and pressures, all while holding up to the toughest run conditions enthusiasts can throw at us.</p><p>At Fuelab, we strive for perfection and results. Put your trust in the company that introduced brushless fuel pump technology over 15 years ago and continues to lead the way. You'll be glad you did.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1653463854c4d6293d-0",
+        "1653463854c4d6293d-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/F198651253_3c065068-cc88-4084-bb22-3ea37fc2b1e3.png",
+        "overlay_opacity": 0,
+        "color_palette": "scheme-1",
+        "layout": "image-right",
+        "text_position": "text-start",
+        "width": "boxed",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "16534638377c7920c1": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "1653463837107b96d3-0": {
+          "type": "title",
+          "settings": {
+            "title": "<h2><strong>FUELING YOUR PASSION</strong></h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "1653463837107b96d3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What drives you? What is your passion? Well if it's winning races, off-road adventure, street/strip performance, or just making horsepower, you're at the right place for your fueling needs! Our brushless fuel pump technology, along with our extensive line of fuel pressure regulators, filters and systems will feed your engine and keep it running at its best.</p><p>Racers who use Fuelab products report unrivaled reliability and efficiency - they just plain work. We build the best so you can keep doing what you love.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1653463837107b96d3-0",
+        "1653463837107b96d3-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/F198651253_3c065068-cc88-4084-bb22-3ea37fc2b1e3.png",
+        "overlay_opacity": 0,
+        "color_palette": "scheme-1",
+        "layout": "image-left",
+        "text_position": "text-start",
+        "width": "boxed",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "16552027695203de66": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "1655202769b66966f1-0": {
+          "type": "title",
+          "settings": {
+            "title": "<h2><strong>CHAMPIONS CHOOSE FUELAB</strong></h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "1655202769b66966f1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Champions rely on our brushless fuel pump technology to get them to the winner’s circle and the wins just keep stacking up. From drift to road racing, off road to diesel performance, the street to the strip and everything in between, we have you covered! Fuelab fuel systems deliver reliability, performance, and consistency. Don’t just take our word for it, let the results speak for themselves.<br/><br/></p>"
+          }
+        },
+        "1655202769b66966f1-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "show_first_link": true,
+            "first_link_text": "Contact us",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain"
+          }
+        }
+      },
+      "block_order": [
+        "1655202769b66966f1-0",
+        "1655202769b66966f1-1",
+        "1655202769b66966f1-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/F198651253_3c065068-cc88-4084-bb22-3ea37fc2b1e3.png",
+        "overlay_opacity": 0,
+        "color_palette": "scheme-1",
+        "layout": "image-right",
+        "text_position": "text-start",
+        "width": "boxed",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "165520504129a8d4ea": {
+      "type": "section-spacer",
+      "disabled": true,
+      "settings": {
+        "height": 0,
+        "height_mobile": 0
+      }
+    },
+    "16552049697d86bb94": {
+      "type": "section-rich-text",
+      "blocks": {
+        "165520496913c5dc92-0": {
+          "type": "title",
+          "settings": {
+            "title": "<h1>Meet our wonderful team</h1>",
+            "title_underline_style": "none"
+          }
+        },
+        "165520496913c5dc92-2": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "165520496913c5dc92-0",
+        "165520496913c5dc92-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_palette": "scheme-1",
+        "overlay_opacity": 100,
+        "text_alignment": "start",
+        "content_width": 1280,
+        "height": "size-s",
+        "width_banner": "boxed",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "1655207119c21c6327": {
+      "type": "section-spacer",
+      "disabled": true,
+      "settings": {
+        "height": 0,
+        "height_mobile": 0
+      }
+    },
+    "165520284857767467": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "16552028481d4c4222-0": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-5",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "John Doe",
+            "title_underline_style": "none",
+            "text": "<p>Theme expert with a special focus on UX</p>",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "16552028481d4c4222-1": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-5",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "Meave Spears",
+            "title_underline_style": "none",
+            "text": "<p>Technical wonder and app specialist</p>",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "16552028481d4c4222-2": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-5",
+            "overlay_opacity": 100,
+            "text_position": "text-center",
+            "title": "Lora Jones",
+            "title_underline_style": "none",
+            "text": "<p>Data driven personality focused on design </p>",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "16552028481d4c4222-0",
+        "16552028481d4c4222-1",
+        "16552028481d4c4222-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "items_width": 3,
+        "height": "16/9",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "shadow": false,
+        "title_size_blocks": "h2",
+        "layout_mobile": "compact",
+        "height_mobile": "16/9",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "16552049540feeb966": {
+      "type": "section-usp-bar",
+      "blocks": {
+        "1655204954cff9afb3-0": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>A <strong>brand new </strong>Shopify theme</p>"
+          }
+        },
+        "1655204954cff9afb3-1": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>100% focused</strong> on UX</p>"
+          }
+        },
+        "1655204954cff9afb3-2": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Perfect </strong>for larger catalogs</p>"
+          }
+        },
+        "192063ba-cf38-489a-8eb7-f21942f527fc": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Sell more & create <strong>happy customers</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "1655204954cff9afb3-0",
+        "1655204954cff9afb3-1",
+        "1655204954cff9afb3-2",
+        "192063ba-cf38-489a-8eb7-f21942f527fc"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_palette": "scheme-6",
+        "layout": "rows",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "show_arrows": false,
+        "width_banner": "boxed",
+        "width": "wide",
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "16534637855a1536b8",
+    "16552050441a8cdfa5",
+    "165346385457f0044f",
+    "16534638377c7920c1",
+    "16552027695203de66",
+    "165520504129a8d4ea",
+    "16552049697d86bb94",
+    "1655207119c21c6327",
+    "165520284857767467",
+    "main-page",
+    "16552049540feeb966"
+  ]
+}

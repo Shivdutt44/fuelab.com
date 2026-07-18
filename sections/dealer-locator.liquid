@@ -1,0 +1,419 @@
+{% comment %}
+  Custom Dealer Locator Section for Shopify - Mobile Padding & Text Clipping Fix
+  Name: Dealer Locator
+{% endcomment %}
+
+<div class="dealer-locator-section section-{{ section.id }}-padding">
+  <div class="dealer-locator-container">
+    {% if section.settings.title != blank %}
+      <div class="section-heading">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="dealer-table-wrapper">
+      <table class="dealer-table">
+        <thead>
+          <tr>
+            <th class="th-name">Name</th>
+            <th class="th-distance">Distance</th>
+            <th class="th-address">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- if section.blocks.size > 0 -%}
+            {%- for block in section.blocks -%}
+              {%- assign custom_bg = block.settings.bg_color -%}
+              <tr {{ block.shopify_attributes }} class="dealer-row-block" {% if custom_bg != blank and custom_bg != 'rgba(0,0,0,0)' %}style="background-color: {{ custom_bg }};"{% endif %}>
+                
+                <td data-label="Name" class="dealer-name">
+                  <strong class="dealer-title-wrapper">
+                    {% if block.settings.show_name_link and block.settings.name_map_url != blank %}
+                      <a href="{{ block.settings.name_map_url }}" target="_blank" class="dealer-name-link">{{ block.settings.name }}</a>
+                    {% else %}
+                      {{ block.settings.name }}
+                    {% endif %}
+                  </strong>
+                </td>
+                
+                <td data-label="Distance" class="dealer-distance">
+                  <span class="distance-value">{{ block.settings.distance }}</span>
+                  {% if block.settings.show_directions and block.settings.directions_url != blank %}
+                    <a href="{{ block.settings.directions_url }}" target="_blank" class="directions-link">directions</a>
+                  {% endif %}
+                </td>
+                
+                <td data-label="Address" class="dealer-address">
+                  <p class="address-text">{{ block.settings.address | newline_to_br }}</p>
+                  {% if block.settings.website != blank %}
+                    <p class="website-text">Website: <a href="{{ block.settings.website }}" target="_blank" class="dealer-link">{{ block.settings.website }}</a></p>
+                  {% endif %}
+                  {% if block.settings.phone != blank %}
+                    <p class="dealer-phone">Phone: {{ block.settings.phone }}</p>
+                  {% endif %}
+                </td>
+
+              </tr>
+            {%- endfor -%}
+          {%- else -%}
+            <tr class="dealer-row-block">
+              <td class="dealer-name"><strong class="dealer-title-wrapper">IG Motorsports LLC</strong></td>
+              <td class="dealer-distance">
+                <span class="distance-value">10 miles</span>
+              </td>
+              <td class="dealer-address">
+                <p class="address-text">Derek Madison 191 E Alton Ave East Alton, IL 62024 United States</p>
+                <p class="website-text">Website: <a href="#" class="dealer-link">https://igmotorsports.com/</a></p>
+              </td>
+            </tr>
+            <tr class="dealer-row-block alt-row" style="background-color: #f7f7f7;">
+              <td class="dealer-name"><strong class="dealer-title-wrapper">EcoTECH</strong></td>
+              <td class="dealer-distance">
+                <span class="distance-value">16 miles <a href="#" class="directions-link">directions</a></span>
+              </td>
+              <td class="dealer-address">
+                <p class="address-text">8512 Watson Road<br>St. Louis, MO 63119 United States</p>
+                <p class="website-text">Website: <a href="#" class="dealer-link">https://ecotechimportauto.com/</a></p>
+                <p class="dealer-phone">Phone: (314) 729-1100</p>
+              </td>
+            </tr>
+          {%- endif -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  .dealer-locator-section {
+    font-family: inherit;
+    color: #333333;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  
+  .dealer-locator-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: 990px) {
+    .dealer-locator-container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .dealer-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  .dealer-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+    background-color: #ffffff;
+    table-layout: fixed;
+  }
+  .dealer-table th {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Desktop Proportions */
+  .th-name, .dealer-name { width: 30%; }
+  .th-distance, .dealer-distance { width: 20%; }
+  .th-address, .dealer-address { width: 50%; }
+
+  .dealer-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  
+  .dealer-table tbody tr:last-child td {
+    border-bottom: none !important;
+  }
+  
+  .dealer-table tbody tr:nth-child(even):not([style]), .dealer-table tr.alt-row:not([style]) {
+    background-color: #f7f7f7;
+  }
+  
+  .dealer-name { color: #111111; }
+  .dealer-title-wrapper {
+    font-size: 16px;
+    display: block;
+  }
+  .dealer-name-link {
+    color: #111111;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .dealer-name-link:hover {
+    color: {{ section.settings.hover_color }} !important;
+    text-decoration: underline;
+  }
+  
+  .distance-value {
+    display: block;
+    margin-bottom: 2px;
+    color: #444444;
+  }
+  
+  .directions-link {
+    color: #333333;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s ease;
+  }
+  .directions-link:hover {
+    color: {{ section.settings.hover_color }} !important;
+    text-decoration: underline;
+  }
+  
+  .dealer-address p { margin: 0 0 4px 0; }
+  .dealer-address p:last-child { margin-bottom: 0; }
+  .dealer-link { color: #0066cc; text-decoration: none; }
+  .dealer-link:hover { text-decoration: underline; }
+  .dealer-phone { color: #666666; }
+
+  /* Premium Image-Matching Mobile Layout */
+  @media screen and (max-width: 749px) {
+    .dealer-locator-container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .dealer-table-wrapper {
+      border: none;
+      border-radius: 0px;
+    }
+    .dealer-table {
+      table-layout: auto;
+      background-color: transparent;
+    }
+    .dealer-table, .dealer-table thead, .dealer-table tbody, .dealer-table th, .dealer-table td, .dealer-table tr {
+      display: block;
+    }
+    .dealer-table thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .dealer-table tr.dealer-row-block {
+      border: none;
+      border-bottom: 2px solid #cccccc;
+      padding: 12px 22px !important; /* Left & Right padding badha kar 22px kiya taaki content na kate */
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .dealer-table tr.dealer-row-block:last-child {
+      border-bottom: none;
+    }
+    .dealer-table td {
+      border: none !important;
+      padding: 0 !important;
+      width: 100% !important;
+      box-sizing: border-box;
+      text-align: left;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #333333;
+      background-color: transparent !important;
+    }
+    .dealer-table td:before {
+      display: none !important;
+    }
+    
+    .dealer-name {
+      margin-bottom: 6px;
+      padding-left: 2px !important; /* Safety push to the right from absolute edge */
+    }
+    
+    .dealer-table tr.dealer-row-block .dealer-title-wrapper {
+      font-size: {{ section.settings.mobile_name_size }}px !important;
+      display: block;
+      font-weight: 700;
+      line-height: 1.25;
+      word-wrap: break-word;
+    }
+    .dealer-distance {
+      margin-bottom: 10px;
+      color: #555555;
+      padding-left: 2px !important;
+    }
+    .distance-value {
+      display: inline-block;
+      color: #555555;
+      font-size: 15px;
+    }
+    .directions-link {
+      display: inline-block;
+      margin-left: 6px;
+    }
+    .dealer-address {
+      padding-left: 2px !important;
+    }
+    .dealer-address p {
+      display: block;
+      margin: 0 0 4px 0;
+      word-break: break-word; /* Long URLs ya text auto wrap honge */
+    }
+    .dealer-address p.address-text {
+      color: #222222;
+    }
+    .dealer-address p.website-text {
+      color: #222222;
+    }
+    .dealer-address p.dealer-phone {
+      margin-bottom: 0;
+      color: #222222;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Dealer Locator",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Heading",
+      "default": "Our Authorized Dealers"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Link Hover Color",
+      "default": "#0088ff"
+    },
+    {
+      "type": "range",
+      "id": "mobile_name_size",
+      "min": 16,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile Dealer Name Size",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "dealer",
+      "name": "Dealer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Dealer Name",
+          "default": "Dealer Name"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_name_link",
+          "label": "Enable Link on Name",
+          "default": true
+        },
+        {
+          "type": "url",
+          "id": "name_map_url",
+          "label": "Link Dealer Name to Google Map URL"
+        },
+        {
+          "type": "text",
+          "id": "distance",
+          "label": "Distance (e.g. 15 miles)",
+          "default": "15 miles"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_directions",
+          "label": "Show Directions Link",
+          "default": true
+        },
+        {
+          "type": "url",
+          "id": "directions_url",
+          "label": "Directions Link (Google Maps URL)"
+        },
+        {
+          "type": "textarea",
+          "id": "address",
+          "label": "Address",
+          "default": "123 Street Road\nCity, State, Zip"
+        },
+        {
+          "type": "text",
+          "id": "website",
+          "label": "Website URL"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone Number"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Row Background Color",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dealer Locator",
+      "blocks": [
+        {
+          "type": "dealer"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

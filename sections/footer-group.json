@@ -1,0 +1,100 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:static_sections.footer.name",
+  "sections": {
+    "section_newsletter_jrXcx3": {
+      "type": "section-newsletter",
+      "disabled": true,
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "scheme-3",
+        "width_banner": "wide",
+        "width": "wide",
+        "title": "<h2>Subscribe to our emails</h2>",
+        "title_underline_style": "none",
+        "text": "<p>Never miss any news and be the first to know about sale and offers</p>",
+        "link_text": "Subscribe",
+        "button_style": "primary plain",
+        "enable_newsletter_terms_checkbox": false,
+        "newsletter_terms_text": "",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "ee8cf9cf-0a8b-4986-b76c-1016a9510c5b": {
+          "type": "customer_support",
+          "settings": {
+            "title": "Customer support",
+            "title_underline_style": "none",
+            "customer_support_img_width": 220,
+            "customer_support_offset_right": 25,
+            "customer_support_offset_bottom": 0,
+            "extra_customer_support": "<p><strong>Contact Us:</strong> <a href=\"tel:+1-618-344-3300\" title=\"Phone\">618-344-3300</a></p><p><strong>Mon - Fri 8:00am - 5:00pm (CST)</strong></p><p><strong>SALES:</strong> <a href=\"https://fuelab.com/ft-2433-shipping.html\" target=\"_blank\">sales@fuelab.com<br/></a><strong>SPONSORSHIPS:</strong> <a href=\"mailto:tanner.berg@fuelab.com\">tanner.berg@fuelab.com<br/></a><strong>Tech Support:</strong> <a href=\"mailto:info@fuelab.com\">info@fuelab.com</a></p><p>3443 Petroff Plaza<br/>Building A<br/>Pontoon Beach, IL 62040</p>",
+            "show_phone_link": true,
+            "show_mail_link": false,
+            "show_whatsapp_link": true,
+            "customer_support_offset_right_mobile": 0,
+            "customer_support_offset_bottom_mobile": 0
+          }
+        },
+        "menu_EtyHQA": {
+          "type": "menu",
+          "settings": {
+            "menu": "policies",
+            "split_menu": false
+          }
+        },
+        "4300adc0-a530-4961-bb5a-0ef06c6e64fb": {
+          "type": "socials_newsletter",
+          "settings": {
+            "title": "Follow us",
+            "show_socials": true,
+            "enable_follow_on_shop": true,
+            "show_newsletter": true,
+            "footer_button_style": "primary plain",
+            "enable_newsletter_terms_checkbox": false,
+            "newsletter_terms_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "ee8cf9cf-0a8b-4986-b76c-1016a9510c5b",
+        "menu_EtyHQA",
+        "4300adc0-a530-4961-bb5a-0ef06c6e64fb"
+      ],
+      "settings": {
+        "width": "wide",
+        "footer_color": "scheme-2",
+        "title_font": "primary",
+        "title_size_blocks": "h5",
+        "bottom_color": "scheme-2",
+        "bottom_img_width": 155,
+        "bottom_img_link": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_follow_on_shop": true,
+        "show_payment_methods": true,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "section_newsletter_jrXcx3",
+    "footer"
+  ]
+}

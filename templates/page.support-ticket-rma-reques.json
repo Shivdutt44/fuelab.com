@@ -1,0 +1,271 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_slideshow_yVxcey": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_Ka7eaW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Vehicle_Specific_Fuel_SYstem.png",
+            "layout": "background",
+            "overlay_opacity": 70,
+            "color_palette": "scheme-2",
+            "text_position": "align-center text-center",
+            "title": "<h1>Support Ticket/RMA Request</h1>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_Ka7eaW"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width_banner": "wide",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "1/1",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_rich_text_hz3Pgm": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_Q3jF8t": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>You must complete this support ticket to initiate a warranty claim. Fill out this brief form and a customer service representative will create an authorization number and it will be emailed to you within 48 hours.<br/><br/>Starting in June of 2021 all Fuelab products built after that date carry a Limited Lifetime Repair Warranty. If the product is covered under warranty, Fuelab will repair and return your product at no charge to the customer. For general inspection, testing, or if there is no issue found with the product, the customer will be subject to a $25 service fee. **International Shipping is to be paid by the customer before return shipping.**<br/><br/>**Failure to submit this request prior to shipping or failure to reference the RMA # may result in delays and Fuelab will not be liable for any loss.**<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_Q3jF8t"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_palette": "scheme-1",
+        "overlay_opacity": 100,
+        "text_alignment": "start",
+        "content_width": 1280,
+        "height": "size-s",
+        "width_banner": "wide",
+        "width": "wide",
+        "spacing_desktop": 30,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_contact_form_AqGRQC": {
+      "type": "section-contact-form",
+      "blocks": {
+        "text_yA6fjT": {
+          "type": "text",
+          "settings": {
+            "title": "First Name ",
+            "placeholder": "",
+            "required": true
+          }
+        },
+        "text_JzDf3Y": {
+          "type": "text",
+          "settings": {
+            "title": "Last Name ",
+            "placeholder": "",
+            "required": true
+          }
+        },
+        "email_Cr8iag": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": ""
+          }
+        },
+        "tel_BFKUjM": {
+          "type": "tel",
+          "settings": {
+            "title": "Phone # ",
+            "placeholder": "Phone number",
+            "required": true
+          }
+        },
+        "text_wiXKhd": {
+          "type": "text",
+          "settings": {
+            "title": "Address Line 1 ",
+            "placeholder": "",
+            "required": true
+          }
+        },
+        "text_8RMedg": {
+          "type": "text",
+          "settings": {
+            "title": "Address Line 2",
+            "placeholder": "Text",
+            "required": false
+          }
+        },
+        "text_rnqGiY": {
+          "type": "text",
+          "settings": {
+            "title": "City ",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_3bDMnA": {
+          "type": "text",
+          "settings": {
+            "title": "State",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_EXhTTR": {
+          "type": "text",
+          "settings": {
+            "title": "Zip / Postal Code",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_KPpw73": {
+          "type": "text",
+          "settings": {
+            "title": "Country ",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_iQAjF8": {
+          "type": "text",
+          "settings": {
+            "title": "Model Number",
+            "placeholder": "Text",
+            "required": false
+          }
+        },
+        "text_mfxEBU": {
+          "type": "text",
+          "settings": {
+            "title": "Serial Number",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "text_wzXB3M": {
+          "type": "text",
+          "settings": {
+            "title": "Reason For Return",
+            "placeholder": "Text",
+            "required": true
+          }
+        },
+        "textarea_4Pe4jj": {
+          "type": "textarea",
+          "settings": {
+            "title": "Detailed Description of Issue or Reason for Return",
+            "placeholder": "Message",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "text_yA6fjT",
+        "text_JzDf3Y",
+        "email_Cr8iag",
+        "tel_BFKUjM",
+        "text_wiXKhd",
+        "text_8RMedg",
+        "text_rnqGiY",
+        "text_3bDMnA",
+        "text_EXhTTR",
+        "text_KPpw73",
+        "text_iQAjF8",
+        "text_mfxEBU",
+        "text_wzXB3M",
+        "textarea_4Pe4jj"
+      ],
+      "name": "t:sections.contact_form.presets.name",
+      "settings": {
+        "alignment": "center",
+        "compact": true,
+        "width": "boxed",
+        "title": "",
+        "title_underline_style": "none",
+        "button_style": "primary plain",
+        "show_placeholder": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_slideshow_yVxcey",
+    "section_rich_text_hz3Pgm",
+    "section_contact_form_AqGRQC"
+  ]
+}

@@ -1,0 +1,348 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "custom_sitemap_VqdRcf": {
+      "type": "custom-sitemap",
+      "blocks": {
+        "sitemap_column_C3AgdW": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Shop Online",
+            "link_text_1": "Fuel Pumps",
+            "link_url_1": "shopify://collections/fuel-pumps",
+            "link_text_2": "Fuel Filters",
+            "link_url_2": "shopify://collections/fuel-filters",
+            "link_text_3": "Fuel Pressure Regulators",
+            "link_url_3": "shopify://collections/fuel-pressure-regulators",
+            "link_text_4": "Fuel Systems",
+            "link_url_4": "shopify://collections/fuel-systems",
+            "link_text_5": "Diesel Performance",
+            "link_url_5": "shopify://collections/diesel-performance",
+            "link_text_6": "Accessories",
+            "link_url_6": "shopify://collections/accessories",
+            "link_text_7": "",
+            "link_url_7": "",
+            "link_text_8": "",
+            "link_url_8": "",
+            "link_text_9": "",
+            "link_url_9": "",
+            "link_text_10": "",
+            "link_url_10": ""
+          }
+        },
+        "sitemap_column_988jqx": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Policies",
+            "link_text_1": "FAQ",
+            "link_url_1": "shopify://pages/faq",
+            "link_text_2": "Troubleshooting",
+            "link_url_2": "shopify://pages/troubleshooting",
+            "link_text_3": "Limited Lifetime Warranty",
+            "link_url_3": "shopify://pages/limited-lifetime-warranty",
+            "link_text_4": "Support Ticket/RMA Request",
+            "link_url_4": "shopify://pages/support-ticket-rma-request",
+            "link_text_5": "Shipping",
+            "link_url_5": "shopify://policies/shipping-policy",
+            "link_text_6": "Privacy Policy",
+            "link_url_6": "shopify://policies/privacy-policy",
+            "link_text_7": "Sitemap",
+            "link_url_7": "shopify://pages/sitemap",
+            "link_text_8": "",
+            "link_url_8": "",
+            "link_text_9": "",
+            "link_url_9": "",
+            "link_text_10": "",
+            "link_url_10": ""
+          }
+        },
+        "sitemap_column_tDjGy3": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "About",
+            "link_text_1": "About Us",
+            "link_url_1": "shopify://pages/about-us",
+            "link_text_2": "Become a Dealer",
+            "link_url_2": "shopify://pages/become-a-dealer",
+            "link_text_3": "Contact Us",
+            "link_url_3": "shopify://pages/contact",
+            "link_text_4": "Dealer Login",
+            "link_url_4": "shopify://pages/dealer-login",
+            "link_text_5": "Dealer Portal",
+            "link_url_5": "shopify://pages/dealer-portal",
+            "link_text_6": "Dealer Locator",
+            "link_url_6": "shopify://pages/dealer-locator",
+            "link_text_7": "Gallery",
+            "link_url_7": "shopify://pages/gallery",
+            "link_text_8": "Instructions",
+            "link_url_8": "shopify://pages/instructions-library",
+            "link_text_9": "Videos",
+            "link_url_9": "shopify://pages/videos",
+            "link_text_10": "Blog Articles",
+            "link_url_10": "#"
+          }
+        }
+      },
+      "block_order": [
+        "sitemap_column_C3AgdW",
+        "sitemap_column_988jqx",
+        "sitemap_column_tDjGy3"
+      ],
+      "name": "Site Map Custom",
+      "settings": {
+        "main_heading": "",
+        "main_heading_size": 32,
+        "heading_alignment": "left",
+        "column_heading_size": 24,
+        "links_font_size": 16,
+        "padding_top": 32,
+        "padding_bottom": 24
+      }
+    },
+    "custom_sitemap_M4Phhg": {
+      "type": "custom-sitemap",
+      "blocks": {
+        "sitemap_column_wjhymm": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Fuel Pumps",
+            "link_text_1": "PRO Series Spur Gear Fuel Pump",
+            "link_url_1": "shopify://collections/pro-series-spur-gear-fuel-pump",
+            "link_text_2": "PRODIGY Series Fuel Pumps",
+            "link_url_2": "shopify://collections/prodigy-series-fuel-pumps",
+            "link_text_3": "H/E Series Fuel Pumps",
+            "link_url_3": "shopify://collections/h-e-series-fuel-pumps",
+            "link_text_4": "Flange Mount Brushless Twin Screw Fuel Pumps",
+            "link_url_4": "shopify://collections/flange-mount-brushless-twin-screw-fuel-pumps",
+            "link_text_5": "494 Series In-Tank Fuel Pumps",
+            "link_url_5": "shopify://collections/494-series-in-tank-fuel-pumps",
+            "link_text_6": "495 Series In-Tank Transfer Pumps",
+            "link_url_6": "shopify://collections/495-series-in-tank-transfer-pumps",
+            "link_text_7": "496 Series Brushless In-Tank Pumps",
+            "link_url_7": "shopify://collections/496-series-brushless-in-tank-pumps",
+            "link_text_8": "Universal SAE 10-Bolt Fuel Pump Hangers",
+            "link_url_8": "shopify://collections/universal-sae-10-bolt-fuel-pump-hangers",
+            "link_text_9": "Fuel Pump Bracket Kits",
+            "link_url_9": "shopify://collections/fuel-pump-bracket-kits",
+            "link_text_10": "",
+            "link_url_10": ""
+          }
+        },
+        "sitemap_column_HVVE87": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Fuel Filters",
+            "link_text_1": "In-Line Fuel Filters",
+            "link_url_1": "shopify://collections/in-line-fuel-filters",
+            "link_text_2": "In-Line Fuel Filter with Check Valve",
+            "link_url_2": "shopify://collections/in-line-fuel-filter-with-check-valve",
+            "link_text_3": "In-Tank Fuel Straining Filters",
+            "link_url_3": "shopify://collections/in-tank-fuel-straining-filters",
+            "link_text_4": "Fuel Filter Elements",
+            "link_url_4": "shopify://collections/fuel-filter-elements",
+            "link_text_5": "Replacement Filter Inlet/Outlet Caps",
+            "link_url_5": "shopify://collections/replacement-filter-inlet-outlet-caps",
+            "link_text_6": "Fuel Filter Bracket Kits",
+            "link_url_6": "shopify://collections/fuel-filter-bracket-kits",
+            "link_text_7": "",
+            "link_url_7": "",
+            "link_text_8": "",
+            "link_url_8": "",
+            "link_text_9": "",
+            "link_url_9": "",
+            "link_text_10": "",
+            "link_url_10": ""
+          }
+        },
+        "sitemap_column_fPTHj4": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Fuel Pressure Regulators",
+            "link_text_1": "Bypass Fuel Pressure Regulators (EFI and Carb)",
+            "link_url_1": "shopify://collections/bypass-fuel-pressure-regulators-efi-and-carb",
+            "link_text_2": "Blocking Fuel Pressure Regulators (Carb)",
+            "link_url_2": "shopify://collections/blocking-fuel-pressure-regulators-carb",
+            "link_text_3": "Electronic Fuel Pressure Regulators (EFI)",
+            "link_url_3": "shopify://collections/electronic-fuel-pressure-regulators-efi",
+            "link_text_4": "Diaphragm/O-Ring Kits",
+            "link_url_4": "shopify://collections/diaphragm-o-ring-kits",
+            "link_text_5": "Regulator Bracket Hardware Kits",
+            "link_url_5": "shopify://collections/regulator-bracket-hardware-kits",
+            "link_text_6": "",
+            "link_url_6": "",
+            "link_text_7": "",
+            "link_url_7": "",
+            "link_text_8": "",
+            "link_url_8": "",
+            "link_text_9": "",
+            "link_url_9": "",
+            "link_text_10": "",
+            "link_url_10": ""
+          }
+        }
+      },
+      "block_order": [
+        "sitemap_column_wjhymm",
+        "sitemap_column_HVVE87",
+        "sitemap_column_fPTHj4"
+      ],
+      "name": "Site Map Custom",
+      "settings": {
+        "main_heading": "Categories",
+        "main_heading_size": 30,
+        "heading_alignment": "left",
+        "column_heading_size": 24,
+        "links_font_size": 16,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_sitemap_dn3LHT": {
+      "type": "custom-sitemap",
+      "blocks": {
+        "sitemap_column_t6xhC6": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Fuel Systems",
+            "link_text_1": "Quick Service Surge Tank (QSST) 2.0",
+            "link_url_1": "shopify://collections/quick-service-surge-tank-qsst-2-0",
+            "link_text_2": "Standard Fuel Pump Surge Tank Systems",
+            "link_url_2": "shopify://collections/standard-fuel-pump-surge-tank-systems",
+            "link_text_3": "Brushless Fuel Pump Surge Tank Systems",
+            "link_url_3": "shopify://collections/brushless-fuel-pump-surge-tank-systems",
+            "link_text_4": "Vehicle Specific Fuel System Upgrades",
+            "link_url_4": "shopify://collections/vehicle-specific-fuel-system-upgrades",
+            "link_text_5": "Power Packs",
+            "link_url_5": "shopify://collections/power-packs",
+            "link_text_6": "",
+            "link_url_6": "",
+            "link_text_7": "",
+            "link_url_7": "",
+            "link_text_8": "",
+            "link_url_8": "",
+            "link_text_9": "",
+            "link_url_9": "",
+            "link_text_10": "",
+            "link_url_10": ""
+          }
+        },
+        "sitemap_column_tYwyXT": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Diesel Performance",
+            "link_text_1": "High Performance Velocity 100 GPH System",
+            "link_url_1": "shopify://collections/high-performance-velocity-100-gph-system",
+            "link_text_2": "High Performance Velocity 200 GPH System",
+            "link_url_2": "shopify://collections/high-performance-velocity-200-gph-system",
+            "link_text_3": "Velocity Lift Pumps",
+            "link_url_3": "shopify://collections/velocity-lift-pumps",
+            "link_text_4": "Fuel Pressure Regulators",
+            "link_url_4": "shopify://collections/fuel-pressure-regulators",
+            "link_text_5": "Diesel Fuel Filtration",
+            "link_url_5": "shopify://collections/diesel-fuel-filtration",
+            "link_text_6": "",
+            "link_url_6": "",
+            "link_text_7": "",
+            "link_url_7": "",
+            "link_text_8": "",
+            "link_url_8": "",
+            "link_text_9": "",
+            "link_url_9": "",
+            "link_text_10": "",
+            "link_url_10": ""
+          }
+        },
+        "sitemap_column_aWtHXX": {
+          "type": "sitemap_column",
+          "settings": {
+            "heading": "Accessories",
+            "link_text_1": "AN Hose and Fittings",
+            "link_url_1": "shopify://collections/an-hose-and-fittings",
+            "link_text_2": "Fuel Pressure Gauges",
+            "link_url_2": "shopify://collections/fuel-pressure-gauges",
+            "link_text_3": "Fuel Surge Tank Upgrade Kits",
+            "link_url_3": "shopify://collections/fuel-surge-tank-upgrade-kits",
+            "link_text_4": "Billet Aluminum Bracket Systems",
+            "link_url_4": "shopify://collections/billet-aluminum-bracket-systems",
+            "link_text_5": "Brushless Fuel Pump Controller",
+            "link_url_5": "shopify://collections/brushless-fuel-pump-controller",
+            "link_text_6": "Hermetic Bulkhead Feedthru",
+            "link_url_6": "shopify://collections/hermetic-bulkhead-feedthru",
+            "link_text_7": "High Flow Check Valves",
+            "link_url_7": "shopify://collections/high-flow-check-valves",
+            "link_text_8": "Draw Straw Tube Kit",
+            "link_url_8": "shopify://collections/draw-straw-tube-kit",
+            "link_text_9": "Weld-On Flanges",
+            "link_url_9": "shopify://collections/weld-on-flanges",
+            "link_text_10": "",
+            "link_url_10": ""
+          }
+        }
+      },
+      "block_order": [
+        "sitemap_column_t6xhC6",
+        "sitemap_column_tYwyXT",
+        "sitemap_column_aWtHXX"
+      ],
+      "name": "Site Map Fully Dynamic",
+      "settings": {
+        "main_heading": "",
+        "main_heading_size": 30,
+        "heading_alignment": "left",
+        "column_heading_size": 20,
+        "links_font_size": 16,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "custom_sitemap_VqdRcf",
+    "custom_sitemap_M4Phhg",
+    "custom_sitemap_dn3LHT"
+  ]
+}

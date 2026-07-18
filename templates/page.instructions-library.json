@@ -1,0 +1,291 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_slideshow_f8Vpfz": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_UtbXni": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "align-center text-center",
+            "title": "<h1>Instructions Library</h1>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_UtbXni"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width_banner": "boxed",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "1/1",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "custom_pdf_download_wrJBd8": {
+      "type": "custom-pdf-download",
+      "blocks": {
+        "pdf_item_dcf7if": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 14601 Diaphragm Replacement Kit",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-14601-Diaphragm-Replacement-Kit.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_VGhtTt": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 14602 Diaphragm Replacement Kit",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-14602-Diaphragm-Replacement-Kit_1.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_Xqq6Qa": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 14603 Diaphragm Replacement Kit",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-14603-Diaphragm-Replacement-Kit.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_LWnyMV": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 14604 Diaphragm Replacement Kit",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-14604-Diaphragm-Replacement-Kit.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_TyMCLF": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 20901 PM Fabricator Kit Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-20901-PM-Fabricator-Kit-Instructions.pdf?v=1784092037"
+          }
+        },
+        "pdf_item_dhxkDH": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 20902 PM Fabricator Kit Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-20902-PM-Fabricator-Kit-Instructions.pdf?v=1784092037"
+          }
+        },
+        "pdf_item_VXpdUR": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 20903 PM Fabricator Kit Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-20903-PM-Fabricator-Kit-Instructions.pdf?v=1784092037"
+          }
+        },
+        "pdf_item_F7wq9L": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 23901 Filter Accessory Kit Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-23901-Filter-Accessory-Kit-Instructions.pdf?v=1784092037"
+          }
+        },
+        "pdf_item_jETLVn": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 23902 Filter Accessory Kit Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-23902-Filter-Accessory-Kit-Instructions.pdf?v=1784092036"
+          }
+        },
+        "pdf_item_FJWTzA": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 23903 Filter Accessory Kit Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-23903-Filter-Accessory-Kit-Instructions.pdf?v=1784092037"
+          }
+        },
+        "pdf_item_wiLpjP": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 23904 Filter Accessory Kit Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-23904-Filter-Accessory-Kit-Instructions.pdf?v=1784092036"
+          }
+        },
+        "pdf_item_QPB4hR": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 45101 Bracket Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-45101-Bracket-Instructions.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_ANmhcY": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 45102 Bracket Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-45102-Bracket-Instructions.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_xkB6KY": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 45103 Bracket Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-45103-Bracket-Instructions.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_DEV6yp": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 45104 Bracket Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-45104-Bracket-Instructions.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_DphCxf": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 45105 Bracket Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-45105-Bracket-Instructions.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_jXJx6a": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 45106 Bracket Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-45106-Bracket-Instructions.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_gnahiq": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 72001 Brushless Pump Controller Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-72001-Brushless-Pump-Controller-Instructions.pdf?v=1784092036"
+          }
+        },
+        "pdf_item_KCiVdK": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 72002 Brushless Pump Controller Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-72002-Brushless-Pump-Controller-Instructions.pdf?v=1784092036"
+          }
+        },
+        "pdf_item_BnF7Nn": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 72003 Brushless Pump Controller Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-72003-Brushless-Pump-Controller-Instructions.pdf?v=1784092036"
+          }
+        },
+        "pdf_item_64b4e7": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 72004 Brushless Pump Controller Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-72004-Brushless-Pump-Controller-Instructions.pdf?v=1784092038"
+          }
+        },
+        "pdf_item_rRhw7k": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 717xx Check Valve Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Check-Valve-Instructions.pdf?v=1784092035"
+          }
+        },
+        "pdf_item_694KK6": {
+          "type": "pdf_item",
+          "settings": {
+            "title": "Model 74101 Feedthru Instructions",
+            "pdf_link": "https://cdn.shopify.com/s/files/1/1023/3154/7942/files/Model-74101-Feedthru-Instructions.pdf?v=1784092036"
+          }
+        }
+      },
+      "block_order": [
+        "pdf_item_dcf7if",
+        "pdf_item_VGhtTt",
+        "pdf_item_Xqq6Qa",
+        "pdf_item_LWnyMV",
+        "pdf_item_TyMCLF",
+        "pdf_item_dhxkDH",
+        "pdf_item_VXpdUR",
+        "pdf_item_F7wq9L",
+        "pdf_item_jETLVn",
+        "pdf_item_FJWTzA",
+        "pdf_item_wiLpjP",
+        "pdf_item_QPB4hR",
+        "pdf_item_ANmhcY",
+        "pdf_item_xkB6KY",
+        "pdf_item_DEV6yp",
+        "pdf_item_DphCxf",
+        "pdf_item_jXJx6a",
+        "pdf_item_gnahiq",
+        "pdf_item_KCiVdK",
+        "pdf_item_BnF7Nn",
+        "pdf_item_64b4e7",
+        "pdf_item_rRhw7k",
+        "pdf_item_694KK6"
+      ],
+      "name": "PDF Download Grid",
+      "settings": {
+        "heading": "DOWNLOAD"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_slideshow_f8Vpfz",
+    "custom_pdf_download_wrJBd8"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "sections": {
+    "fuel_system_selector": {
+      "type": "section-fuel-system-selector",
+      "blocks": {
+        "filter-1": {
+          "type": "filter",
+          "settings": {
+            "label": "Fuel System",
+            "param": "fuel_system",
+            "options": "Carbureted\nEFI\nDiesel"
+          }
+        },
+        "filter-2": {
+          "type": "filter",
+          "settings": {
+            "label": "Application",
+            "param": "application",
+            "options": "Naturally Aspirated\nForced Induction"
+          }
+        },
+        "filter-3": {
+          "type": "filter",
+          "settings": {
+            "label": "Fuel Type",
+            "param": "fuel_type",
+            "options": "Gasoline\nE85\nDiesel\nMethanol"
+          }
+        },
+        "filter-4": {
+          "type": "filter",
+          "settings": {
+            "label": "Pump Location",
+            "param": "pump_location",
+            "options": "In-Tank\nExternal"
+          }
+        },
+        "filter-5": {
+          "type": "filter",
+          "settings": {
+            "label": "Horsepower",
+            "param": "horsepower",
+            "options": "0-1000\n1000-2000\n2000+"
+          }
+        }
+      },
+      "block_order": [
+        "filter-1",
+        "filter-2",
+        "filter-3",
+        "filter-4",
+        "filter-5"
+      ],
+      "settings": {
+        "background_image": "",
+        "overlay_opacity": 80,
+        "accent_color": "#f7c600",
+        "heading": "Select Your Fuel System",
+        "search_url": "/collections/all",
+        "search_label": "Search",
+        "reset_label": "Reset filters",
+        "show_calculator": true,
+        "calc_heading": "Power-Flow Capacity Calculator",
+        "calc_subheading": "Calculate flow rate required given horsepower",
+        "calc_button_text": "Calculate Now",
+        "calc_button_url": "/pages/calculator"
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "fuel_system_selector",
+    "main-page"
+  ]
+}
+</content>
