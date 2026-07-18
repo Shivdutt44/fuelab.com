@@ -158,16 +158,16 @@
     },
     "fuel_system_calculator_rWRpq7": {
       "type": "fuel-system-calculator",
+      "disabled": true,
       "name": "Fuel System Calculator",
       "settings": {
-        "top_title": "SELECT YOUR FUEL SYSTEM",
-        "heading_text": "Power-Flow Capacity Calculator",
-        "d_h2_size": 36,
-        "m_h2_size": 24,
-        "subheading_text": "Calculate flow rate required given horsepower",
-        "d_p_size": 16,
-        "m_p_size": 13,
-        "btn_label": "Calculate Now"
+        "headline_text": "Power-Flow Capacity Calculator",
+        "d_title_size": 36,
+        "m_title_size": 24,
+        "subheadline_text": "Calculate flow rate required given horsepower",
+        "d_subtitle_size": 18,
+        "m_subtitle_size": 14,
+        "button_text_label": "Calculate Now"
       }
     },
     "section_fuel_system_selector_jdwDmR": {
@@ -221,7 +221,6 @@
         "filter_wbHXM7",
         "filter_kJDayU"
       ],
-      "disabled": true,
       "name": "Fuel system selector",
       "settings": {
         "background_image": "shopify://shop_images/Quick_Service_surge_Tank.png",
