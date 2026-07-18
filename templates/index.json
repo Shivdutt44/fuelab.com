@@ -162,15 +162,15 @@
         "filter_TCbBJP": {
           "type": "filter",
           "settings": {
-            "label": "Fuel System",
+            "label": "Fuel Injected",
             "param": "fuel_system",
-            "options": "Carbureted\nEFI\nDiesel"
+            "options": "Fuel Injected\nCarbureted"
           }
         },
         "filter_DL7GYp": {
           "type": "filter",
           "settings": {
-            "label": "Application",
+            "label": "INDUCTION",
             "param": "application",
             "options": "Naturally Aspirated\nForced Induction"
           }
@@ -178,15 +178,15 @@
         "filter_WbXLxy": {
           "type": "filter",
           "settings": {
-            "label": "Fuel Type",
+            "label": "FUEL TYPE",
             "param": "fuel_type",
-            "options": "Gasoline\nE85\nDiesel\nMethanol"
+            "options": "Gasoline\nE85\nMethanol\nDiesel"
           }
         },
         "filter_wbHXM7": {
           "type": "filter",
           "settings": {
-            "label": "Pump Location",
+            "label": "MOUNTING CONFIG",
             "param": "pump_location",
             "options": "In-Tank\nExternal"
           }
@@ -194,7 +194,7 @@
         "filter_kJDayU": {
           "type": "filter",
           "settings": {
-            "label": "Horsepower",
+            "label": "HORSEPOWER",
             "param": "horsepower",
             "options": "0-1000\n1000-2000\n2000+"
           }
@@ -218,6 +218,7 @@
         "reset_label": "Reset filters",
         "search_btn_text_color": "#111111",
         "search_btn_font_size": 14,
+        "calc_subheading": "Calculate flow rate required given horsepower",
         "calc_btn_text_color": "#111111",
         "calc_btn_font_size": 17,
         "btn_padding_x": 34,

@@ -69,11 +69,8 @@
           {{ section.settings.search_label | default: 'Search' }}
         </button>
         <button type="button" class="fss__reset-btn" data-fss-reset aria-label="{{ section.settings.reset_label | default: 'Reset filters' }}">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 2v6h-6"></path>
-            <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
-            <path d="M3 22v-6h6"></path>
-            <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="currentColor">
+            <path d="M440.65 12.57l4 82.77A247.16 247.16 0 0 0 255.83 8C134.73 8 33.91 94.92 12.29 209.82A12 12 0 0 0 24.09 224h49.05a12 12 0 0 0 11.67-9.26 175.91 175.91 0 0 1 317-56.94l-101.46-4.86a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12H500a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12h-47.37a12 12 0 0 0-11.98 12.57zM255.83 432a175.61 175.61 0 0 1-146-77.8l101.8 4.87a12 12 0 0 0 12.57-12v-47.4a12 12 0 0 0-12-12H12a12 12 0 0 0-12 12V500a12 12 0 0 0 12 12h47.35a12 12 0 0 0 12-12.6l-4.15-82.57A247.17 247.17 0 0 0 255.83 504c121.11 0 221.93-86.92 243.55-201.82a12 12 0 0 0-11.8-14.18h-49.05a12 12 0 0 0-11.67 9.26A175.86 175.86 0 0 1 255.83 432z"/>
           </svg>
         </button>
       </div>
@@ -92,9 +89,11 @@
         {%- if section.settings.calc_button_text != blank -%}
           <a href="{{ section.settings.calc_button_url | default: '/pages/fuel-pump-calculator' }}" class="fss__calc-btn">
             <span>{{ section.settings.calc_button_text }}</span>
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-              <path d="M8 5l9 7-9 7V5z"></path>
-            </svg>
+            <span class="fss__calc-btn-icon">
+              <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
           </a>
         {%- endif -%}
       </div>
@@ -104,7 +103,7 @@
 
 <style>
   #fss-{{ section.id }} {
-    --fss-accent: {{ accent }};
+    --fss-accent: #FFD204 !important; /* Force exact bright yellow accent from reference site */
     font-family: inherit;
   }
   #fss-{{ section.id }} .fss__hero {
@@ -138,89 +137,156 @@
     z-index: 2;
     color: var(--fss-accent);
     font-style: italic;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
     text-align: center;
     font-size: clamp(22px, 4vw, 34px);
     margin: 0 0 28px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  }
+  #fss-{{ section.id }} .fss__heading::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--fss-accent);
+    margin: 0 auto 16px;
   }
   #fss-{{ section.id }} .fss__bar {
     position: relative;
     z-index: 2;
     width: 100%;
     max-width: 1240px;
-    background: #111111;
-    border-radius: 4px;
-    padding: var(--fss-bar-padding, 22px);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    gap: 16px;
+    background: rgba(17, 17, 17, 0.85); /* Semi-transparent dark card */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Thin grey border */
+    border-radius: 0px; /* Sharp corners */
+    padding: 15px !important; /* Even spacing around elements as in screenshot */
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   }
+  
+  /* Infinite horizontal yellow lines running behind/outwards from the filter card */
+  #fss-{{ section.id }} .fss__bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 2000px;
+    height: 2px;
+    background: var(--fss-accent);
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+  #fss-{{ section.id }} .fss__bar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 2000px;
+    height: 2px;
+    background: var(--fss-accent);
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+
   #fss-{{ section.id }} .fss__fields {
-    flex: 1 1 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 12px;
+    display: flex !important;
+    flex: 1 !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  #fss-{{ section.id }} .fss__field {
+    flex: 1 !important;
+    min-width: 0 !important;
   }
   #fss-{{ section.id }} .fss__select {
     width: 100%;
     height: 46px;
     padding: 0 14px;
-    border: none;
-    border-radius: 3px;
+    border: 1px solid #dcdcdc !important; /* Subtle border outline */
+    border-radius: 0px !important; /* Sharp corners */
     background: #ffffff;
-    color: #111111;
+    color: #333333;
     font-size: 14px;
     font-weight: 600;
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M0 0l5 6 5-6z' fill='%23111'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='1 2 6 7 11 2'/></svg>") !important; /* Thin custom chevron */
     background-repeat: no-repeat;
     background-position: right 14px center;
     cursor: pointer;
   }
   #fss-{{ section.id }} .fss__actions {
-    flex: 0 0 auto;
-    display: flex;
-    gap: 10px;
+    display: flex !important;
+    gap: 10px !important;
+    flex-shrink: 0 !important;
   }
+
+  /* Reset button pseudo-elements to prevent global capsule styles from theme CSS */
+  #fss-{{ section.id }} .fss__search-btn,
+  #fss-{{ section.id }} .fss__reset-btn {
+    float: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0px !important;
+    min-width: 0 !important; /* Override theme min-width */
+  }
+  #fss-{{ section.id }} .fss__search-btn::before,
+  #fss-{{ section.id }} .fss__search-btn::after,
+  #fss-{{ section.id }} .fss__reset-btn::before,
+  #fss-{{ section.id }} .fss__reset-btn::after {
+    display: none !important;
+    content: none !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
   #fss-{{ section.id }} .fss__search-btn {
-    height: 46px;
-    padding: 0 var(--fss-btn-padding-x, 34px);
-    background: var(--fss-accent);
-    color: var(--fss-search-btn-color, #111111);
-    border: none;
-    border-radius: 3px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    font-size: var(--fss-search-btn-size, 14px);
-    cursor: pointer;
-    transition: filter 0.15s ease;
+    height: 46px !important;
+    padding: 0 var(--fss-btn-padding-x, 34px) !important;
+    background: var(--fss-accent) !important;
+    color: #111111 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    font-weight: 800 !important;
+    text-transform: none !important; /* "Search" mixed-case as in screenshot */
+    letter-spacing: normal !important;
+    font-size: var(--fss-search-btn-size, 14px) !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
   }
   #fss-{{ section.id }} .fss__search-btn:hover {
-    filter: brightness(1.08);
+    background: #e6bd00 !important;
   }
   #fss-{{ section.id }} .fss__reset-btn {
-    height: 46px;
-    width: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    color: var(--fss-accent);
-    border: 1px solid var(--fss-accent);
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease;
+    height: 46px !important;
+    width: 46px !important;
+    max-width: 46px !important;
+    flex: 0 0 46px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: transparent !important;
+    color: var(--fss-accent) !important;
+    border: 1px solid var(--fss-accent) !important;
+    border-radius: 0px !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    transition: transform 0.2s ease, opacity 0.2s ease !important;
   }
   #fss-{{ section.id }} .fss__reset-btn:hover {
-    background: var(--fss-accent);
-    color: #111111;
+    opacity: 0.85 !important;
+  }
+  #fss-{{ section.id }} .fss__reset-btn svg {
+    width: 20px !important;
+    height: 20px !important;
+    fill: var(--fss-accent) !important;
+    stroke: none !important;
   }
 
   #fss-{{ section.id }} .fss__calc {
@@ -244,37 +310,86 @@
     margin: 0 0 30px;
     opacity: 0.9;
   }
+  
+  /* Reset pseudo-elements and style the Calculate Now button to match reference */
+  #fss-{{ section.id }} .fss__calc-btn::before,
+  #fss-{{ section.id }} .fss__calc-btn::after {
+    display: none !important;
+    content: none !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
   #fss-{{ section.id }} .fss__calc-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: var(--fss-accent);
-    color: var(--fss-calc-btn-color, #111111);
-    font-weight: 800;
-    text-transform: none;
-    padding: 16px var(--fss-btn-padding-x, 36px);
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: var(--fss-calc-btn-size, 17px);
-    line-height: 1;
-    transition: filter 0.15s ease, transform 0.15s ease;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    background: var(--fss-accent) !important;
+    color: #000000 !important;
+    font-weight: 700 !important;
+    text-transform: none !important;
+    padding: 14px 28px !important;
+    border-radius: 0px !important; /* Sharp corners */
+    text-decoration: none !important;
+    font-size: var(--fss-calc-btn-size, 17px) !important;
+    line-height: 1 !important;
+    float: none !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
   }
   #fss-{{ section.id }} .fss__calc-btn:hover {
-    filter: brightness(1.08);
-    transform: translateY(-1px);
+    background: #e6bd00 !important;
+  }
+  #fss-{{ section.id }} .fss__calc-btn-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 22px !important;
+    height: 22px !important;
+    background: #111111 !important; /* Dark circle background */
+    color: var(--fss-accent) !important; /* Yellow arrow */
+    border-radius: 50% !important;
+  }
+  #fss-{{ section.id }} .fss__calc-btn-icon svg {
+    width: 10px !important;
+    height: 10px !important;
   }
 
-  @media only screen and (max-width: 47.5em) {
+  @media only screen and (max-width: 991px) {
     #fss-{{ section.id }} .fss__bar {
-      flex-direction: column;
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+    #fss-{{ section.id }} .fss__bar::before,
+    #fss-{{ section.id }} .fss__bar::after {
+      display: none !important;
+    }
+    #fss-{{ section.id }} .fss__fields {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important; /* 2 columns on tablet */
+      gap: 10px !important;
+      width: 100% !important;
     }
     #fss-{{ section.id }} .fss__actions {
-      flex-direction: column;
+      display: flex !important;
+      gap: 10px !important;
+      width: 100% !important;
+      margin-top: 10px !important;
     }
-    #fss-{{ section.id }} .fss__search-btn,
+    #fss-{{ section.id }} .fss__search-btn {
+      flex: 1 !important;
+    }
     #fss-{{ section.id }} .fss__reset-btn {
-      width: 100%;
+      flex-shrink: 0 !important;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    #fss-{{ section.id }} .fss__fields {
+      grid-template-columns: 1fr !important; /* 1 column on mobile */
     }
   }
 </style>
