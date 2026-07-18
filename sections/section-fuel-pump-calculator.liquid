@@ -27,7 +27,8 @@
             <label for="fpc-fuel-type-{{ section.id }}">Choose Fuel Type</label>
             <div class="fpc__select-wrapper">
               <select id="fpc-fuel-type-{{ section.id }}" class="fpc__select" data-fpc-fuel-type>
-                <option value="gasoline" selected>Gasoline</option>
+                <option value="" disabled selected hidden>Select Type</option>
+                <option value="gasoline">Gasoline</option>
                 <option value="e85">E85</option>
                 <option value="methanol">Methanol</option>
               </select>
@@ -44,8 +45,8 @@
           <div class="fpc__form-actions">
             <button type="button" class="fpc__calculate-btn" data-fpc-calculate>Calculate</button>
             <button type="button" class="fpc__reset-btn" data-fpc-reset aria-label="Reset Calculator">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.57a10 10 0 0 1 18.83-5.14M22 12.43a10 10 0 0 1-18.83 5.14"/>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
+                <path d="M370.72 133.28C339.458 104.008 298.888 87.872 256 87.872c-77.96 0-141.28 63.32-141.28 141.28H74.56c0-100.864 82.096-182.96 182.96-182.96 46.176 0 90.304 17.632 124.8 49.376L437.12 3H512v146.4H365.6l5.12-16.12zM256 382.848c77.96 0 141.28-63.32 141.28-141.28h39.84c0 100.864-82.096 182.96-182.96 182.96-46.176 0-90.304-17.632-124.8-49.376L74.88 509H0V362.6h146.4l-5.12 16.12c31.322 29.272 71.892 45.408 114.72 45.408z"/>
               </svg>
             </button>
           </div>
@@ -125,6 +126,7 @@
 
 <style>
   #fpc-{{ section.id }} {
+    --fpc-accent: #FFD204 !important; /* Force exact bright yellow accent from reference site */
     background: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: #333333;
@@ -242,17 +244,35 @@
     gap: 16px !important;
     margin-top: 30px !important;
   }
+  #fpc-{{ section.id }} .fpc__calculate-btn,
+  #fpc-{{ section.id }} .fpc__reset-btn {
+    float: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  #fpc-{{ section.id }} .fpc__calculate-btn::before,
+  #fpc-{{ section.id }} .fpc__calculate-btn::after,
+  #fpc-{{ section.id }} .fpc__reset-btn::before,
+  #fpc-{{ section.id }} .fpc__reset-btn::after {
+    display: none !important;
+    content: none !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
   #fpc-{{ section.id }} .fpc__calculate-btn {
     flex: 1 !important;
     height: 46px !important;
     background: var(--fpc-accent) !important;
-    color: #111111 !important;
+    color: #333333 !important; /* Softer dark charcoal text color exactly matching reference buttons */
     border: none !important;
     border-radius: 0px !important;
-    font-weight: 700 !important;
+    font-weight: 700 !important; /* Bold as per 'font-bold' class in reference and screenshot */
     font-size: 15px !important;
     text-transform: none !important; /* mixed case, as in screenshot */
     letter-spacing: normal !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
     cursor: pointer !important;
     transition: background-color 0.2s ease, transform 0.1s ease !important;
   }
@@ -288,7 +308,8 @@
     width: 24px !important;
     height: 24px !important;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    stroke: var(--fpc-accent) !important;
+    fill: var(--fpc-accent) !important;
+    stroke: none !important;
   }
   #fpc-{{ section.id }} .fpc__reset-btn:hover svg {
     transform: rotate(-180deg) !important;
@@ -482,6 +503,11 @@
 
     function calculate() {
       var fuelType = fuelTypeEl.value;
+      if (!fuelType) {
+        fuelTypeEl.style.borderColor = 'red';
+        fuelTypeEl.focus();
+        return;
+      }
       var hp = parseFloat(hpEl.value) || 0;
       var press = parseFloat(pressEl.value) || 0;
 
@@ -564,6 +590,12 @@
 
     if (resetBtn) {
       resetBtn.addEventListener('click', resetCalculator);
+    }
+
+    if (fuelTypeEl) {
+      fuelTypeEl.addEventListener('change', function() {
+        fuelTypeEl.style.borderColor = '';
+      });
     }
 
     // Support calculating on pressing Enter key
