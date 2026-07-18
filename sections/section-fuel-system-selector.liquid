@@ -4,10 +4,6 @@
   assign bg_image = section.settings.background_image
 -%}
 
-{%- if section.settings.enable_full_width -%}
-<div class="fss-full-width-wrapper">
-{%- endif -%}
-
 <div
   class="fss"
   id="fss-{{ section.id }}"
@@ -106,24 +102,6 @@
 </div>
 
 <style>
-  {%- if section.settings.enable_full_width -%}
-  .fss-full-width-wrapper {
-    width: 100vw !important;
-    position: relative !important;
-    left: 50% !important;
-    right: 50% !important;
-    margin-left: -50vw !important;
-    margin-right: -50vw !important;
-  }
-  .shopify-section:has(#fss-{{ section.id }}) {
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  {%- endif -%}
-
   #fss-{{ section.id }} {
     --fss-accent: #FFD204 !important; /* Force exact bright yellow accent from reference site */
     font-family: inherit;
@@ -422,12 +400,6 @@
     #fss-{{ section.id }} .fss__fields {
       grid-template-columns: 1fr !important; /* 1 column on mobile */
     }
-    {%- if section.settings.enable_full_width -%}
-    #fss-{{ section.id }} .fss__hero {
-      padding-left: 15px !important;
-      padding-right: 15px !important;
-    }
-    {%- endif -%}
   }
 </style>
 
@@ -447,7 +419,7 @@
        When a select is cleared (back to ""), disable all after it.
     ───────────────────────────────────────────────────────── */
 
-    var updateCascade = function () {
+    function updateCascade() {
       for (var i = 0; i < selects.length; i++) {
         if (i === 0) {
           /* First dropdown is always enabled */
@@ -504,21 +476,10 @@
   })();
 </script>
 
-{%- if section.settings.enable_full_width -%}
-</div>
-{%- endif -%}
-
 {% schema %}
 {
   "name": "Fuel system selector",
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "enable_full_width",
-      "label": "Enable Full Width Layout",
-      "default": true,
-      "info": "Turn on to make the section stretch 100% across the screen screen browser edges."
-    },
     {
       "type": "image_picker",
       "id": "background_image",
