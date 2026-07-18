@@ -1,5 +1,6 @@
 {%- style -%}
-  .fuel-custom-section-{{ section.id }} {
+  /* Section Main Wrapper */
+  .fsc-main-wrapper-{{ section.id }} {
     background-color: #000000;
     padding: 60px 0 80px 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -9,8 +10,8 @@
     position: relative;
   }
 
-  /* Main background row container with exact yellow border design */
-  .fuel-calc-header-wrapper {
+  /* Header Stripe Line Design */
+  .fsc-stripe-divider-{{ section.id }} {
     position: relative;
     width: 100%;
     padding: 0 20px;
@@ -19,7 +20,7 @@
   }
 
   /* Centered Horizontal Selector Panel Box */
-  .fuel-calc-main-panel {
+  .fsc-control-panel-{{ section.id }} {
     background-color: #111111;
     border: 1px solid #1c1c1c;
     padding: 24px 20px;
@@ -37,14 +38,14 @@
     box-shadow: 0 15px 35px rgba(0,0,0,0.7);
   }
 
-  /* Dropdown Individual Boxes styling */
-  .fuel-select-field-box {
+  /* Dropdown Containers */
+  .fsc-select-block-{{ section.id }} {
     flex: 1;
     min-width: 0;
     position: relative;
   }
 
-  .fuel-select-field-box select {
+  .fsc-select-block-{{ section.id }} select {
     width: 100%;
     height: 48px;
     background-color: #ffffff;
@@ -64,16 +65,16 @@
     box-sizing: border-box;
   }
 
-  /* Disabled State - Custom Locked look */
-  .fuel-select-field-box.is-disabled select {
+  /* Disabled State Styling */
+  .fsc-select-block-{{ section.id }}.fsc-locked-state select {
     color: #aaaaaa;
     background-color: #ffffff;
     cursor: not-allowed;
     border-color: #e6e6e6;
   }
 
-  /* Search Button Box */
-  .fuel-search-cta-btn {
+  /* Inline Search Button */
+  .fsc-inline-search-btn-{{ section.id }} {
     background-color: #fecb00;
     color: #000000;
     border: none;
@@ -90,12 +91,12 @@
     align-items: center;
     justify-content: center;
   }
-  .fuel-search-cta-btn:hover {
+  .fsc-inline-search-btn-{{ section.id }}:hover {
     background-color: #e5b600;
   }
 
-  /* Transparent Refresh Box Style */
-  .fuel-refresh-cta-btn {
+  /* Clear/Reset Icon Button */
+  .fsc-reset-icon-btn-{{ section.id }} {
     background-color: transparent;
     border: 1px solid #3a3a3a;
     color: #fecb00;
@@ -109,26 +110,26 @@
     box-sizing: border-box;
     flex-shrink: 0;
   }
-  .fuel-refresh-cta-btn:hover {
+  .fsc-reset-icon-btn-{{ section.id }}:hover {
     background-color: #1a1a1a;
     border-color: #fecb00;
   }
-  .fuel-refresh-cta-btn svg {
+  .fsc-reset-icon-btn-{{ section.id }} svg {
     width: 20px;
     height: 20px;
     fill: currentColor;
   }
 
-  /* Text & Calculation Output Block */
-  .fuel-calc-bottom-content {
+  /* Content Block Styling */
+  .fsc-typography-container-{{ section.id }} {
     margin-top: 100px;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers block items horizontally */
+    align-items: center;
   }
 
-  .fuel-calc-main-heading {
+  .fsc-heading-element-{{ section.id }} {
     color: #fecb00;
     font-weight: 700;
     margin: 0 0 6px 0;
@@ -136,7 +137,7 @@
     width: 100%;
   }
   
-  .fuel-calc-sub-heading {
+  .fsc-subheading-element-{{ section.id }} {
     color: #ffffff;
     font-weight: 400;
     margin: 0 0 25px 0;
@@ -144,16 +145,16 @@
     width: 100%;
   }
 
-  /* Center alignment container wrapper for the button */
-  .fuel-btn-container {
+  /* Perfectly Centered Button Alignment Container */
+  .fsc-btn-alignment-box-{{ section.id }} {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 5px;
   }
 
-  /* Exact Oval Pill Shaped Yellow Calculate Button */
-  .fuel-calculate-action-btn {
+  /* Main Pill Shape Oval Calculate Button */
+  .fsc-action-pill-btn-{{ section.id }} {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -166,34 +167,34 @@
     border: none;
     cursor: pointer;
     text-transform: none;
-    border-radius: 50px; /* Gives the perfect pill/oval shape like the image */
+    border-radius: 50px;
     box-sizing: border-box;
     transition: background-color 0.2s, transform 0.2s;
   }
-  .fuel-calculate-action-btn:hover {
+  .fsc-action-pill-btn-{{ section.id }}:hover {
     background-color: #e5b600;
     transform: scale(1.02);
   }
   
-  .fuel-calculate-action-btn svg {
+  .fsc-action-pill-btn-{{ section.id }} svg {
     width: 18px;
     height: 18px;
     fill: #000000;
   }
 
-  /* Dynamic Custom Text Responsive Size Engine via Schema Controls */
+  /* Typography Schema Font Adjustments */
   @media screen and (min-width: 750px) {
-    .fuel-calc-main-heading { font-size: {{ section.settings.d_title_size }}px; }
-    .fuel-calc-sub-heading { font-size: {{ section.settings.d_subtitle_size }}px; }
+    .fsc-heading-element-{{ section.id }} { font-size: {{ section.settings.d_title_size }}px; }
+    .fsc-subheading-element-{{ section.id }} { font-size: {{ section.settings.d_subtitle_size }}px; }
   }
   @media screen and (max-width: 749px) {
-    .fuel-calc-main-heading { font-size: {{ section.settings.m_title_size }}px; }
-    .fuel-calc-sub-heading { font-size: {{ section.settings.m_subtitle_size }}px; }
+    .fsc-heading-element-{{ section.id }} { font-size: {{ section.settings.m_title_size }}px; }
+    .fsc-subheading-element-{{ section.id }} { font-size: {{ section.settings.m_subtitle_size }}px; }
   }
 
-  /* Full Layout Responsiveness for Tablet and Mobile devices */
+  /* Full Layout Responsiveness */
   @media screen and (max-width: 991px) {
-    .fuel-calc-main-panel {
+    .fsc-control-panel-{{ section.id }} {
       flex-direction: column;
       align-items: stretch;
       gap: 12px;
@@ -201,26 +202,28 @@
       margin: 20px 10px;
       padding: 20px 15px;
     }
-    .fuel-calc-header-wrapper {
+    .fsc-stripe-divider-{{ section.id }} {
       border-bottom: none;
     }
-    .fuel-calc-bottom-content {
+    .fsc-typography-container-{{ section.id }} {
       margin-top: 20px;
     }
-    .fuel-select-field-box select, .fuel-search-cta-btn, .fuel-refresh-cta-btn {
+    .fsc-select-block-{{ section.id }} select, 
+    .fsc-inline-search-btn-{{ section.id }}, 
+    .fsc-reset-icon-btn-{{ section.id }} {
       width: 100%;
     }
   }
 {%- endstyle -%}
 
-<div class="fuel-custom-section-{{ section.id }}">
+<div class="fsc-main-wrapper-{{ section.id }}" id="fsc-section-root-{{ section.id }}">
   
-  <div class="fuel-calc-header-wrapper">
-    <div class="fuel-calc-main-panel">
+  <div class="fsc-stripe-divider-{{ section.id }}" id="fsc-stripe-line-{{ section.id }}">
+    <div class="fsc-control-panel-{{ section.id }}" id="fsc-main-panel-{{ section.id }}">
       
       <!-- 1. CARB OR EFI -->
-      <div class="fuel-select-field-box" id="container-box-1">
-        <select id="engine-select-1">
+      <div class="fsc-select-block-{{ section.id }}" id="fsc-block-wrap-1-{{ section.id }}">
+        <select id="fsc-dropdown-select-1-{{ section.id }}">
           <option value="" disabled selected hidden>CARB OR EFI</option>
           <option value="Carbureted">Carbureted</option>
           <option value="Fuel Injected">Fuel Injected</option>
@@ -228,8 +231,8 @@
       </div>
 
       <!-- 2. INDUCTION -->
-      <div class="fuel-select-field-box is-disabled" id="container-box-2">
-        <select id="engine-select-2" disabled>
+      <div class="fsc-select-block-{{ section.id }} fsc-locked-state" id="fsc-block-wrap-2-{{ section.id }}">
+        <select id="fsc-dropdown-select-2-{{ section.id }}" disabled>
           <option value="" disabled selected hidden>INDUCTION</option>
           <option value="Forced Induction">Forced Induction</option>
           <option value="Naturally Aspirated">Naturally Aspirated</option>
@@ -237,8 +240,8 @@
       </div>
 
       <!-- 3. FUEL TYPE -->
-      <div class="fuel-select-field-box is-disabled" id="container-box-3">
-        <select id="engine-select-3" disabled>
+      <div class="fsc-select-block-{{ section.id }} fsc-locked-state" id="fsc-block-wrap-3-{{ section.id }}">
+        <select id="fsc-dropdown-select-3-{{ section.id }}" disabled>
           <option value="" disabled selected hidden>FUEL TYPE</option>
           <option value="Diesel">Diesel</option>
           <option value="E85">E85</option>
@@ -248,8 +251,8 @@
       </div>
 
       <!-- 4. MOUNTING CO -->
-      <div class="fuel-select-field-box is-disabled" id="container-box-4">
-        <select id="engine-select-4" disabled>
+      <div class="fsc-select-block-{{ section.id }} fsc-locked-state" id="fsc-block-wrap-4-{{ section.id }}">
+        <select id="fsc-dropdown-select-4-{{ section.id }}" disabled>
           <option value="" disabled selected hidden>MOUNTING CO</option>
           <option value="External">External</option>
           <option value="In-Tank">In-Tank</option>
@@ -257,8 +260,8 @@
       </div>
 
       <!-- 5. HORSEPOWER -->
-      <div class="fuel-select-field-box is-disabled" id="container-box-5">
-        <select id="engine-select-5" disabled>
+      <div class="fsc-select-block-{{ section.id }} fsc-locked-state" id="fsc-block-wrap-5-{{ section.id }}">
+        <select id="fsc-dropdown-select-5-{{ section.id }}" disabled>
           <option value="" disabled selected hidden>HORSEPOWER</option>
           <option value="0-1000">0-1000</option>
           <option value="1001-2000">1001-2000</option>
@@ -267,10 +270,10 @@
       </div>
 
       <!-- Search Trigger Button -->
-      <button type="button" class="fuel-search-cta-btn" id="search-cta-trigger">Search</button>
+      <button type="button" class="fsc-inline-search-btn-{{ section.id }}" id="fsc-search-btn-id-{{ section.id }}">Search</button>
 
       <!-- Refresh Trigger Button -->
-      <button type="button" class="fuel-refresh-cta-btn" id="refresh-cta-trigger" title="Reset Filters">
+      <button type="button" class="fsc-reset-icon-btn-{{ section.id }}" id="fsc-refresh-btn-id-{{ section.id }}" title="Reset Filters">
         <svg viewBox="0 0 24 24">
           <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
         </svg>
@@ -278,14 +281,14 @@
     </div>
   </div>
 
-  <!-- Lower Main Content Area -->
-  <div class="fuel-calc-bottom-content">
-    <h2 class="fuel-calc-main-heading">{{ section.settings.headline_text }}</h2>
-    <p class="fuel-calc-sub-heading">{{ section.settings.subheadline_text }}</p>
+  <!-- Content & Bottom Pill Button Area -->
+  <div class="fsc-typography-container-{{ section.id }}" id="fsc-text-container-{{ section.id }}">
+    <h2 class="fsc-heading-element-{{ section.id }}" id="fsc-heading-title-{{ section.id }}">{{ section.settings.headline_text }}</h2>
+    <p class="fsc-subheading-element-{{ section.id }}" id="fsc-subheading-desc-{{ section.id }}">{{ section.settings.subheadline_text }}</p>
 
-    <!-- Correctly Centered Wrapper -->
-    <div class="fuel-btn-container">
-      <button type="button" class="fuel-calculate-action-btn" id="calculate-cta-trigger">
+    <!-- Centered Button Wrap Box -->
+    <div class="fsc-btn-alignment-box-{{ section.id }}" id="fsc-btn-wrap-box-{{ section.id }}">
+      <button type="button" class="fsc-action-pill-btn-{{ section.id }}" id="fsc-calculate-btn-id-{{ section.id }}">
         {{ section.settings.button_text_label }}
         <svg viewBox="0 0 24 24">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
@@ -298,80 +301,82 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const select1 = document.getElementById("engine-select-1");
-  const select2 = document.getElementById("engine-select-2");
-  const select3 = document.getElementById("engine-select-3");
-  const select4 = document.getElementById("engine-select-4");
-  const select5 = document.getElementById("engine-select-5");
+  // Unique Instance DOM Selectors based on Section ID
+  const s1 = document.getElementById("fsc-dropdown-select-1-{{ section.id }}");
+  const s2 = document.getElementById("fsc-dropdown-select-2-{{ section.id }}");
+  const s3 = document.getElementById("fsc-dropdown-select-3-{{ section.id }}");
+  const s4 = document.getElementById("fsc-dropdown-select-4-{{ section.id }}");
+  const s5 = document.getElementById("fsc-dropdown-select-5-{{ section.id }}");
 
-  const box2 = document.getElementById("container-box-2");
-  const box3 = document.getElementById("container-box-3");
-  const box4 = document.getElementById("container-box-4");
-  const box5 = document.getElementById("container-box-5");
+  const w2 = document.getElementById("fsc-block-wrap-2-{{ section.id }}");
+  const w3 = document.getElementById("fsc-block-wrap-3-{{ section.id }}");
+  const w4 = document.getElementById("fsc-block-wrap-4-{{ section.id }}");
+  const w5 = document.getElementById("fsc-block-wrap-5-{{ section.id }}");
 
-  const clickSearch = document.getElementById("search-cta-trigger");
-  const clickRefresh = document.getElementById("refresh-cta-trigger");
-  const clickCalc = document.getElementById("calculate-cta-trigger");
+  const trigSearch = document.getElementById("fsc-search-btn-id-{{ section.id }}");
+  const trigRefresh = document.getElementById("fsc-refresh-btn-id-{{ section.id }}");
+  const trigCalc = document.getElementById("fsc-calculate-btn-id-{{ section.id }}");
 
-  // Step-by-Step Chain Flow Unlock Mechanism
-  select1.addEventListener("change", function() {
-    if(select1.value) { select2.removeAttribute("disabled"); box2.classList.remove("is-disabled"); }
+  // Sequential Chain Unlock Engine
+  s1.addEventListener("change", function() {
+    if(s1.value) { s2.removeAttribute("disabled"); w2.classList.remove("fsc-locked-state"); }
   });
-  select2.addEventListener("change", function() {
-    if(select2.value) { select3.removeAttribute("disabled"); box3.classList.remove("is-disabled"); }
+  s2.addEventListener("change", function() {
+    if(s2.value) { s3.removeAttribute("disabled"); w3.classList.remove("fsc-locked-state"); }
   });
-  select3.addEventListener("change", function() {
-    if(select3.value) { select4.removeAttribute("disabled"); box4.classList.remove("is-disabled"); }
+  s3.addEventListener("change", function() {
+    if(s3.value) { s4.removeAttribute("disabled"); w4.classList.remove("fsc-locked-state"); }
   });
-  select4.addEventListener("change", function() {
-    if(select4.value) { select5.removeAttribute("disabled"); box5.classList.remove("is-disabled"); }
-  });
-
-  // Reset/Refresh Application Trigger Flow
-  clickRefresh.addEventListener("click", function() {
-    select1.selectedIndex = 0;
-    select2.selectedIndex = 0;
-    select3.selectedIndex = 0;
-    select4.selectedIndex = 0;
-    select5.selectedIndex = 0;
-
-    select2.setAttribute("disabled", "true");
-    select3.setAttribute("disabled", "true");
-    select4.setAttribute("disabled", "true");
-    select5.setAttribute("disabled", "true");
-
-    box2.classList.add("is-disabled");
-    box3.classList.add("is-disabled");
-    box4.classList.add("is-disabled");
-    box5.classList.add("is-disabled");
+  s4.addEventListener("change", function() {
+    if(s4.value) { s5.removeAttribute("disabled"); w5.classList.remove("fsc-locked-state"); }
   });
 
-  // Dynamic Search Parameters Forward Route Execution
-  function executeProductQuery() {
-    let queryValues = [];
-    if(select1.value) queryValues.push(select1.value);
-    if(select2.value) queryValues.push(select2.value);
-    if(select3.value) queryValues.push(select3.value);
-    if(select4.value) queryValues.push(select4.value);
-    if(select5.value) queryValues.push(select5.value);
+  // Unique Reset Functionality Flow
+  trigRefresh.addEventListener("click", function() {
+    s1.selectedIndex = 0;
+    s2.selectedIndex = 0;
+    s3.selectedIndex = 0;
+    s4.selectedIndex = 0;
+    s5.selectedIndex = 0;
 
-    if(queryValues.length === 0) {
-      alert("Please select at least one dropdown criteria option.");
+    s2.setAttribute("disabled", "true");
+    s3.setAttribute("disabled", "true");
+    s4.setAttribute("disabled", "true");
+    s5.setAttribute("disabled", "true");
+
+    w2.classList.add("fsc-locked-state");
+    w3.classList.add("fsc-locked-state");
+    w4.classList.add("fsc-locked-state");
+    w5.classList.add("fsc-locked-state");
+  });
+
+  // Clean Search Query Navigation Engine
+  function runShopifySearchQuery() {
+    let selectedValues = [];
+    if(s1.value) selectedValues.push(s1.value);
+    if(s2.value) selectedValues.push(s2.value);
+    if(s3.value) selectedValues.push(s3.value);
+    if(s4.value) selectedValues.push(s4.value);
+    if(s5.value) selectedValues.push(s5.value);
+
+    if(selectedValues.length === 0) {
+      alert("Please select at least one criteria to search.");
       return;
     }
 
-    let buildSearchString = queryValues.map(val => encodeURIComponent(val)).join("+");
-    window.location.href = window.Shopify.routes.root + "search?type=product&q=" + buildSearchString;
+    let finalQueryString = selectedValues.map(val => encodeURIComponent(val)).join("+");
+    let searchRoute = (window.Shopify && window.Shopify.routes && window.Shopify.routes.root) ? window.Shopify.routes.root : "/";
+    window.location.href = searchRoute + "search?type=product&q=" + finalQueryString;
   }
 
-  clickSearch.addEventListener("click", executeProductQuery);
-  clickCalc.addEventListener("click", executeProductQuery);
+  trigSearch.addEventListener("click", runShopifySearchQuery);
+  trigCalc.addEventListener("click", runShopifySearchQuery);
 });
 </script>
 
 {% schema %}
 {
-  "name": "Fuel Calculator Ultimate",
+  "name": "Fuel Calculator Unique",
   "settings": [
     {
       "type": "text",
@@ -434,7 +439,7 @@ document.addEventListener("DOMContentLoaded", function() {
   ],
   "presets": [
     {
-      "name": "Fuel Calculator Ultimate",
+      "name": "Fuel Calculator Unique",
       "category": "Custom Sections"
     }
   ]
