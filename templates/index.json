@@ -158,7 +158,6 @@
     },
     "fuel_system_calculator_rWRpq7": {
       "type": "fuel-system-calculator",
-      "disabled": true,
       "name": "Fuel System Calculator",
       "settings": {
         "top_title": "SELECT YOUR FUEL SYSTEM",
@@ -222,6 +221,7 @@
         "filter_wbHXM7",
         "filter_kJDayU"
       ],
+      "disabled": true,
       "name": "Fuel system selector",
       "settings": {
         "background_image": "shopify://shop_images/Quick_Service_surge_Tank.png",
