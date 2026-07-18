@@ -6,7 +6,7 @@
         "filter-1": {
           "type": "filter",
           "settings": {
-            "label": "Fuel System",
+            "label": "Carbureted",
             "param": "fuel_system",
             "options": "Carbureted\nEFI\nDiesel"
           }
@@ -14,7 +14,7 @@
         "filter-2": {
           "type": "filter",
           "settings": {
-            "label": "Application",
+            "label": "Forced Induction",
             "param": "application",
             "options": "Naturally Aspirated\nForced Induction"
           }
@@ -22,25 +22,25 @@
         "filter-3": {
           "type": "filter",
           "settings": {
-            "label": "Fuel Type",
+            "label": "E85",
             "param": "fuel_type",
-            "options": "Gasoline\nE85\nDiesel\nMethanol"
+            "options": "Gasoline\nE85\nDiesel"
           }
         },
         "filter-4": {
           "type": "filter",
           "settings": {
-            "label": "Pump Location",
+            "label": "External",
             "param": "pump_location",
-            "options": "In-Tank\nExternal"
+            "options": "In-Tank\nExternal\nIn-Line"
           }
         },
         "filter-5": {
           "type": "filter",
           "settings": {
-            "label": "Horsepower",
+            "label": "0-1000",
             "param": "horsepower",
-            "options": "0-1000\n1000-2000\n2000+"
+            "options": "Up to 400 HP\n400-700 HP\n700-1200 HP\n1200+ HP"
           }
         }
       },
@@ -56,35 +56,27 @@
         "overlay_opacity": 80,
         "accent_color": "#f7c600",
         "heading": "Select Your Fuel System",
-        "search_url": "/collections/all",
+        "search_url": "/search",
         "search_label": "Search",
         "reset_label": "Reset filters",
         "show_calculator": true,
         "calc_heading": "Power-Flow Capacity Calculator",
-        "calc_subheading": "Calculate flow rate required given horsepower",
+        "calc_subheading": "Calculate flow rate required for given horsepower",
         "calc_button_text": "Calculate Now",
-        "calc_button_url": "/pages/calculator"
+        "calc_button_url": "/pages/fuel-pump-calculator"
       }
     },
     "main-page": {
       "type": "main-page",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "title_size": "h1"
-          }
-        },
         "content": {
           "type": "content",
           "settings": {}
         }
       },
       "block_order": [
-        "title",
         "content"
       ],
-      "disabled": true,
       "settings": {
         "text_alignment": "start",
         "spacing_desktop": 50,

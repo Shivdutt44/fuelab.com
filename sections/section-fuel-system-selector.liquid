@@ -11,6 +11,15 @@
   style="
     --fss-accent: {{ accent }};
     --fss-overlay: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    --fss-search-btn-color: {{ section.settings.search_btn_text_color }};
+    --fss-search-btn-size: {{ section.settings.search_btn_font_size }}px;
+    --fss-calc-btn-color: {{ section.settings.calc_btn_text_color }};
+    --fss-calc-btn-size: {{ section.settings.calc_btn_font_size }}px;
+    --fss-bar-padding: {{ section.settings.bar_padding }}px;
+    --fss-btn-padding-x: {{ section.settings.btn_padding_x }}px;
+    --fss-hero-padding-top: {{ section.settings.hero_padding_top }}px;
+    --fss-hero-padding-bottom: {{ section.settings.hero_padding_bottom }}px;
+    --fss-calc-padding: {{ section.settings.calc_padding }}px;
   "
 >
   <div class="fss__hero">
@@ -104,7 +113,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 48px 20px 70px;
+    padding: var(--fss-hero-padding-top, 48px) 20px var(--fss-hero-padding-bottom, 70px);
     overflow: hidden;
     background: #0a0a0a;
     min-height: 280px;
@@ -144,7 +153,7 @@
     max-width: 1240px;
     background: #111111;
     border-radius: 4px;
-    padding: 22px;
+    padding: var(--fss-bar-padding, 22px);
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -181,15 +190,15 @@
   }
   #fss-{{ section.id }} .fss__search-btn {
     height: 46px;
-    padding: 0 34px;
+    padding: 0 var(--fss-btn-padding-x, 34px);
     background: var(--fss-accent);
-    color: #111111;
+    color: var(--fss-search-btn-color, #111111);
     border: none;
     border-radius: 3px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    font-size: 14px;
+    font-size: var(--fss-search-btn-size, 14px);
     cursor: pointer;
     transition: filter 0.15s ease;
   }
@@ -217,7 +226,7 @@
   #fss-{{ section.id }} .fss__calc {
     background: #000000;
     text-align: center;
-    padding: 70px 20px;
+    padding: var(--fss-calc-padding, 70px) 20px;
   }
   #fss-{{ section.id }} .fss__calc-inner {
     max-width: 700px;
@@ -275,18 +284,21 @@
     var searchBtn = root.querySelector('[data-fss-search]');
     var resetBtn = root.querySelector('[data-fss-reset]');
     var selects = root.querySelectorAll('.fss__select');
-    var searchUrl = root.getAttribute('data-search-url') || '/collections/all';
+    var searchUrl = root.getAttribute('data-search-url') || '/search';
 
     if (searchBtn) {
       searchBtn.addEventListener('click', function () {
-        var params = new URLSearchParams();
+        var terms = [];
         selects.forEach(function (select) {
           if (select.value) {
-            params.set(select.getAttribute('data-filter-param'), select.value);
+            terms.push(select.value);
           }
         });
-        var query = params.toString();
-        window.location.href = query ? searchUrl + '?' + query : searchUrl;
+        if (!terms.length) return;
+        var params = new URLSearchParams();
+        params.set('q', terms.join(' '));
+        params.set('type', 'product');
+        window.location.href = searchUrl + '?' + params.toString();
       });
     }
 
@@ -335,8 +347,8 @@
       "type": "url",
       "id": "search_url",
       "label": "Search results URL",
-      "info": "Page the Search button redirects to, with selected filters appended as query parameters.",
-      "default": "/collections/all"
+      "info": "Selected filter values are sent here as a native Shopify product search query (?q=...&type=product).",
+      "default": "/search"
     },
     {
       "type": "text",
@@ -370,7 +382,7 @@
       "type": "text",
       "id": "calc_subheading",
       "label": "Subheading",
-      "default": "Calculate flow rate required given horsepower"
+      "default": "Calculate flow rate required for given horsepower"
     },
     {
       "type": "text",
@@ -381,7 +393,8 @@
     {
       "type": "url",
       "id": "calc_button_url",
-      "label": "Button link"
+      "label": "Button link",
+      "default": "/pages/fuel-pump-calculator"
     }
   ],
   "blocks": [

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:fuelab.com)",
+      "mcp__claude_ai_Shopify__graphql_query",
+      "mcp__claude_ai_Shopify__graphql_mutation"
+    ]
+  }
+}
