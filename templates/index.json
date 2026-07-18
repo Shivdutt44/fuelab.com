@@ -209,6 +209,7 @@
       ],
       "name": "Fuel system selector",
       "settings": {
+        "background_image": "shopify://shop_images/Quick_Service_surge_Tank.png",
         "overlay_opacity": 80,
         "accent_color": "#f7c600",
         "heading": "Select Your Fuel System",
