@@ -156,6 +156,81 @@
         "fix_zindex": 0
       }
     },
+    "section_fuel_system_selector_jdwDmR": {
+      "type": "section-fuel-system-selector",
+      "blocks": {
+        "filter_TCbBJP": {
+          "type": "filter",
+          "settings": {
+            "label": "Fuel System",
+            "param": "fuel_system",
+            "options": "Carbureted\nEFI\nDiesel"
+          }
+        },
+        "filter_DL7GYp": {
+          "type": "filter",
+          "settings": {
+            "label": "Application",
+            "param": "application",
+            "options": "Naturally Aspirated\nForced Induction"
+          }
+        },
+        "filter_WbXLxy": {
+          "type": "filter",
+          "settings": {
+            "label": "Fuel Type",
+            "param": "fuel_type",
+            "options": "Gasoline\nE85\nDiesel\nMethanol"
+          }
+        },
+        "filter_wbHXM7": {
+          "type": "filter",
+          "settings": {
+            "label": "Pump Location",
+            "param": "pump_location",
+            "options": "In-Tank\nExternal"
+          }
+        },
+        "filter_kJDayU": {
+          "type": "filter",
+          "settings": {
+            "label": "Horsepower",
+            "param": "horsepower",
+            "options": "0-1000\n1000-2000\n2000+"
+          }
+        }
+      },
+      "block_order": [
+        "filter_TCbBJP",
+        "filter_DL7GYp",
+        "filter_WbXLxy",
+        "filter_wbHXM7",
+        "filter_kJDayU"
+      ],
+      "name": "Fuel system selector",
+      "settings": {
+        "overlay_opacity": 80,
+        "accent_color": "#f7c600",
+        "heading": "Select Your Fuel System",
+        "search_url": "",
+        "search_label": "Search",
+        "reset_label": "Reset filters",
+        "search_btn_text_color": "#111111",
+        "search_btn_font_size": 14,
+        "calc_btn_text_color": "#111111",
+        "calc_btn_font_size": 17,
+        "btn_padding_x": 34,
+        "hero_padding_top": 50,
+        "hero_padding_bottom": 70,
+        "bar_padding": 22,
+        "calc_padding": 70,
+        "show_calculator": true,
+        "calc_heading": "Power-Flow Capacity Calculator",
+        "calc_subheading": "Calculate flow rate required for given horsepower",
+        "calc_button_text": "Calculate Now",
+        "calc_button_url": "shopify://pages/fuel-pump-calculator"
+      }
+    },
     "1653391228084c834a": {
       "type": "section-collection-list",
       "disabled": true,
@@ -935,6 +1010,7 @@
   "order": [
     "section_grid_z4HzFQ",
     "section_slideshow_6xUpAK",
+    "section_fuel_system_selector_jdwDmR",
     "1653391228084c834a",
     "section_featured_collection_xeEerP",
     "17834479092ee3a42c",
