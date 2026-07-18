@@ -32,7 +32,7 @@
     gap: 12px;
     position: relative;
     z-index: 10;
-    transform: translateY(28px); /* Exactly positioned over the yellow border line */
+    transform: translateY(28px);
     box-sizing: border-box;
     box-shadow: 0 15px 35px rgba(0,0,0,0.7);
   }
@@ -123,6 +123,9 @@
   .fuel-calc-bottom-content {
     margin-top: 100px;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers block items horizontally */
   }
 
   .fuel-calc-main-heading {
@@ -130,6 +133,7 @@
     font-weight: 700;
     margin: 0 0 6px 0;
     letter-spacing: -0.5px;
+    width: 100%;
   }
   
   .fuel-calc-sub-heading {
@@ -137,27 +141,38 @@
     font-weight: 400;
     margin: 0 0 25px 0;
     letter-spacing: 0.1px;
+    width: 100%;
   }
 
-  /* Exact Matched Yellow Calculate Button With Dark Circle Arrow Ring */
+  /* Center alignment container wrapper for the button */
+  .fuel-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  /* Exact Oval Pill Shaped Yellow Calculate Button */
   .fuel-calculate-action-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     background-color: #fecb00;
     color: #000000;
-    padding: 12px 24px;
+    padding: 14px 32px;
     font-size: 15px;
     font-weight: 700;
     border: none;
     cursor: pointer;
     text-transform: none;
-    border-radius: 0;
+    border-radius: 50px; /* Gives the perfect pill/oval shape like the image */
     box-sizing: border-box;
+    transition: background-color 0.2s, transform 0.2s;
   }
   .fuel-calculate-action-btn:hover {
     background-color: #e5b600;
+    transform: scale(1.02);
   }
   
   .fuel-calculate-action-btn svg {
@@ -263,12 +278,13 @@
     </div>
   </div>
 
-  <!-- Lower Main Content Area (Button is now correctly under heading and subheading) -->
+  <!-- Lower Main Content Area -->
   <div class="fuel-calc-bottom-content">
     <h2 class="fuel-calc-main-heading">{{ section.settings.headline_text }}</h2>
     <p class="fuel-calc-sub-heading">{{ section.settings.subheadline_text }}</p>
 
-    <div>
+    <!-- Correctly Centered Wrapper -->
+    <div class="fuel-btn-container">
       <button type="button" class="fuel-calculate-action-btn" id="calculate-cta-trigger">
         {{ section.settings.button_text_label }}
         <svg viewBox="0 0 24 24">
