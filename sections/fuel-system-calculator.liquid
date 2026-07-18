@@ -1,104 +1,101 @@
 {%- style -%}
-  .fuel-calc-section-{{ section.id }} {
+  .fuel-custom-section-{{ section.id }} {
     background-color: #000000;
-    padding: 0 0 80px 0;
-    font-family: Arial, sans-serif;
+    padding: 60px 0 80px 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     text-align: center;
     color: #ffffff;
     box-sizing: border-box;
+    position: relative;
   }
 
-  /* Upper Section Banner Layout with Exact Yellow Horizontal Line underneath */
-  .fuel-calc-stripe-bg {
+  /* Main background row container with exact yellow border design */
+  .fuel-calc-header-wrapper {
     position: relative;
     width: 100%;
-    padding: 60px 20px 0 20px;
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85));
+    padding: 0 20px;
     border-bottom: 4px solid #fecb00;
     box-sizing: border-box;
   }
 
-  .fuel-calc-top-title {
-    color: #fecb00;
-    font-weight: 900;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 24px;
-    letter-spacing: 1px;
-    margin: 0 0 25px 0;
-  }
-
-  /* Exact Matched Dark Selector Panel Grid Box in 1 Line */
-  .fuel-calc-panel {
+  /* Centered Horizontal Selector Panel Box */
+  .fuel-calc-main-panel {
     background-color: #111111;
-    border: 1px solid #282828;
+    border: 1px solid #1c1c1c;
     padding: 24px 20px;
-    max-width: 1140px;
+    max-width: 1180px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr) auto auto;
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 12px;
     position: relative;
-    z-index: 5;
-    transform: translateY(35px); /* Exactly hovering over the line */
+    z-index: 10;
+    transform: translateY(28px); /* Exactly positioned over the yellow border line */
     box-sizing: border-box;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
   }
 
-  /* Dropdown Styles */
-  .fuel-dropdown-item {
-    width: 100%;
+  /* Dropdown Individual Boxes styling */
+  .fuel-select-field-box {
+    flex: 1;
+    min-width: 0;
     position: relative;
   }
 
-  .fuel-dropdown-item select {
+  .fuel-select-field-box select {
     width: 100%;
     height: 48px;
     background-color: #ffffff;
-    color: #222222;
-    border: 1px solid #cccccc;
-    padding: 0 25px 0 12px;
-    font-size: 13px;
+    color: #111111;
+    border: 1px solid #dcdcdc;
+    padding: 0 30px 0 15px;
+    font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none; /* Keeps exact text case styling */
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%23222222' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%23111111' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
     background-repeat: no-repeat;
-    background-position: calc(100% - 12px) center;
+    background-position: calc(100% - 15px) center;
     border-radius: 0;
     box-sizing: border-box;
   }
 
-  /* Disabled State - Matches Image exactly with silver/gray look */
-  .fuel-dropdown-item.is-locked select {
-    color: #a0a0a0;
-    background-color: #f7f7f7;
+  /* Disabled State - Custom Locked look */
+  .fuel-select-field-box.is-disabled select {
+    color: #aaaaaa;
+    background-color: #ffffff;
     cursor: not-allowed;
+    border-color: #e6e6e6;
   }
 
-  /* Bright Yellow Search Button */
-  .fuel-btn-search {
+  /* Search Button Box */
+  .fuel-search-cta-btn {
     background-color: #fecb00;
     color: #000000;
     border: none;
     height: 48px;
-    padding: 0 25px;
-    font-size: 14px;
+    padding: 0 26px;
+    font-size: 15px;
     font-weight: 700;
     cursor: pointer;
     text-transform: capitalize;
     border-radius: 0;
     white-space: nowrap;
     box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
-  .fuel-btn-search:hover {
+  .fuel-search-cta-btn:hover {
     background-color: #e5b600;
   }
 
-  /* Custom Transparent Reset Box Button */
-  .fuel-btn-refresh {
+  /* Transparent Refresh Box Style */
+  .fuel-refresh-cta-btn {
     background-color: transparent;
     border: 1px solid #3a3a3a;
     color: #fecb00;
@@ -110,103 +107,106 @@
     cursor: pointer;
     border-radius: 0;
     box-sizing: border-box;
+    flex-shrink: 0;
   }
-  .fuel-btn-refresh:hover {
-    background-color: #222222;
+  .fuel-refresh-cta-btn:hover {
+    background-color: #1a1a1a;
     border-color: #fecb00;
   }
-  .fuel-btn-refresh svg {
+  .fuel-refresh-cta-btn svg {
     width: 20px;
     height: 20px;
     fill: currentColor;
   }
 
-  /* Lower Heading & Text Block */
-  .fuel-calc-content-block {
-    margin-top: 95px;
+  /* Text & Calculation Output Block */
+  .fuel-calc-bottom-content {
+    margin-top: 100px;
     padding: 0 20px;
   }
 
-  .fuel-calc-main-title {
+  .fuel-calc-main-heading {
     color: #fecb00;
     font-weight: 700;
-    margin: 0 0 5px 0;
+    margin: 0 0 6px 0;
     letter-spacing: -0.5px;
   }
   
-  .fuel-calc-sub-title {
+  .fuel-calc-sub-heading {
     color: #ffffff;
     font-weight: 400;
-    margin: 0 0 20px 0;
-    letter-spacing: 0.2px;
+    margin: 0 0 25px 0;
+    letter-spacing: 0.1px;
   }
 
-  /* Calculate Now Action Button Style matching perfectly */
-  .fuel-btn-calc-now {
+  /* Exact Matched Yellow Calculate Button With Dark Circle Arrow Ring */
+  .fuel-calculate-action-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     background-color: #fecb00;
     color: #000000;
-    padding: 10px 22px;
-    font-size: 14px;
+    padding: 12px 24px;
+    font-size: 15px;
     font-weight: 700;
     border: none;
     cursor: pointer;
-    text-transform: capitalize;
+    text-transform: none; /* Keeps Calculate Now case correct */
     border-radius: 0;
+    box-sizing: border-box;
   }
-  .fuel-btn-calc-now:hover {
+  .fuel-calculate-action-btn:hover {
     background-color: #e5b600;
   }
-  .fuel-btn-calc-now svg {
-    width: 16px;
-    height: 16px;
+  
+  /* Matches image dynamic icon format perfectly */
+  .fuel-calculate-action-btn svg {
+    width: 18px;
+    height: 18px;
     fill: #000000;
   }
 
-  /* Responsive Typography Settings via Schema Panels */
+  /* Dynamic Custom Text Responsive Size Engine via Schema Controls */
   @media screen and (min-width: 750px) {
-    .fuel-calc-main-title { font-size: {{ section.settings.d_h2_size }}px; }
-    .fuel-calc-sub-title { font-size: {{ section.settings.d_p_size }}px; }
+    .fuel-calc-main-heading { font-size: {{ section.settings.d_title_size }}px; }
+    .fuel-calc-sub-heading { font-size: {{ section.settings.d_subtitle_size }}px; }
   }
   @media screen and (max-width: 749px) {
-    .fuel-calc-main-title { font-size: {{ section.settings.m_h2_size }}px; }
-    .fuel-calc-sub-title { font-size: {{ section.settings.m_p_size }}px; }
+    .fuel-calc-main-heading { font-size: {{ section.settings.m_title_size }}px; }
+    .fuel-calc-sub-heading { font-size: {{ section.settings.m_subtitle_size }}px; }
   }
 
-  /* Responsive Device Layout Breakpoint Controls */
+  /* Full Layout Responsiveness for Tablet and Mobile devices */
   @media screen and (max-width: 991px) {
-    .fuel-calc-panel {
-      grid-template-columns: 1fr;
-      gap: 10px;
+    .fuel-calc-main-panel {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
       transform: translateY(0);
-      margin: 20px;
-      padding: 15px;
+      margin: 20px 10px;
+      padding: 20px 15px;
     }
-    .fuel-calc-stripe-bg {
+    .fuel-calc-header-wrapper {
       border-bottom: none;
-      padding-bottom: 10px;
     }
-    .fuel-calc-content-block {
-      margin-top: 30px;
+    .fuel-calc-bottom-content {
+      margin-top: 20px;
     }
-    .fuel-btn-refresh {
+    .fuel-select-field-box select, .fuel-search-cta-btn, .fuel-refresh-cta-btn {
       width: 100%;
     }
   }
 {%- endstyle -%}
 
-<div class="fuel-calc-section-{{ section.id }}">
+<div class="fuel-custom-section-{{ section.id }}">
   
-  <div class="fuel-calc-stripe-bg">
-    <h3 class="fuel-calc-top-title">{{ section.settings.top_title }}</h3>
-    
-    <div class="fuel-calc-panel">
+  <div class="fuel-calc-header-wrapper">
+    <div class="fuel-calc-main-panel">
+      
       <!-- 1. CARB OR EFI -->
-      <div class="fuel-dropdown-item">
-        <select id="calc-sel-1">
+      <div class="fuel-select-field-box" id="container-box-1">
+        <select id="engine-select-1">
           <option value="" disabled selected hidden>CARB OR EFI</option>
           <option value="Carbureted">Carbureted</option>
           <option value="Fuel Injected">Fuel Injected</option>
@@ -214,8 +214,8 @@
       </div>
 
       <!-- 2. INDUCTION -->
-      <div class="fuel-dropdown-item is-locked" id="wrap-sel-2">
-        <select id="calc-sel-2" disabled>
+      <div class="fuel-select-field-box is-disabled" id="container-box-2">
+        <select id="engine-select-2" disabled>
           <option value="" disabled selected hidden>INDUCTION</option>
           <option value="Forced Induction">Forced Induction</option>
           <option value="Naturally Aspirated">Naturally Aspirated</option>
@@ -223,8 +223,8 @@
       </div>
 
       <!-- 3. FUEL TYPE -->
-      <div class="fuel-dropdown-item is-locked" id="wrap-sel-3">
-        <select id="calc-sel-3" disabled>
+      <div class="fuel-select-field-box is-disabled" id="container-box-3">
+        <select id="engine-select-3" disabled>
           <option value="" disabled selected hidden>FUEL TYPE</option>
           <option value="Diesel">Diesel</option>
           <option value="E85">E85</option>
@@ -234,8 +234,8 @@
       </div>
 
       <!-- 4. MOUNTING CO -->
-      <div class="fuel-dropdown-item is-locked" id="wrap-sel-4">
-        <select id="calc-sel-4" disabled>
+      <div class="fuel-select-field-box is-disabled" id="container-box-4">
+        <select id="engine-select-4" disabled>
           <option value="" disabled selected hidden>MOUNTING CO</option>
           <option value="External">External</option>
           <option value="In-Tank">In-Tank</option>
@@ -243,8 +243,8 @@
       </div>
 
       <!-- 5. HORSEPOWER -->
-      <div class="fuel-dropdown-item is-locked" id="wrap-sel-5">
-        <select id="calc-sel-5" disabled>
+      <div class="fuel-select-field-box is-disabled" id="container-box-5">
+        <select id="engine-select-5" disabled>
           <option value="" disabled selected hidden>HORSEPOWER</option>
           <option value="0-1000">0-1000</option>
           <option value="1001-2000">1001-2000</option>
@@ -252,11 +252,11 @@
         </select>
       </div>
 
-      <!-- Action: Search -->
-      <button type="button" class="fuel-btn-search" id="btn-search-trigger">Search</button>
+      <!-- Search Trigger Button -->
+      <button type="button" class="fuel-search-cta-btn" id="search-cta-trigger">Search</button>
 
-      <!-- Action: Reset -->
-      <button type="button" class="fuel-btn-refresh" id="btn-refresh-trigger">
+      <!-- Refresh Trigger Button -->
+      <button type="button" class="fuel-refresh-cta-btn" id="refresh-cta-trigger" title="Reset Filters">
         <svg viewBox="0 0 24 24">
           <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
         </svg>
@@ -264,14 +264,14 @@
     </div>
   </div>
 
-  <!-- Lower Text Content Area -->
-  <div class="fuel-calc-content-block">
-    <h2 class="fuel-calc-main-title">{{ section.settings.heading_text }}</h2>
-    <p class="fuel-calc-sub-title">{{ section.settings.subheading_text }}</p>
+  <!-- Lower Main Content & Custom Action Area -->
+  <div class="fuel-calc-bottom-content">
+    <h2 class="fuel-calc-main-heading">{{ section.settings.headline_text }}</h2>
+    <p class="fuel-calc-sub-heading">{{ section.settings.subheadline_text }}</p>
 
     <div>
-      <button type="button" class="fuel-btn-calc-now" id="btn-calculate-trigger">
-        {{ section.settings.btn_label }}
+      <button type="button" class="fuel-calculate-action-btn" id="calculate-cta-trigger">
+        {{ section.settings.button_text_label }}
         <svg viewBox="0 0 24 24">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
         </svg>
@@ -283,108 +283,102 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const s1 = document.getElementById("calc-sel-1");
-  const s2 = document.getElementById("calc-sel-2");
-  const s3 = document.getElementById("calc-sel-3");
-  const s4 = document.getElementById("calc-sel-4");
-  const s5 = document.getElementById("calc-sel-5");
+  const select1 = document.getElementById("engine-select-1");
+  const select2 = document.getElementById("engine-select-2");
+  const select3 = document.getElementById("engine-select-3");
+  const select4 = document.getElementById("engine-select-4");
+  const select5 = document.getElementById("engine-select-5");
 
-  const w2 = document.getElementById("wrap-sel-2");
-  const w3 = document.getElementById("wrap-sel-3");
-  const w4 = document.getElementById("wrap-sel-4");
-  const w5 = document.getElementById("wrap-sel-5");
+  const box2 = document.getElementById("container-box-2");
+  const box3 = document.getElementById("container-box-3");
+  const box4 = document.getElementById("container-box-4");
+  const box5 = document.getElementById("container-box-5");
 
-  const tSearch = document.getElementById("btn-search-trigger");
-  const tRefresh = document.getElementById("btn-refresh-trigger");
-  const tCalc = document.getElementById("btn-calculate-trigger");
+  const clickSearch = document.getElementById("search-cta-trigger");
+  const clickRefresh = document.getElementById("refresh-cta-trigger");
+  const clickCalc = document.getElementById("calculate-cta-trigger");
 
-  // Dynamic Sequential Locks Logic
-  s1.addEventListener("change", function() {
-    if(s1.value) { s2.removeAttribute("disabled"); w2.classList.remove("is-locked"); }
+  // Step-by-Step Chain Flow Unlock Mechanism
+  select1.addEventListener("change", function() {
+    if(select1.value) { select2.removeAttribute("disabled"); box2.classList.remove("is-disabled"); }
   });
-  s2.addEventListener("change", function() {
-    if(s2.value) { s3.removeAttribute("disabled"); w3.classList.remove("is-locked"); }
+  select2.addEventListener("change", function() {
+    if(select2.value) { select3.removeAttribute("disabled"); box3.classList.remove("is-disabled"); }
   });
-  s3.addEventListener("change", function() {
-    if(s3.value) { s4.removeAttribute("disabled"); w4.classList.remove("is-locked"); }
+  select3.addEventListener("change", function() {
+    if(select3.value) { select4.removeAttribute("disabled"); box4.classList.remove("is-disabled"); }
   });
-  s4.addEventListener("change", function() {
-    if(s4.value) { s5.removeAttribute("disabled"); w5.classList.remove("is-locked"); }
-  });
-
-  // Reset Engine Action 
-  tRefresh.addEventListener("click", function() {
-    s1.selectedIndex = 0;
-    s2.selectedIndex = 0;
-    s3.selectedIndex = 0;
-    s4.selectedIndex = 0;
-    s5.selectedIndex = 0;
-
-    s2.setAttribute("disabled", "true");
-    s3.setAttribute("disabled", "true");
-    s4.setAttribute("disabled", "true");
-    s5.setAttribute("disabled", "true");
-
-    w2.classList.add("is-locked");
-    w3.classList.add("is-locked");
-    w4.classList.add("is-locked");
-    w5.classList.add("is-locked");
+  select4.addEventListener("change", function() {
+    if(select4.value) { select5.removeAttribute("disabled"); box5.classList.remove("is-disabled"); }
   });
 
-  // Corrected Dynamic Search Submission Engine
-  function performShopifySearch() {
-    let terms = [];
-    if (s1.value) terms.push(s1.value);
-    if (s2.value) terms.push(s2.value);
-    if (s3.value) terms.push(s3.value);
-    if (s4.value) terms.push(s4.value);
-    if (s5.value) terms.push(s5.value);
+  // Reset/Refresh Application Trigger Flow
+  clickRefresh.addEventListener("click", function() {
+    select1.selectedIndex = 0;
+    select2.selectedIndex = 0;
+    select3.selectedIndex = 0;
+    select4.selectedIndex = 0;
+    select5.selectedIndex = 0;
 
-    if (terms.length === 0) {
-      alert("Please select filters to search.");
+    select2.setAttribute("disabled", "true");
+    select3.setAttribute("disabled", "true");
+    select4.setAttribute("disabled", "true");
+    select5.setAttribute("disabled", "true");
+
+    box2.classList.add("is-disabled");
+    box3.classList.add("is-disabled");
+    box4.classList.add("is-disabled");
+    box5.classList.add("is-disabled");
+  });
+
+  // Dynamic Search Parameters Forward Route Execution
+  function executeProductQuery() {
+    let queryValues = [];
+    if(select1.value) queryValues.push(select1.value);
+    if(select2.value) queryValues.push(select2.value);
+    if(select3.value) queryValues.push(select3.value);
+    if(select4.value) queryValues.push(select4.value);
+    if(select5.value) queryValues.push(select5.value);
+
+    if(queryValues.length === 0) {
+      alert("Please select at least one dropdown criteria option.");
       return;
     }
 
-    // Direct redirection to dynamic shopify product search catalog archive
-    let queryString = terms.map(t => encodeURIComponent(t)).join("+");
-    window.location.href = "/search?type=product&q=" + queryString;
+    // Creating target string search parameters for Shopify Storefront Catalog Filter Engine
+    let buildSearchString = queryValues.map(val => encodeURIComponent(val)).join("+");
+    window.location.href = window.Shopify.routes.root + "search?type=product&q=" + buildSearchString;
   }
 
-  tSearch.addEventListener("click", performShopifySearch);
-  tCalc.addEventListener("click", performShopifySearch);
+  clickSearch.addEventListener("click", executeProductQuery);
+  clickCalc.addEventListener("click", executeProductQuery);
 });
 </script>
 
 {% schema %}
 {
-  "name": "Fuel Calculator Perfect",
+  "name": "Fuel Calculator Ultimate",
   "settings": [
     {
       "type": "text",
-      "id": "top_title",
-      "label": "Top Title",
-      "default": "SELECT YOUR FUEL SYSTEM"
-    },
-    {
-      "type": "text",
-      "id": "heading_text",
+      "id": "headline_text",
       "label": "Heading Text",
       "default": "Power-Flow Capacity Calculator"
     },
     {
       "type": "range",
-      "id": "d_h2_size",
-      "min": 18,
+      "id": "d_title_size",
+      "min": 16,
       "max": 60,
       "step": 1,
       "unit": "px",
       "label": "Heading Font Size (Desktop)",
-      "default": 34
+      "default": 36
     },
     {
       "type": "range",
-      "id": "m_h2_size",
-      "min": 14,
+      "id": "m_title_size",
+      "min": 12,
       "max": 40,
       "step": 1,
       "unit": "px",
@@ -393,40 +387,40 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       "type": "text",
-      "id": "subheading_text",
+      "id": "subheadline_text",
       "label": "Subheading Text",
       "default": "Calculate flow rate required given horsepower"
     },
     {
       "type": "range",
-      "id": "d_p_size",
+      "id": "d_subtitle_size",
       "min": 12,
-      "max": 28,
+      "max": 30,
       "step": 1,
       "unit": "px",
       "label": "Subheading Font Size (Desktop)",
-      "default": 16
+      "default": 18
     },
     {
       "type": "range",
-      "id": "m_p_size",
+      "id": "m_subtitle_size",
       "min": 10,
-      "max": 22,
+      "max": 24,
       "step": 1,
       "unit": "px",
       "label": "Subheading Font Size (Mobile)",
-      "default": 13
+      "default": 14
     },
     {
       "type": "text",
-      "id": "btn_label",
-      "label": "Calculate Button Text",
+      "id": "button_text_label",
+      "label": "Calculate Action Text",
       "default": "Calculate Now"
     }
   ],
   "presets": [
     {
-      "name": "Fuel Calculator Perfect",
+      "name": "Fuel Calculator Ultimate",
       "category": "Custom Sections"
     }
   ]
