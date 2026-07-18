@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "fuel_pump_calculator": {
+      "type": "section-fuel-pump-calculator",
+      "settings": {
+        "accent_color": "#f7c600",
+        "heading": "Power-Flow Capacity Calculator",
+        "intro_text": "This calculator is designed to estimate fuel needs based on desired horsepower, fuel pressure, and fuel type.",
+        "disclaimer": "These values are based on a calculated estimation and are not guaranteed. Please refer to your tuner or engine builder for recommended fuel pump and injector size."
+      }
+    }
+  },
+  "order": [
+    "fuel_pump_calculator"
+  ]
+}

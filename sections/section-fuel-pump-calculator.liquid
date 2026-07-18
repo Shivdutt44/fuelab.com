@@ -1,0 +1,646 @@
+{%- liquid
+  assign accent = section.settings.accent_color
+-%}
+
+<div class="fpc" id="fpc-{{ section.id }}" style="--fpc-accent: {{ accent }};">
+  
+  {% comment %} 1. Gradient Header Banner {% endcomment %}
+  <div class="fpc__header">
+    <div class="fpc__header-inner">
+      {%- if section.settings.heading != blank -%}
+        <h1 class="fpc__heading">{{ section.settings.heading }}</h1>
+      {%- endif -%}
+      {%- if section.settings.subtitle != blank -%}
+        <p class="fpc__subtitle">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {% comment %} 2. Main Content Wrapper {% endcomment %}
+  <div class="fpc__content">
+    
+    <div class="fpc__columns">
+      {% comment %} Left Column - Form Card {% endcomment %}
+      <div class="fpc__form-column">
+        <form class="fpc__form" id="fpc-form-{{ section.id }}" onsubmit="return false;">
+          <div class="fpc__field">
+            <label for="fpc-fuel-type-{{ section.id }}">Choose Fuel Type</label>
+            <div class="fpc__select-wrapper">
+              <select id="fpc-fuel-type-{{ section.id }}" class="fpc__select" data-fpc-fuel-type>
+                <option value="gasoline" selected>Gasoline</option>
+                <option value="e85">E85</option>
+                <option value="methanol">Methanol</option>
+              </select>
+            </div>
+          </div>
+          <div class="fpc__field">
+            <label for="fpc-hp-{{ section.id }}">Horsepower (Est)</label>
+            <input type="number" id="fpc-hp-{{ section.id }}" class="fpc__input" data-fpc-hp placeholder="0 BHP" min="0" step="1">
+          </div>
+          <div class="fpc__field">
+            <label for="fpc-press-{{ section.id }}">Fuel Press</label>
+            <input type="number" id="fpc-press-{{ section.id }}" class="fpc__input" data-fpc-press placeholder="0 PSIG" min="0" step="0.5">
+          </div>
+          <div class="fpc__form-actions">
+            <button type="button" class="fpc__calculate-btn" data-fpc-calculate>Calculate</button>
+            <button type="button" class="fpc__reset-btn" data-fpc-reset aria-label="Reset Calculator">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.57a10 10 0 0 1 18.83-5.14M22 12.43a10 10 0 0 1-18.83 5.14"/>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      {% comment %} Right Column - Text Description {% endcomment %}
+      <div class="fpc__info-column">
+        {%- if section.settings.info_heading != blank -%}
+          <h2 class="fpc__info-heading">{{ section.settings.info_heading }}</h2>
+        {%- endif -%}
+        <div class="fpc__info-text">
+          {%- if section.settings.intro_text != blank -%}
+            <p>{{ section.settings.intro_text | newline_to_br }}</p>
+          {%- endif -%}
+          {%- if section.settings.sub_text != blank -%}
+            <p>{{ section.settings.sub_text | newline_to_br }}</p>
+          {%- endif -%}
+          {%- if section.settings.disclaimer != blank -%}
+            <p class="fpc__info-disclaimer"><strong>{{ section.settings.disclaimer }}</strong></p>
+          {%- endif -%}
+        </div>
+        {%- if section.settings.shop_link_text != blank -%}
+          <div class="fpc__shop-link-wrapper">
+            <a href="{{ section.settings.shop_link_url | default: '/collections/all' }}" class="fpc__shop-link">
+              {{ section.settings.shop_link_text }}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {% comment %} Results Table (initially hidden, fades in) {% endcomment %}
+    <div class="fpc__results-wrapper" data-fpc-results-wrapper style="display: none; opacity: 0;">
+      <div class="fpc__results-divider"></div>
+      <h3 class="fpc__results-heading" data-fpc-results-heading></h3>
+      <div class="fpc__results">
+        <table class="fpc__table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Mass Flow Rate (LB/HR)</th>
+              <th scope="col">Gallons Per Hour (GPH)</th>
+              <th scope="col">Gallons Per Minute (GPM)</th>
+              <th scope="col">Liters Per Hour (LPH)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">N.A</th>
+              <td data-fpc-result="na-lbhr">0</td>
+              <td data-fpc-result="na-gph">0</td>
+              <td data-fpc-result="na-gpm">0</td>
+              <td data-fpc-result="na-lph">0</td>
+            </tr>
+            <tr>
+              <th scope="row">Nitrous</th>
+              <td data-fpc-result="nitrous-lbhr">0</td>
+              <td data-fpc-result="nitrous-gph">0</td>
+              <td data-fpc-result="nitrous-gpm">0</td>
+              <td data-fpc-result="nitrous-lph">0</td>
+            </tr>
+            <tr>
+              <th scope="row">Forced</th>
+              <td data-fpc-result="forced-lbhr">0</td>
+              <td data-fpc-result="forced-gph">0</td>
+              <td data-fpc-result="forced-gpm">0</td>
+              <td data-fpc-result="forced-lph">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  #fpc-{{ section.id }} {
+    background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333333;
+    padding: 0 0 60px 0;
+  }
+  
+  /* Header Banner */
+  #fpc-{{ section.id }} .fpc__header {
+    background: linear-gradient(180deg, #333333 0%, #000000 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--fpc-accent);
+    margin-bottom: 50px;
+  }
+  #fpc-{{ section.id }} .fpc__header-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  #fpc-{{ section.id }} .fpc__heading {
+    color: var(--fpc-accent);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    font-size: clamp(28px, 5vw, 46px);
+    margin: 0 0 12px 0;
+    line-height: 1.1;
+  }
+  #fpc-{{ section.id }} .fpc__subtitle {
+    color: #ffffff;
+    font-size: clamp(14px, 2.5vw, 18px);
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.95;
+    letter-spacing: 0.02em;
+  }
+
+  /* Main Container */
+  #fpc-{{ section.id }} .fpc__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Two Column Grid */
+  #fpc-{{ section.id }} .fpc__columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 50px;
+  }
+
+  /* Left Column: Form Card */
+  #fpc-{{ section.id }} .fpc__form-column {
+    width: 100%;
+  }
+  #fpc-{{ section.id }} .fpc__form {
+    background: #000000;
+    padding: 35px 30px;
+    border-radius: 6px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+    border-top: 4px solid var(--fpc-accent);
+  }
+  #fpc-{{ section.id }} .fpc__field {
+    margin-bottom: 24px;
+  }
+  #fpc-{{ section.id }} .fpc__field label {
+    display: block;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  #fpc-{{ section.id }} .fpc__select-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  #fpc-{{ section.id }} .fpc__select,
+  #fpc-{{ section.id }} .fpc__input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  #fpc-{{ section.id }} .fpc__select:focus,
+  #fpc-{{ section.id }} .fpc__input:focus {
+    border-color: var(--fpc-accent);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 210, 4, 0.25);
+  }
+  #fpc-{{ section.id }} .fpc__select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1.5L6 6.5L11 1.5' stroke='%23333333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    cursor: pointer;
+    padding-right: 40px;
+  }
+
+  /* Form Action Buttons */
+  #fpc-{{ section.id }} .fpc__form-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    margin-top: 30px !important;
+  }
+  #fpc-{{ section.id }} .fpc__calculate-btn {
+    flex: 1 !important;
+    height: 46px !important;
+    background: var(--fpc-accent) !important;
+    color: #111111 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    text-transform: none !important; /* mixed case, as in screenshot */
+    letter-spacing: normal !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease, transform 0.1s ease !important;
+  }
+  #fpc-{{ section.id }} .fpc__calculate-btn:hover {
+    background: #e6bd00 !important;
+  }
+  #fpc-{{ section.id }} .fpc__calculate-btn:active {
+    transform: scale(0.98) !important;
+  }
+  #fpc-{{ section.id }} .fpc__reset-btn {
+    width: 46px !important;
+    height: 46px !important;
+    background: transparent !important;
+    color: var(--fpc-accent) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    transition: transform 0.2s ease, opacity 0.2s ease !important;
+  }
+  #fpc-{{ section.id }} .fpc__reset-btn:hover {
+    background: transparent !important;
+    opacity: 0.85 !important;
+  }
+  #fpc-{{ section.id }} .fpc__reset-btn:active {
+    transform: scale(0.9) !important;
+  }
+  #fpc-{{ section.id }} .fpc__reset-btn svg {
+    width: 24px !important;
+    height: 24px !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    stroke: var(--fpc-accent) !important;
+  }
+  #fpc-{{ section.id }} .fpc__reset-btn:hover svg {
+    transform: rotate(-180deg) !important;
+  }
+
+  /* Right Column: Info Column */
+  #fpc-{{ section.id }} .fpc__info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+  #fpc-{{ section.id }} .fpc__info-heading {
+    font-size: 28px;
+    font-weight: 850;
+    color: #000000;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+  }
+  #fpc-{{ section.id }} .fpc__info-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin: 0 0 18px 0;
+  }
+  #fpc-{{ section.id }} .fpc__info-text p.fpc__info-disclaimer {
+    color: #000000;
+    font-size: 14px;
+    border-left: 3px solid var(--fpc-accent);
+    padding-left: 14px;
+    margin-top: 25px;
+  }
+  #fpc-{{ section.id }} .fpc__shop-link-wrapper {
+    margin-top: 20px;
+  }
+  #fpc-{{ section.id }} .fpc__shop-link {
+    display: inline-block;
+    font-weight: 900;
+    color: #000000;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    transition: color 0.2s ease;
+  }
+  #fpc-{{ section.id }} .fpc__shop-link:hover {
+    color: var(--fpc-accent);
+  }
+
+  /* Results Table Area */
+  #fpc-{{ section.id }} .fpc__results-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(15px);
+  }
+  #fpc-{{ section.id }} .fpc__results-wrapper.is-visible {
+    transform: translateY(0);
+  }
+  #fpc-{{ section.id }} .fpc__results-divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 20px 0 40px 0;
+  }
+  #fpc-{{ section.id }} .fpc__results-heading {
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    color: #333333;
+    margin: 0 0 15px 0;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  #fpc-{{ section.id }} .fpc__results {
+    overflow-x: auto;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  #fpc-{{ section.id }} .fpc__table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  #fpc-{{ section.id }} .fpc__table th,
+  #fpc-{{ section.id }} .fpc__table td {
+    padding: 16px 20px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  #fpc-{{ section.id }} .fpc__table thead th {
+    color: #000000;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: var(--fpc-accent);
+    border-bottom: 1px solid #e8e8e8;
+  }
+  #fpc-{{ section.id }} .fpc__table tbody th {
+    text-align: left;
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    background: #ffffff;
+  }
+  #fpc-{{ section.id }} .fpc__table tbody tr:nth-child(even) {
+    background: #fcfcfc;
+  }
+  #fpc-{{ section.id }} .fpc__table tbody tr:nth-child(even) th {
+    background: #fcfcfc;
+  }
+  #fpc-{{ section.id }} .fpc__table tbody tr:last-child td,
+  #fpc-{{ section.id }} .fpc__table tbody tr:last-child th {
+    border-bottom: none;
+  }
+
+  /* Responsive styling */
+  @media only screen and (max-width: 900px) {
+    #fpc-{{ section.id }} .fpc__columns {
+      gap: 35px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    #fpc-{{ section.id }} .fpc__columns {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    #fpc-{{ section.id }} .fpc__info-column {
+      order: -1; /* Display text above form on mobile */
+      text-align: center;
+      align-items: center;
+      padding-top: 0;
+    }
+    #fpc-{{ section.id }} .fpc__info-heading {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    #fpc-{{ section.id }} .fpc__info-text p.fpc__info-disclaimer {
+      text-align: left;
+    }
+    #fpc-{{ section.id }} .fpc__header {
+      padding: 50px 15px;
+      margin-bottom: 35px;
+    }
+    #fpc-{{ section.id }} .fpc__table th,
+    #fpc-{{ section.id }} .fpc__table td {
+      padding: 14px 12px;
+      font-size: 13px;
+    }
+    #fpc-{{ section.id }} .fpc__table thead th {
+      font-size: 11px;
+      padding: 14px 10px;
+    }
+    #fpc-{{ section.id }} .fpc__table tbody th {
+      font-size: 14px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var root = document.getElementById('fpc-{{ section.id }}');
+    if (!root) return;
+
+    var fuelTypeEl = root.querySelector('[data-fpc-fuel-type]');
+    var hpEl = root.querySelector('[data-fpc-hp]');
+    var pressEl = root.querySelector('[data-fpc-press]');
+    var calcBtn = root.querySelector('[data-fpc-calculate]');
+    var resetBtn = root.querySelector('[data-fpc-reset]');
+    var resultsWrapper = root.querySelector('[data-fpc-results-wrapper]');
+    var resultsHeading = root.querySelector('[data-fpc-results-heading]');
+
+    // Math Constants based on reference site
+    var BASE_BSFC = 0.44;
+    var MULTIPLIER_COEFFICIENTS = {
+      na: { gasoline: 1.0, e85: 1.4, methanol: 2.2 },
+      nitrous: { gasoline: 1.2, e85: 1.6, methanol: 2.2 },
+      forced: { gasoline: 1.4, e85: 1.9, methanol: 3.6 }
+    };
+    var FUEL_DENSITY = { gasoline: 6.0, e85: 6.5, methanol: 6.5 };
+    var LITERS_PER_GALLON = 3.785411784;
+
+    function setResult(key, value) {
+      var el = root.querySelector('[data-fpc-result="' + key + '"]');
+      if (el) el.textContent = value;
+    }
+
+    function calculate() {
+      var fuelType = fuelTypeEl.value;
+      var hp = parseFloat(hpEl.value) || 0;
+      var press = parseFloat(pressEl.value) || 0;
+
+      // Handle pressure compensation degradation
+      var pressCompDenominator = 1 - (press / 224.82);
+      if (pressCompDenominator <= 0.01) {
+        pressCompDenominator = 0.01; // Avoid division by zero or negative flow
+      }
+
+      var density = FUEL_DENSITY[fuelType] || FUEL_DENSITY.gasoline;
+
+      ['na', 'nitrous', 'forced'].forEach(function (application) {
+        var multiplier = MULTIPLIER_COEFFICIENTS[application][fuelType] || 1.0;
+        
+        // 1. Required engine mass flow (LB/HR)
+        var requiredEngineFlow = hp * BASE_BSFC * multiplier;
+        
+        // 2. Required pump mass flow compensated for pressure (LB/HR)
+        var lbHr = requiredEngineFlow / pressCompDenominator;
+        
+        // 3. Volumetric flows
+        var gph = lbHr / density;
+        var gpm = gph / 60;
+        var lph = gph * LITERS_PER_GALLON;
+
+        setResult(application + '-lbhr', lbHr.toFixed(2));
+        setResult(application + '-gph', gph.toFixed(2));
+        setResult(application + '-gpm', gpm.toFixed(2));
+        setResult(application + '-lph', lph.toFixed(2));
+      });
+
+      // Update results heading to selected fuel + (Q High)
+      var fuelNames = { gasoline: 'Gasoline', e85: 'E85', methanol: 'Methanol' };
+      var fuelName = fuelNames[fuelType] || fuelType;
+      if (resultsHeading) {
+        resultsHeading.textContent = fuelName + ' (Q High)';
+      }
+
+      // Animate results table in
+      resultsWrapper.style.display = 'block';
+      // Force repaint to allow transition
+      resultsWrapper.offsetHeight;
+      resultsWrapper.style.opacity = '1';
+      resultsWrapper.classList.add('is-visible');
+
+      // Scroll smoothly to results
+      resultsWrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function resetCalculator() {
+      // Clear inputs
+      hpEl.value = '';
+      pressEl.value = '';
+      fuelTypeEl.selectedIndex = 0;
+
+      // Reset results heading
+      if (resultsHeading) {
+        resultsHeading.textContent = '';
+      }
+
+      // Reset output table cells to 0
+      ['na', 'nitrous', 'forced'].forEach(function (application) {
+        setResult(application + '-lbhr', '0');
+        setResult(application + '-gph', '0');
+        setResult(application + '-gpm', '0');
+        setResult(application + '-lph', '0');
+      });
+
+      // Animate results table out
+      resultsWrapper.style.opacity = '0';
+      resultsWrapper.classList.remove('is-visible');
+      setTimeout(function () {
+        resultsWrapper.style.display = 'none';
+      }, 400);
+    }
+
+    if (calcBtn) {
+      calcBtn.addEventListener('click', calculate);
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', resetCalculator);
+    }
+
+    // Support calculating on pressing Enter key
+    var triggerCalculateOnEnter = function (e) {
+      if (e.key === 'Enter') {
+        calculate();
+      }
+    };
+    if (hpEl) hpEl.addEventListener('keydown', triggerCalculateOnEnter);
+    if (pressEl) pressEl.addEventListener('keydown', triggerCalculateOnEnter);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Fuel pump calculator",
+  "settings": [
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#FFD204"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Banner Heading",
+      "default": "Fuel Pump Calculator"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Banner Subtitle",
+      "default": "Calculate flow rate required given horsepower"
+    },
+    {
+      "type": "text",
+      "id": "info_heading",
+      "label": "Info Column Heading",
+      "default": "Fuel Pump Calculator"
+    },
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Intro Paragraph",
+      "default": "This calculator is designed to estimate fuel needs based on desired horsepower, fuel pressure, and fuel type. Once you select those values it will populate an estimated fuel pump flow rate required to meet your needs."
+    },
+    {
+      "type": "textarea",
+      "id": "sub_text",
+      "label": "Secondary Paragraph",
+      "default": "Select your fuel type, key in your desired horsepower and fuel pressure and it will generate fuel requirements for Naturally Aspirated, Nitrous, and Forced Induction Applications."
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer",
+      "label": "Disclaimer text",
+      "default": "**These values are based on a calculated estimation and are not guaranteed. Please refer to your tuner or engine builder for recommended fuel pump and injector size.**"
+    },
+    {
+      "type": "text",
+      "id": "shop_link_text",
+      "label": "Shop Link Text",
+      "default": "CLICK HERE TO SHOP FUEL PUMPS!"
+    },
+    {
+      "type": "url",
+      "id": "shop_link_url",
+      "label": "Shop Link URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fuel pump calculator",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
