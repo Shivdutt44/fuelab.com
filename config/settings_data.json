@@ -52,7 +52,7 @@
     "multiply_collection_images": "none",
     "everything_rounded": false,
     "button_height": "size-s",
-    "button_style": "plain",
+    "button_style": "solid",
     "button_rounded": "slightly-rounded",
     "button_font": "body",
     "button_font_weight": "600",

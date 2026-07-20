@@ -246,7 +246,7 @@
       "type": "section-featured-collection",
       "name": "t:sections.featured_collection.presets.name",
       "settings": {
-        "collection": "253-series-universal-in-tank-brushless-kits",
+        "collection": "fuel-pumps",
         "layout": "grid",
         "limit": 4,
         "number_of_items": 4,
