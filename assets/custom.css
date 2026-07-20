@@ -118,3 +118,20 @@
   }
 {% endstyle %}
 
+/* Parent element ko Flexbox container banayein */
+p.link-btn.wide.m10 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important; /* Dono buttons ke beech ka gap */
+}
+
+/* Absolute positioning reset karein aur full width karein */
+.overlay-buy_button {
+  position: relative !important; /* ya static */
+  top: auto !important;
+  left: auto !important;
+  display: flex !important;
+  justify-content: center;
+  align-content: center;
+  width: 100% !important;
+}
