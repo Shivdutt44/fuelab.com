@@ -191,231 +191,33 @@
         "fix_zindex": 0
       }
     },
-    "section_rich_text_D3ttgC": {
-      "type": "section-rich-text",
-      "blocks": {
-        "title_FwCjbP": {
-          "type": "title",
-          "settings": {
-            "title": "<h2><strong>Shop by Categories</strong></h2>",
-            "title_underline_style": "none"
-          }
-        },
-        "content_LcEjBj": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "page": "",
-            "text": ""
-          }
-        },
-        "button_bdxwbL": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "Button",
-            "link_url": "/",
-            "button_style": "secondary plain"
-          }
-        }
-      },
-      "block_order": [
-        "title_FwCjbP",
-        "content_LcEjBj",
-        "button_bdxwbL"
-      ],
-      "name": "t:sections.rich_text.presets.name",
+    "section_collection_list_4GjMHJ": {
+      "type": "section-collection-list",
+      "name": "t:sections.collection_list.presets.name",
       "settings": {
-        "color_palette": "",
-        "overlay_opacity": 100,
-        "text_alignment": "center",
-        "content_width": 1280,
-        "height": "size-s",
-        "width_banner": "boxed",
+        "collections": [
+          "diesel-fuel-filtration",
+          "diesel-performance",
+          "fuel-filters",
+          "fuel-pumps",
+          "fuel-systems",
+          "installation-kits",
+          "power-packs"
+        ],
+        "image_ratio": "square",
+        "fill_images": false,
+        "layout": "slider",
+        "number_of_items": 5,
+        "text_alignment": "start",
         "width": "boxed",
-        "spacing_desktop": 0,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "section_grid_EUPGRd": {
-      "type": "section-grid",
-      "blocks": {
-        "image_qRkdmD": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fuel_Pumps.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/fuel-pumps\" title=\"Fuel Pumps\">Fuel Pumps</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "",
-            "link_url": "shopify://collections/fuel-pumps",
-            "button_style": "primary link",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_Xcf6Vp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fuel_Filters.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/fuel-filters\" title=\"Fuel Filters\">Fuel Filters</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_TBy7T9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fuel_Pressure_Regulator.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/fuel-pressure-regulators\" title=\"Fuel Pressure Regulators\">Fuel Pressure Regulators</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_k7BEyb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fuel_System.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/fuel-systems\" title=\"Fuel Systems\">Fuel Systems</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_JKJya3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Diesel_Performance.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/diesel-performance\" title=\"Diesel Performance\">Diesel Performance</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_FBRTwV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Accesories.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/accessories\" title=\"Fuel System Accessories\">Accessories</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        }
-      },
-      "block_order": [
-        "image_qRkdmD",
-        "image_Xcf6Vp",
-        "image_TBy7T9",
-        "image_k7BEyb",
-        "image_JKJya3",
-        "image_FBRTwV"
-      ],
-      "name": "t:sections.grid.presets.name",
-      "settings": {
-        "number_of_columns": "6",
-        "height": "size-m",
-        "width": "boxed",
-        "space_between": 10,
-        "image_zoom": true,
-        "image_move": false,
-        "layout_mobile": "rows",
-        "mobile_height": "size-s",
+        "title": "<h2><strong>Shop By Categories </strong></h2>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "Shop All",
+        "link_url": "shopify://collections",
+        "button_style": "primary plain",
+        "collection_title_size": "h4",
+        "mobile_layout": "grid",
         "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
@@ -449,29 +251,76 @@
         "fix_zindex": 0
       }
     },
-    "17834479092ee3a42c": {
-      "type": "_blocks",
+    "section_image_hotspots_4VYzgD": {
+      "type": "section-image-hotspots",
       "blocks": {
-        "ecom_reviews_expert_rating_badge_ULKEyc": {
-          "type": "shopify://apps/ecom-reviews-expert/blocks/rating_badge/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
-          "settings": {}
+        "hotspot_MkQNxJ": {
+          "type": "hotspot",
+          "settings": {
+            "product": "",
+            "text_position": "text-start",
+            "title": "Image hotspot",
+            "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+            "position_left": 70,
+            "position_top": 20,
+            "position_left_mobile": 70,
+            "position_top_mobile": 20
+          }
+        },
+        "hotspot_VwRnpB": {
+          "type": "hotspot",
+          "settings": {
+            "product": "",
+            "text_position": "text-start",
+            "title": "Image hotspot",
+            "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+            "position_left": 30,
+            "position_top": 50,
+            "position_left_mobile": 30,
+            "position_top_mobile": 50
+          }
+        },
+        "hotspot_mC4EAL": {
+          "type": "hotspot",
+          "settings": {
+            "product": "",
+            "text_position": "text-start",
+            "title": "Image hotspot",
+            "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+            "position_left": 50,
+            "position_top": 70,
+            "position_left_mobile": 50,
+            "position_top_mobile": 70
+          }
         }
       },
       "block_order": [
-        "ecom_reviews_expert_rating_badge_ULKEyc"
+        "hotspot_MkQNxJ",
+        "hotspot_VwRnpB",
+        "hotspot_mC4EAL"
       ],
+      "name": "t:sections.image_hotspots.presets.name",
       "settings": {
-        "color_palette": "",
-        "overlay_opacity": 100,
-        "width": "boxed",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "padding_left_mobile": 0,
-        "padding_right_mobile": 0,
+        "image": "shopify://shop_images/Quick_Service_surge_Tank.png",
+        "overlay_opacity": 0,
+        "color_palette": "scheme-2",
+        "hotspot_height": 39,
+        "hotspot_color_palette": "primary",
+        "layout": "right",
+        "height": "16/9",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width_banner": "boxed",
+        "width": "wide",
+        "text_position": "align-start text-start",
+        "title": "<h2>Image hotspot banner</h2>",
+        "title_underline_style": "none",
+        "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+        "show_link": true,
+        "link_text": "Explore All",
+        "link_url": "/",
+        "button_style": "secondary inv",
+        "height_mobile": "1/1",
         "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
@@ -500,34 +349,6 @@
         "enable_color_picker": true,
         "enable_quick_buy_compact": true,
         "mobile_layout": "slider",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "178344775174928417": {
-      "type": "_blocks",
-      "blocks": {
-        "ecom_reviews_expert_carousel_dMBLx6": {
-          "type": "shopify://apps/ecom-reviews-expert/blocks/carousel/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "ecom_reviews_expert_carousel_dMBLx6"
-      ],
-      "settings": {
-        "color_palette": "",
-        "overlay_opacity": 100,
-        "width": "boxed",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "padding_left_mobile": 0,
-        "padding_right_mobile": 0,
         "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
@@ -570,12 +391,10 @@
   "order": [
     "section_grid_z4HzFQ",
     "section_promo_gallery_KH9cgb",
-    "section_rich_text_D3ttgC",
-    "section_grid_EUPGRd",
+    "section_collection_list_4GjMHJ",
     "section_featured_collection_xeEerP",
-    "17834479092ee3a42c",
+    "section_image_hotspots_4VYzgD",
     "section_featured_collection_YByJiQ",
-    "178344775174928417",
     "1782912292bb391f4e"
   ]
 }
