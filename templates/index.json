@@ -443,6 +443,72 @@
         "fix_zindex": 0
       }
     },
+    "section_faq_cc8JjX": {
+      "type": "section-faq",
+      "blocks": {
+        "text_9BaHwT": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Collapsible row",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Row content</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_9ELpAf": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Collapsible row",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Row content</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_yggBBN": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Collapsible row",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Row content</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "text_9BaHwT",
+        "text_9ELpAf",
+        "text_yggBBN"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "alignment": "center",
+        "compact": true,
+        "width": "boxed",
+        "title": "<h2>FREQUENTLY ASKED QUESTIONS</h2>",
+        "title_underline_style": "none",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
     "1782912292bb391f4e": {
       "type": "_blocks",
       "blocks": {
@@ -480,6 +546,7 @@
     "section_featured_collection_xeEerP",
     "section_image_hotspots_4VYzgD",
     "section_featured_collection_YByJiQ",
+    "section_faq_cc8JjX",
     "1782912292bb391f4e"
   ]
 }
