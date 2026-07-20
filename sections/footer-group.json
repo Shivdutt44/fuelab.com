@@ -54,7 +54,7 @@
         "menu_EtyHQA": {
           "type": "menu",
           "settings": {
-            "menu": "policies",
+            "menu": "main-menu",
             "split_menu": false
           }
         },
