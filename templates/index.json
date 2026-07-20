@@ -242,6 +242,76 @@
         "fix_zindex": 0
       }
     },
+    "section_video_banner_VcyEWn": {
+      "type": "section-video-banner",
+      "blocks": {
+        "title_QEr6cK": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>Video with text</h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "text_3jfiQk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with a video and tell your customers something about this product, collection, blogpost or a promotion.</p>"
+          }
+        },
+        "usp_WrtjWg": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this video</p>"
+          }
+        },
+        "usp_xnn7n6": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this video</p>"
+          }
+        },
+        "usp_8y6tXi": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this video</p>"
+          }
+        },
+        "buttons_KQbyDR": {
+          "type": "buttons",
+          "settings": {
+            "show_first_link": true,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "secondary plain",
+            "show_second_link": true,
+            "second_link_text": "Button",
+            "second_link_url": "/",
+            "second_button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "title_QEr6cK",
+        "text_3jfiQk",
+        "usp_WrtjWg",
+        "usp_xnn7n6",
+        "usp_8y6tXi",
+        "buttons_KQbyDR"
+      ],
+      "name": "t:sections.video_with_text.presets.name",
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "scheme-6",
+        "layout": "image-left",
+        "text_position": "text-start",
+        "width": "boxed",
+        "video_alt_text": "",
+        "video": "shopify://files/videos/Derek Madison and his Fuelab sponsored Pro2 S14(720P_HD).mp4",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
     "section_featured_collection_xeEerP": {
       "type": "section-featured-collection",
       "name": "t:sections.featured_collection.presets.name",
@@ -276,7 +346,7 @@
         "hotspot_MkQNxJ": {
           "type": "hotspot",
           "settings": {
-            "product": "",
+            "product": "10an-100-micron-in-tank-fuel-straining-filter-83801",
             "text_position": "text-start",
             "title": "Image hotspot",
             "text": "<p>Highlight a new collection and share details about products related to this image</p>",
@@ -330,7 +400,7 @@
         "enable_custom_height": false,
         "custom_height": 300,
         "width_banner": "boxed",
-        "width": "wide",
+        "width": "boxed",
         "text_position": "align-start text-start",
         "title": "<h2>Image hotspot banner</h2>",
         "title_underline_style": "none",
@@ -376,17 +446,12 @@
     "1782912292bb391f4e": {
       "type": "_blocks",
       "blocks": {
-        "ai_instafeed_story_layout_xm4EhR": {
-          "type": "shopify://apps/ai-instafeed/blocks/story-layout/019d9e97-150a-7897-8fc5-04537079e185",
-          "settings": {}
-        },
         "ai_instafeed_feed_grid_gjXUpd": {
           "type": "shopify://apps/ai-instafeed/blocks/feed-grid/019d9e97-150a-7897-8fc5-04537079e185",
           "settings": {}
         }
       },
       "block_order": [
-        "ai_instafeed_story_layout_xm4EhR",
         "ai_instafeed_feed_grid_gjXUpd"
       ],
       "settings": {
@@ -411,6 +476,7 @@
     "section_grid_z4HzFQ",
     "section_promo_gallery_KH9cgb",
     "section_collection_list_4GjMHJ",
+    "section_video_banner_VcyEWn",
     "section_featured_collection_xeEerP",
     "section_image_hotspots_4VYzgD",
     "section_featured_collection_YByJiQ",
