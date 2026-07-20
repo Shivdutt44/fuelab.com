@@ -40,6 +40,7 @@
     "base_font_size": 100,
     "prices_font": "primary",
     "prices_font_weight": "700",
+    "breadcrumbs_font": "secondary",
     "h1_size_mobile": 100,
     "h2_size_mobile": 90,
     "h3_size_mobile": 100,
