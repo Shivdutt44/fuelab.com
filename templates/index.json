@@ -100,8 +100,8 @@
       "settings": {
         "number_of_columns": "4",
         "height": "size-s",
-        "width": "boxed",
-        "space_between": 16,
+        "width": "wide",
+        "space_between": 3,
         "image_zoom": true,
         "image_move": false,
         "layout_mobile": "rows",
