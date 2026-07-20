@@ -48,7 +48,7 @@
     "h5_size_mobile": 100,
     "h6_size_mobile": 80,
     "product_image_ratio": "310x310",
-    "fill_product_images": true,
+    "fill_product_images": false,
     "show_secondary_image": true,
     "multiply_collection_images": "none",
     "everything_rounded": false,
