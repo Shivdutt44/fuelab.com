@@ -65,7 +65,7 @@
             "show_socials": true,
             "enable_follow_on_shop": true,
             "show_newsletter": true,
-            "footer_button_style": "primary plain",
+            "footer_button_style": "primary inv",
             "enable_newsletter_terms_checkbox": false,
             "newsletter_terms_text": ""
           }
