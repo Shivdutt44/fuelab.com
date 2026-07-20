@@ -1,4 +1,5 @@
 
+  {% style %}
   /* 1. Main Submit Block Container */
   article#main-product[data-form-id] div.submit.m10 {
     display: flex !important;
@@ -116,7 +117,7 @@
       font-size: 14px !important;
     }
   }
-
+{% endstyle %}
 
 
 /* After add to cart checkout problem code */
