@@ -146,12 +146,17 @@ button.overlay-buy_button[name="checkout"] {
   min-height: 50px !important;      /* Fixed minimum height dene ke liye */
 }
 
-/* css for email */
+/* css for footer email */
 fieldset p input[type="email"][aria-label="Email"] {
   border: 1px solid #ffffff !important;
   border-radius: 6px !important;
   color: #ffffff !important;
   background-color: transparent;
+  height: 48px !important;
+  width: 100% !important;
+  max-width: 350px !important;
+  padding: 8px 12px !important;
+  box-sizing: border-box;
 }
 
 fieldset p input[type="email"][aria-label="Email"]::placeholder {
@@ -161,10 +166,15 @@ fieldset p input[type="email"][aria-label="Email"]::placeholder {
 
 fieldset button.overlay-primary {
   width: auto !important;
-  max-width: 150px !important;
+  max-width: 180px !important;
+  border-radius: 0px !important;
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
   padding: 8px 16px !important;
   margin-top: 10px;
+}
+
+fieldset button.overlay-primary:hover {
+  border-radius: 0px !important;
 }
