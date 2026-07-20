@@ -118,49 +118,14 @@
         "image_K9kHjn": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Artboard_1_1_123216ff-68da-41a3-853a-0d5f16725b12.png",
             "overlay_opacity_img": 0,
             "color_palette": "scheme-2",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
-            "title": "Promo banner",
+            "title": "<strong>Promo banner</strong>",
             "title_underline_style": "none",
-            "text": "<p>Describe a product or make an announcement</p>",
-            "show_link": false,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": false,
-            "overlay_url": ""
-          }
-        },
-        "image_KMycGp": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity_img": 0,
-            "color_palette": "scheme-2",
-            "overlay_opacity": 100,
-            "text_position": "text-center align-middle",
-            "title": "Promo banner",
-            "title_underline_style": "none",
-            "text": "<p>Describe a product or make an announcement</p>",
-            "show_link": false,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": false,
-            "overlay_url": ""
-          }
-        },
-        "image_xNJnjf": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity_img": 0,
-            "color_palette": "scheme-2",
-            "overlay_opacity": 100,
-            "text_position": "text-center align-middle",
-            "title": "Promo banner",
-            "title_underline_style": "none",
-            "text": "<p>Describe a product or make an announcement</p>",
+            "text": "",
             "show_link": false,
             "link_text": "Button",
             "link_url": "",
@@ -171,13 +136,11 @@
         }
       },
       "block_order": [
-        "image_K9kHjn",
-        "image_KMycGp",
-        "image_xNJnjf"
+        "image_K9kHjn"
       ],
       "name": "t:sections.promo_gallery.presets.name",
       "settings": {
-        "items_width": 3,
+        "items_width": 4,
         "height": "1/1",
         "width": "wide",
         "space_between": 0,
@@ -186,7 +149,7 @@
         "title_size_blocks": "h4",
         "layout_mobile": "rows",
         "height_mobile": "16/9",
-        "spacing_desktop": 30,
+        "spacing_desktop": 80,
         "spacing_mobile": 0,
         "fix_zindex": 0
       }

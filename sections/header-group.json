@@ -174,59 +174,10 @@
         "spacing_desktop": 15,
         "spacing_mobile": 15
       }
-    },
-    "dealer_locator_GKR9nx": {
-      "type": "dealer-locator",
-      "blocks": {
-        "dealer_ihLG7a": {
-          "type": "dealer",
-          "settings": {
-            "name": "IG Motorsports LLC",
-            "show_name_link": true,
-            "name_map_url": "",
-            "distance": "10 milesdirections",
-            "show_directions": true,
-            "directions_url": "",
-            "address": "Derek Madison\n191 E Alton Ave East Alton, IL 62024 United States\nWebsite: https://igmotorsports.com/",
-            "website": "",
-            "phone": "",
-            "bg_color": "rgba(0,0,0,0)"
-          }
-        },
-        "dealer_hBHLGN": {
-          "type": "dealer",
-          "settings": {
-            "name": "EcoTECH",
-            "show_name_link": true,
-            "name_map_url": "",
-            "distance": "16 milesdirections",
-            "show_directions": true,
-            "directions_url": "",
-            "address": "8512 Watson Road\nSt. Louis, MO 63119 United States\nWebsite: https://ecotechimportauto.com/\nPhone: (314) 729-1100",
-            "website": "",
-            "phone": "",
-            "bg_color": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "dealer_ihLG7a",
-        "dealer_hBHLGN"
-      ],
-      "disabled": true,
-      "name": "Dealer Locator",
-      "settings": {
-        "title": "",
-        "hover_color": "#0088ff",
-        "mobile_name_size": 22,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "announcement",
-    "header",
-    "dealer_locator_GKR9nx"
+    "header"
   ]
 }
