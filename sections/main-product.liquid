@@ -1891,65 +1891,84 @@
 
 
 {% style %}
-  /* 1. Strictly targeted Main Container using parent attribute and combined classes */
+  /* 1. Main Container (Targeted using Parent ID & Attribute) */
   article#main-product[data-form-id] div.submit.m10 {
     display: flex !important;
     align-items: center !important;
-    gap: 12px !important; /* Quantity aur Button ke beech spacing */
+    gap: 12px !important;
     position: relative !important;
     width: 100% !important;
   }
 
-  /* 2. Unique Quantity Selector Styling */
+  /* 2. Quantity Box Styling & Height Matching */
   article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount {
     position: relative !important;
     flex-shrink: 0 !important;
     width: auto !important;
-    border-radius: 8px !important; /* Quantity box border radius */
-    overflow: hidden !important; /* Rounded corners clean dikhane ke liye */
+    height: 44px !important; /* Fixed height for clean proportion */
+    border-radius: 8px !important;
+    overflow: hidden !important;
     border: 1px solid #ccc !important;
+    box-sizing: border-box !important;
   }
 
   article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount > span.semantic-amount {
     display: flex !important;
     align-items: center !important;
-    border-radius: 8px !important;
+    justify-content: center !important;
+    height: 100% !important;
   }
 
-  /* 3. Unique Add to Cart Container */
+  /* 3. Quantity Number (1, 2, 3...) Text Center Alignment */
+  article#main-product[data-form-id] div.submit.m10 input[name="quantity"] {
+    text-align: center !important;       /* Horizontally Center Number */
+    display: flex !important;
+    align-items: center !important;     /* Vertically Center Number */
+    justify-content: center !important;
+    height: 100% !important;
+    padding: 0 8px !important;
+    font-weight: 600 !important;
+  }
+
+  /* 4. Add to Cart Container */
   article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide {
     flex: 1 1 auto !important;
     width: auto !important;
     margin: 0 !important;
   }
 
-  /* 4. Unique Add to Cart Button (Center Text Alignment & Border Radius) */
+  /* 5. Add to Cart Button (Sleeker Height & Centered Text) */
   article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-buy_button {
-    position: relative !important; /* Overlap issue fix */
+    position: relative !important;
     left: auto !important;
     top: auto !important;
     width: 100% !important;
-    height: 100% !important;
+    height: 44px !important;              /* Sleek height to match Quantity Box */
     
-    /* Text ko exact center align karne ke liye */
+    /* Text Exact Center Alignment */
     display: flex !important;
     align-items: center !important;     /* Vertical Center */
     justify-content: center !important;  /* Horizontal Center */
     text-align: center !important;
     
-    border-radius: 8px !important; /* Button border radius */
-    padding: 12px 20px !important;
+    border-radius: 8px !important;
+    padding: 0 16px !important;          /* Clean compact padding */
     box-sizing: border-box !important;
+    line-height: 1 !important;
   }
 
-  /* 5. Mobile Responsiveness (For small screens) */
+  /* 6. Responsive Settings (Mobile Screens) */
   @media only screen and (max-width: 480px) {
     article#main-product[data-form-id] div.submit.m10 {
       gap: 8px !important;
     }
 
+    article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount,
     article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-buy_button {
-      padding: 10px 12px !important;
+      height: 40px !important; /* Slightly smaller height on mobile for tight layout */
+    }
+
+    article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-buy_button {
       font-size: 14px !important;
     }
   }
