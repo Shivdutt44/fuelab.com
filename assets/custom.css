@@ -118,6 +118,8 @@
   }
 {% endstyle %}
 
+
+/* After add to cart checkout problem code */
 /* Parent element ko Flexbox container banayein */
 p.link-btn.wide.m10 {
   display: flex !important;
