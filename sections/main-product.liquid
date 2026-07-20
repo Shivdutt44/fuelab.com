@@ -1891,62 +1891,66 @@
 
 
 {% style %}
-  /* 1. Main Container (Flexbox & Responsive Layout) */
-  .submit.m10 {
+  /* 1. Strictly targeted Main Container using parent attribute and combined classes */
+  article#main-product[data-form-id] div.submit.m10 {
     display: flex !important;
     align-items: center !important;
-    gap: 12px !important; /* Quantity aur Button ke bich spacing */
+    gap: 12px !important; /* Quantity aur Button ke beech spacing */
     position: relative !important;
     width: 100% !important;
   }
 
-  /* 2. Quantity Box Styling (Border Radius & Fix Width) */
-  .submit.m10 .f8pr-amount {
+  /* 2. Unique Quantity Selector Styling */
+  article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount {
     position: relative !important;
     flex-shrink: 0 !important;
+    width: auto !important;
     border-radius: 8px !important; /* Quantity box border radius */
-    overflow: hidden !important; /* Smooth rounded corners ke liye */
-    border: 1px solid #ccc; /* Agar border visible na ho to border-line */
+    overflow: hidden !important; /* Rounded corners clean dikhane ke liye */
+    border: 1px solid #ccc !important;
   }
 
-  .submit.m10 .semantic-amount {
+  article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount > span.semantic-amount {
     display: flex !important;
     align-items: center !important;
     border-radius: 8px !important;
   }
 
-  /* 3. Add to Cart Container & Button Text Center Alignment */
-  .submit.m10 .f8pr-button.wide {
+  /* 3. Unique Add to Cart Container */
+  article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide {
     flex: 1 1 auto !important;
     width: auto !important;
     margin: 0 !important;
   }
 
-  .submit.m10 .overlay-buy_button {
-    position: relative !important; /* Overlay absolute issue fix */
+  /* 4. Unique Add to Cart Button (Center Text Alignment & Border Radius) */
+  article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-buy_button {
+    position: relative !important; /* Overlap issue fix */
+    left: auto !important;
+    top: auto !important;
     width: 100% !important;
     height: 100% !important;
     
-    /* Text ko exact center me align karne ke liye */
+    /* Text ko exact center align karne ke liye */
     display: flex !important;
     align-items: center !important;     /* Vertical Center */
     justify-content: center !important;  /* Horizontal Center */
     text-align: center !important;
     
-    border-radius: 8px !important; /* Matches overall button style */
-    padding: 12px 20px !important; /* Good touch area for mobile */
+    border-radius: 8px !important; /* Button border radius */
+    padding: 12px 20px !important;
     box-sizing: border-box !important;
   }
 
-  /* 4. Responsive Rules (Small Screens / Mobile) */
+  /* 5. Mobile Responsiveness (For small screens) */
   @media only screen and (max-width: 480px) {
-    .submit.m10 {
-      gap: 8px !important; /* Chhoti screen par kam space */
+    article#main-product[data-form-id] div.submit.m10 {
+      gap: 8px !important;
     }
 
-    .submit.m10 .overlay-buy_button {
+    article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-buy_button {
       padding: 10px 12px !important;
-      font-size: 14px !important; /* Mobile friendly font size */
+      font-size: 14px !important;
     }
   }
 {% endstyle %}
