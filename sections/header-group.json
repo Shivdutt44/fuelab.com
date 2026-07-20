@@ -27,7 +27,7 @@
       ],
       "settings": {
         "text_alignment": "center",
-        "color_palette": "scheme-2",
+        "color_palette": "scheme-3",
         "padding": 14,
         "display_type": "none",
         "allow_close": true,
@@ -99,7 +99,7 @@
         "enable_language_selector": true,
         "top_bar_color": "scheme-3",
         "header_color": "scheme-1",
-        "menubar_color": "scheme-3",
+        "menubar_color": "scheme-1",
         "show_top_bar": false,
         "top_bar_height": "35px|25px",
         "top_bar_font": "secondary",
