@@ -101,7 +101,7 @@
         "number_of_columns": "4",
         "height": "size-s",
         "width": "wide",
-        "space_between": 3,
+        "space_between": 1,
         "image_zoom": true,
         "image_move": false,
         "layout_mobile": "rows",
