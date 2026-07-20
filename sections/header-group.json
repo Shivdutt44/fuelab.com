@@ -17,7 +17,7 @@
         "announcement-block-1": {
           "type": "announcement",
           "settings": {
-            "text": "🚀 <strong>50% OFF</strong> ALL INTERIOR PRODUCTS",
+            "text": "50% OFF ALL PRODUCTS",
             "image_height": 55
           }
         }
@@ -28,12 +28,12 @@
       "settings": {
         "text_alignment": "center",
         "color_palette": "scheme-3",
-        "padding": 14,
+        "padding": 10,
         "display_type": "none",
-        "allow_close": true,
+        "allow_close": false,
         "text_speed": "neutral",
         "show_cursor": true,
-        "default_no_nav": false,
+        "default_no_nav": true,
         "autoplay_enabled": true,
         "autoplay_seconds": 6,
         "gap": 30,
