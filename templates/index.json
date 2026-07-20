@@ -235,7 +235,7 @@
         "link_text": "Shop All",
         "link_url": "shopify://collections",
         "button_style": "primary plain",
-        "collection_title_size": "h4",
+        "collection_title_size": "h5",
         "mobile_layout": "grid",
         "spacing_desktop": 50,
         "spacing_mobile": 30,
