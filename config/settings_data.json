@@ -32,6 +32,7 @@
     "sale_label_text_color": "#FFFFFF",
     "heading_font": "sans_serif_n4",
     "body_font": "arial_n4",
+    "h2_size": 92,
     "h5_size": 100,
     "h6_size": 80,
     "primary_case": "uppercase",
