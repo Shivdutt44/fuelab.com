@@ -36,7 +36,7 @@
     position: relative !important;
   }
 
-  /* 3. Quantity Number Input - Horizontally Centered */
+  /* 3. Quantity Number Input - Horizontally Centered & 2px Up */
   article#main-product[data-form-id] div.submit.m10 input[name="quantity"] {
     width: 55px !important;               /* Space for text */
     height: 100% !important;
@@ -51,8 +51,8 @@
     margin: 0 auto !important;            /* Margin auto for perfect center */
     box-shadow: none !important;
     
-    /* 1px Up adjustment for clean vertical balance */
-    transform: translateY(-1px) !important;
+    /* Exactly 2px Up Shift */
+    transform: translateY(-2px) !important;
   }
 
   /* 4. Increase / Decrease Buttons (+/-) Styling */
