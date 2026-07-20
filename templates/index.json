@@ -151,7 +151,7 @@
         "autoplay_seconds": 3,
         "enable_controls": false,
         "height_mobile": "1/1",
-        "spacing_desktop": 50,
+        "spacing_desktop": 0,
         "spacing_mobile": 30,
         "fix_zindex": 0
       }
@@ -223,6 +223,7 @@
       ],
       "name": "Fuel system selector",
       "settings": {
+        "enable_full_width": true,
         "background_image": "shopify://shop_images/Quick_Service_surge_Tank.png",
         "overlay_opacity": 80,
         "accent_color": "#f7c600",
