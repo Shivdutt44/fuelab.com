@@ -42,6 +42,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Brushless_Fuel.png",
+            "video": "shopify://files/videos/Fielding Shredder and his Fuelab Sponsored S14(720P_HD).mp4",
             "overlay_opacity": 0,
             "color_palette": "",
             "text_position": "align-bottom text-start",
@@ -111,168 +112,231 @@
         "fix_zindex": 0
       }
     },
-    "section_slideshow_6xUpAK": {
-      "type": "section-slideshow",
+    "section_rich_text_D3ttgC": {
+      "type": "section-rich-text",
       "blocks": {
-        "slide_c9rL6y": {
-          "type": "slide",
+        "title_FwCjbP": {
+          "type": "title",
           "settings": {
-            "image": "shopify://shop_images/Home_page_Banner.png",
-            "layout": "background",
-            "overlay_opacity": 30,
-            "color_palette": "scheme-2",
-            "text_position": "align-end text-end",
-            "title": "<h2><strong>Performance Starts with Precision</strong></h2>",
-            "title_underline_style": "none",
-            "text": "<p>Precision-engineered fuel pumps, regulators, filters, and complete fuel systems built for dependable performance.</p>",
-            "show_first_link": true,
-            "first_link_text": "SHOP NOW",
-            "first_link_url": "shopify://collections/all",
-            "first_button_style": "primary plain",
-            "show_second_link": false,
-            "second_link_text": "Button",
-            "second_link_url": "",
-            "second_button_style": "secondary plain",
-            "show_overlay_link": true,
-            "overlay_url": ""
+            "title": "<h1><strong>Shop by Categories</strong></h1>",
+            "title_underline_style": "none"
+          }
+        },
+        "content_LcEjBj": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "page": "",
+            "text": ""
+          }
+        },
+        "button_bdxwbL": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "Button",
+            "link_url": "/",
+            "button_style": "secondary plain"
           }
         }
       },
       "block_order": [
-        "slide_c9rL6y"
+        "title_FwCjbP",
+        "content_LcEjBj",
+        "button_bdxwbL"
       ],
-      "disabled": true,
-      "name": "t:sections.slideshow.presets.name",
+      "name": "t:sections.rich_text.presets.name",
       "settings": {
-        "height": "21/9",
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "text_alignment": "center",
+        "content_width": 1280,
+        "height": "size-s",
         "width_banner": "wide",
         "width": "wide",
-        "autoplay": false,
-        "autoplay_seconds": 3,
-        "enable_controls": false,
-        "height_mobile": "1/1",
         "spacing_desktop": 0,
         "spacing_mobile": 30,
         "fix_zindex": 0
       }
     },
-    "fuel_system_calculator_rWRpq7": {
-      "type": "fuel-system-calculator",
-      "disabled": true,
-      "name": "Fuel System Calculator",
-      "settings": {
-        "headline_text": "Power-Flow Capacity Calculator",
-        "d_title_size": 36,
-        "m_title_size": 24,
-        "subheadline_text": "Calculate flow rate required given horsepower",
-        "d_subtitle_size": 18,
-        "m_subtitle_size": 14,
-        "button_text_label": "Calculate Now"
-      }
-    },
-    "section_fuel_system_selector_jdwDmR": {
-      "type": "section-fuel-system-selector",
+    "section_grid_EUPGRd": {
+      "type": "section-grid",
       "blocks": {
-        "filter_TCbBJP": {
-          "type": "filter",
+        "image_qRkdmD": {
+          "type": "image",
           "settings": {
-            "label": "Fuel Injected",
-            "param": "fuel_system",
-            "options": "Fuel Injected\nCarbureted"
+            "image": "shopify://shop_images/Fuel_Pumps.png",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "text-center",
+            "cols": 2,
+            "rows": 1,
+            "title": "<h3><a href=\"/collections/fuel-pumps\" title=\"Fuel Pumps\">Fuel Pumps</a></h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "shopify://collections/fuel-pumps",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": "",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
           }
         },
-        "filter_DL7GYp": {
-          "type": "filter",
+        "image_Xcf6Vp": {
+          "type": "image",
           "settings": {
-            "label": "INDUCTION",
-            "param": "application",
-            "options": "Naturally Aspirated\nForced Induction"
+            "image": "shopify://shop_images/Fuel_Filters.png",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "text-center",
+            "cols": 2,
+            "rows": 1,
+            "title": "<h3><a href=\"/collections/fuel-filters\" title=\"Fuel Filters\">Fuel Filters</a></h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": "",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
           }
         },
-        "filter_WbXLxy": {
-          "type": "filter",
+        "image_TBy7T9": {
+          "type": "image",
           "settings": {
-            "label": "FUEL TYPE",
-            "param": "fuel_type",
-            "options": "Gasoline\nE85\nMethanol\nDiesel"
+            "image": "shopify://shop_images/Fuel_Pressure_Regulator.png",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "text-center",
+            "cols": 2,
+            "rows": 1,
+            "title": "<h3><a href=\"/collections/fuel-pressure-regulators\" title=\"Fuel Pressure Regulators\">Fuel Pressure Regulators</a></h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": "",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
           }
         },
-        "filter_wbHXM7": {
-          "type": "filter",
+        "image_k7BEyb": {
+          "type": "image",
           "settings": {
-            "label": "MOUNTING CONFIG",
-            "param": "pump_location",
-            "options": "In-Tank\nExternal"
+            "image": "shopify://shop_images/Fuel_System.png",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "text-center",
+            "cols": 2,
+            "rows": 1,
+            "title": "<h3><a href=\"/collections/fuel-systems\" title=\"Fuel Systems\">Fuel Systems</a></h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": "",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
           }
         },
-        "filter_kJDayU": {
-          "type": "filter",
+        "image_JKJya3": {
+          "type": "image",
           "settings": {
-            "label": "HORSEPOWER",
-            "param": "horsepower",
-            "options": "0-1000\n1000-2000\n2000+"
+            "image": "shopify://shop_images/Diesel_Performance.png",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "text-center",
+            "cols": 2,
+            "rows": 1,
+            "title": "<h3><a href=\"/collections/diesel-performance\" title=\"Diesel Performance\">Diesel Performance</a></h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": "",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        },
+        "image_FBRTwV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Accesories.png",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-2",
+            "text_position": "text-center",
+            "cols": 2,
+            "rows": 1,
+            "title": "<h3><a href=\"/collections/accessories\" title=\"Fuel System Accessories\">Accessories</a></h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": "",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
           }
         }
       },
       "block_order": [
-        "filter_TCbBJP",
-        "filter_DL7GYp",
-        "filter_WbXLxy",
-        "filter_wbHXM7",
-        "filter_kJDayU"
+        "image_qRkdmD",
+        "image_Xcf6Vp",
+        "image_TBy7T9",
+        "image_k7BEyb",
+        "image_JKJya3",
+        "image_FBRTwV"
       ],
-      "name": "Fuel system selector",
+      "name": "t:sections.grid.presets.name",
       "settings": {
-        "enable_full_width": true,
-        "background_image": "shopify://shop_images/Quick_Service_surge_Tank.png",
-        "overlay_opacity": 80,
-        "accent_color": "#f7c600",
-        "heading": "Select Your Fuel System",
-        "search_url": "",
-        "search_label": "Search",
-        "reset_label": "Reset filters",
-        "search_btn_text_color": "#111111",
-        "search_btn_font_size": 14,
-        "calc_btn_text_color": "#111111",
-        "calc_btn_font_size": 17,
-        "btn_padding_x": 34,
-        "hero_padding_top": 50,
-        "hero_padding_bottom": 70,
-        "bar_padding": 22,
-        "calc_padding": 70,
-        "show_calculator": true,
-        "calc_heading": "Power-Flow Capacity Calculator",
-        "calc_subheading": "Calculate flow rate required for given horsepower",
-        "calc_button_text": "Calculate Now",
-        "calc_button_url": "shopify://pages/fuel-pump-calculator"
-      }
-    },
-    "1653391228084c834a": {
-      "type": "section-collection-list",
-      "disabled": true,
-      "settings": {
-        "collections": [
-          "253-series-universal-in-tank-brushless-kits",
-          "818-series-in-line-fuel-filters",
-          "diesel-fuel-filtration",
-          "dodge-diesel-fuel-filtration",
-          "525-in-line-series-fuel-pressure-regulators",
-          "495-series-in-tank-transfer-pumps"
-        ],
-        "image_ratio": "square",
-        "fill_images": false,
-        "layout": "rows",
-        "number_of_items": 6,
-        "text_alignment": "center",
+        "number_of_columns": "6",
+        "height": "size-m",
         "width": "wide",
-        "title": "<h2>Top selling collections</h2>",
-        "title_underline_style": "secondary_font",
-        "show_link": true,
-        "link_text": "View all collections",
-        "link_url": "shopify://collections",
-        "button_style": "primary link",
-        "collection_title_size": "p",
-        "mobile_layout": "slider",
+        "space_between": 8,
+        "image_zoom": true,
+        "image_move": true,
+        "layout_mobile": "compact",
+        "mobile_height": "size-s",
         "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
@@ -547,6 +611,7 @@
         "image_kPVn8B",
         "image_BB3ki9"
       ],
+      "disabled": true,
       "settings": {
         "number_of_columns": "4",
         "height": "size-l",
@@ -711,236 +776,6 @@
         "fix_zindex": 0
       }
     },
-    "section_rich_text_D3ttgC": {
-      "type": "section-rich-text",
-      "blocks": {
-        "title_FwCjbP": {
-          "type": "title",
-          "settings": {
-            "title": "<h1><strong>Shop by Category</strong></h1>",
-            "title_underline_style": "none"
-          }
-        },
-        "content_LcEjBj": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "page": "",
-            "text": ""
-          }
-        },
-        "button_bdxwbL": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "Button",
-            "link_url": "/",
-            "button_style": "secondary plain"
-          }
-        }
-      },
-      "block_order": [
-        "title_FwCjbP",
-        "content_LcEjBj",
-        "button_bdxwbL"
-      ],
-      "name": "t:sections.rich_text.presets.name",
-      "settings": {
-        "color_palette": "",
-        "overlay_opacity": 100,
-        "text_alignment": "center",
-        "content_width": 1280,
-        "height": "size-s",
-        "width_banner": "wide",
-        "width": "wide",
-        "spacing_desktop": 0,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "section_grid_EUPGRd": {
-      "type": "section-grid",
-      "blocks": {
-        "image_qRkdmD": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fuel_Pumps.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/fuel-pumps\" title=\"Fuel Pumps\">Fuel Pumps</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": false,
-            "link_text": "Button",
-            "link_url": "shopify://collections/fuel-pumps",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_Xcf6Vp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fuel_Filters.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/fuel-filters\" title=\"Fuel Filters\">Fuel Filters</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_TBy7T9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fuel_Pressure_Regulator.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/fuel-pressure-regulators\" title=\"Fuel Pressure Regulators\">Fuel Pressure Regulators</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_k7BEyb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fuel_System.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/fuel-systems\" title=\"Fuel Systems\">Fuel Systems</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_JKJya3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Diesel_Performance.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/diesel-performance\" title=\"Diesel Performance\">Diesel Performance</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_FBRTwV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Accesories.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "text-center",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/accessories\" title=\"Fuel System Accessories\">Accessories</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "Button",
-            "link_url": "",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        }
-      },
-      "block_order": [
-        "image_qRkdmD",
-        "image_Xcf6Vp",
-        "image_TBy7T9",
-        "image_k7BEyb",
-        "image_JKJya3",
-        "image_FBRTwV"
-      ],
-      "name": "t:sections.grid.presets.name",
-      "settings": {
-        "number_of_columns": "6",
-        "height": "size-l",
-        "width": "wide",
-        "space_between": 1,
-        "image_zoom": true,
-        "image_move": true,
-        "layout_mobile": "rows",
-        "mobile_height": "size-s",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
     "section_grid_NAgiXL": {
       "type": "section-grid",
       "blocks": {
@@ -974,6 +809,7 @@
       "block_order": [
         "image_mMb4RA"
       ],
+      "disabled": true,
       "name": "t:sections.grid.presets.name",
       "settings": {
         "number_of_columns": "6",
@@ -1025,10 +861,8 @@
   },
   "order": [
     "section_grid_z4HzFQ",
-    "section_slideshow_6xUpAK",
-    "fuel_system_calculator_rWRpq7",
-    "section_fuel_system_selector_jdwDmR",
-    "1653391228084c834a",
+    "section_rich_text_D3ttgC",
+    "section_grid_EUPGRd",
     "section_featured_collection_xeEerP",
     "17834479092ee3a42c",
     "section_featured_collection_xYUWQA",
@@ -1036,8 +870,6 @@
     "section_featured_products_nGUMPh",
     "178344775174928417",
     "section_grid_TGhkGb",
-    "section_rich_text_D3ttgC",
-    "section_grid_EUPGRd",
     "section_grid_NAgiXL",
     "1782912292bb391f4e"
   ]
