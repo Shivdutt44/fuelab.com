@@ -164,9 +164,14 @@
         "disabled": false,
         "settings": {}
       },
+      "8903970442762518517": {
+        "type": "shopify://apps/ecom-reviews-expert/blocks/ai_reviews_embed/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
+        "disabled": true,
+        "settings": {}
+      },
       "14670819250224415090": {
         "type": "shopify://apps/ecom-verified-seller/blocks/main/019a4390-55cf-7736-92b4-7bcca0c8f196",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "enabled": true,
           "badge_size": "small",
@@ -177,11 +182,6 @@
           "contact_page": "",
           "refund_policy_page": ""
         }
-      },
-      "8903970442762518517": {
-        "type": "shopify://apps/ecom-reviews-expert/blocks/ai_reviews_embed/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
-        "disabled": true,
-        "settings": {}
       }
     },
     "color_schemes": {
