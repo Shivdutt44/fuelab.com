@@ -135,11 +135,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "17585992559042263405": {
-        "type": "shopify://apps/ecom-reviews-expert/blocks/rich_snippets/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
-        "disabled": false,
-        "settings": {}
-      },
       "17684631493175363121": {
         "type": "shopify://apps/ai-instafeed/blocks/app-embed/019d9e97-150a-7897-8fc5-04537079e185",
         "disabled": false,
@@ -182,6 +177,11 @@
           "contact_page": "",
           "refund_policy_page": ""
         }
+      },
+      "17585992559042263405": {
+        "type": "shopify://apps/ecom-reviews-expert/blocks/rich_snippets/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
