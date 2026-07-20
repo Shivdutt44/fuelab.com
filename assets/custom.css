@@ -1,5 +1,5 @@
 {% style %}
-  /* 1. Main Submit Block Container */
+  /* 1. Main Submit Block Container (Strictly Scoped) */
   article#main-product[data-form-id] div.submit.m10 {
     display: flex !important;
     align-items: center !important;
@@ -8,72 +8,82 @@
     width: 100% !important;
   }
 
-  /* 2. Modern Quantity Selector Card Styling */
+  /* 2. Quantity Selector Box (Pill/Card Style) */
   article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount {
     position: relative !important;
     flex-shrink: 0 !important;
-    width: 105px !important;              /* Clean compact width */
-    height: 44px !important;              /* Matches button height */
+    width: 120px !important;              /* Perfect proportions */
+    height: 44px !important;              /* Sleek height */
     border-radius: 8px !important;
-    background-color: #f8f9fa !important; /* Soft light background */
-    border: 1px solid #e2e8f0 !important;  /* Modern slate border */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    background-color: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
     overflow: hidden !important;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    box-sizing: border-box !important;
+    transition: all 0.2s ease-in-out !important;
   }
 
-  /* Hover effect on quantity box */
+  /* Hover & Focus state for Quantity Box */
   article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount:hover {
-    border-color: #cbd5e1 !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+    border-color: #94a3b8 !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06) !important;
   }
 
   article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount > span.semantic-amount {
     display: flex !important;
     align-items: center !important;
+    justify-content: space-between !important;
     height: 100% !important;
     width: 100% !important;
     position: relative !important;
+    padding: 0 2px !important;
   }
 
-  /* 3. Quantity Number Input - Shifted Left & Styled */
+  /* 3. Number Input (Centered Cleanly) */
   article#main-product[data-form-id] div.submit.m10 input[name="quantity"] {
-    width: 55px !important;               /* Space for text */
+    flex: 1 !important;
+    width: 100% !important;
     height: 100% !important;
     text-align: center !important;
     font-size: 15px !important;
     font-weight: 600 !important;
-    color: #1e293b !important;
+    color: #0f172a !important;
     background: transparent !important;
     border: none !important;
     outline: none !important;
-    padding-left: 6px !important;         /* Thoda left side adjust karne ke liye */
-    padding-right: 0 !important;
+    padding: 0 !important;
     margin: 0 !important;
     box-shadow: none !important;
+    -moz-appearance: textfield !important;
   }
 
-  /* 4. Increase / Decrease Buttons (+/-) Styling */
+  /* 4. Plus (+) & Minus (-) Buttons Redesign */
   article#main-product[data-form-id] div.submit.m10 .semantic-amount a.incr,
   article#main-product[data-form-id] div.submit.m10 .semantic-amount a.decr {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 24px !important;
-    height: 50% !important;
+    width: 34px !important;               /* Easy click target */
+    height: 34px !important;
+    font-size: 18px !important;           /* Big & Clear text */
+    font-weight: 500 !important;
     color: #475569 !important;
     text-decoration: none !important;
-    transition: background-color 0.15s ease, color 0.15s ease !important;
+    border-radius: 6px !important;
+    transition: all 0.15s ease !important;
     cursor: pointer !important;
+    user-select: none !important;
+    background-color: transparent !important;
   }
 
+  /* Hover Effect on + and - Buttons */
   article#main-product[data-form-id] div.submit.m10 .semantic-amount a.incr:hover,
   article#main-product[data-form-id] div.submit.m10 .semantic-amount a.decr:hover {
-    background-color: #e2e8f0 !important;
+    background-color: #f1f5f9 !important;
     color: #0f172a !important;
   }
 
-  /* 5. Add to Cart Button */
+  /* 5. Add to Cart Button Alignment */
   article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide {
     flex: 1 1 auto !important;
     width: auto !important;
@@ -85,7 +95,7 @@
     left: auto !important;
     top: auto !important;
     width: 100% !important;
-    height: 44px !important;
+    height: 44px !important;              /* Matches Quantity Height */
     
     display: flex !important;
     align-items: center !important;
@@ -105,8 +115,15 @@
     }
 
     article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount {
-      width: 95px !important;
+      width: 105px !important;
       height: 40px !important;
+    }
+
+    article#main-product[data-form-id] div.submit.m10 .semantic-amount a.incr,
+    article#main-product[data-form-id] div.submit.m10 .semantic-amount a.decr {
+      width: 30px !important;
+      height: 30px !important;
+      font-size: 16px !important;
     }
 
     article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-buy_button {
