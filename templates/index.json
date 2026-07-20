@@ -96,7 +96,6 @@
         "image_tEAqG9",
         "image_NLiKpn"
       ],
-      "disabled": true,
       "name": "t:sections.grid.presets.name",
       "settings": {
         "number_of_columns": "4",
@@ -107,8 +106,8 @@
         "image_move": false,
         "layout_mobile": "rows",
         "mobile_height": "size-s",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
         "fix_zindex": 0
       }
     },
@@ -142,6 +141,7 @@
       "block_order": [
         "slide_c9rL6y"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "height": "21/9",
