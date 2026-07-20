@@ -41,11 +41,11 @@
             "title": "CUSTOMER SUPPORT",
             "title_underline_style": "none",
             "customer_support_img_width": 220,
-            "customer_support_offset_right": 25,
+            "customer_support_offset_right": 150,
             "customer_support_offset_bottom": 0,
             "extra_customer_support": "<p><strong>Contact Us:</strong> <a href=\"tel:+1-618-344-3300\" title=\"Phone\">618-344-3300</a></p><p><strong>Mon - Fri 8:00am - 5:00pm (CST)</strong></p><p><strong>SALES:</strong> <a href=\"https://fuelab.com/ft-2433-shipping.html\" target=\"_blank\">sales@fuelab.com<br/></a><strong>SPONSORSHIPS:</strong> <a href=\"mailto:tanner.berg@fuelab.com\">tanner.berg@fuelab.com<br/></a><strong>Tech Support:</strong> <a href=\"mailto:info@fuelab.com\">info@fuelab.com</a></p><p>3443 Petroff Plaza<br/>Building A<br/>Pontoon Beach, IL 62040</p>",
             "show_phone_link": true,
-            "show_mail_link": false,
+            "show_mail_link": true,
             "show_whatsapp_link": true,
             "customer_support_offset_right_mobile": 0,
             "customer_support_offset_bottom_mobile": 0
