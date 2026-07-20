@@ -138,7 +138,7 @@ p.link-btn.wide.m10 {
   width: 100% !important;
 }
 
-/* --- SIRF CHECKOUT BUTTON KI HEIGHT BADHANE KE LIYE --- */
+/* --- only for checkout button height --- */
 button.overlay-buy_button[name="checkout"] {
   padding-top: 16px !important;    /* Top aur Bottom padding se height badhegi */
   padding-bottom: 16px !important; 
