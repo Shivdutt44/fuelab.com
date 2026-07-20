@@ -326,7 +326,7 @@
         "number_of_items": 4,
         "text_alignment": "center",
         "width": "wide",
-        "title": "<h2>You may also like</h2>",
+        "title": "<h1><strong>You may also like</strong></h1>",
         "title_underline_style": "none",
         "enable_quick_buy_desktop": true,
         "enable_quick_buy_mobile": true,

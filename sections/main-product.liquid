@@ -1890,4 +1890,34 @@
 {% endschema %}
 
 
+{% style %}
+  /* Overlap fix for quantity selector and Add to Cart */
+  .m6pr form, 
+  .m6pr [class*="buy-button"], 
+  .m6pr .product-form__input--quantity {
+    display: flex !important;
+    gap: 15px !important;
+    align-items: center !important;
+  }
+
+  .m6pr input[name="quantity"] {
+    width: 80px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Existing mobile styling */
+  @media only screen and (max-width: 760px) {
+    #shopify-section-{{ section.id }} .m6tb .tabs-header, .m6tb.static .tabs-header, #shopify-section-{{ section.id }} .accordion-a.compact summary {
+      font-size: var(--mob_{{ section.settings.mobile_tabs_title_size }});
+    }
+    .template-product .tabs-header, #quickshop {
+      --main_h1: var(--mob_{{ section.settings.mobile_tabs_title_size }});
+      --main_h2: var(--mob_{{ section.settings.mobile_tabs_title_size }});
+      --main_h3: var(--mob_{{ section.settings.mobile_tabs_title_size }});
+      --main_h4: var(--mob_{{ section.settings.mobile_tabs_title_size }});
+      --main_h5: var(--mob_{{ section.settings.mobile_tabs_title_size }});
+      --main_h6: var(--mob_{{ section.settings.mobile_tabs_title_size }});
+    }
+  }
+{% endstyle %}
 
