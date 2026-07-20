@@ -13,11 +13,11 @@
   "sections": {
     "section_newsletter_jrXcx3": {
       "type": "section-newsletter",
-      "disabled": true,
       "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "overlay_opacity": 0,
-        "color_palette": "scheme-3",
+        "image": "shopify://shop_images/Velocity_Lift_Pump.png",
+        "overlay_opacity": 75,
+        "color_palette": "scheme-2",
         "width_banner": "wide",
         "width": "wide",
         "title": "<h2>Subscribe to our emails</h2>",
@@ -57,24 +57,11 @@
             "menu": "main-menu",
             "split_menu": true
           }
-        },
-        "4300adc0-a530-4961-bb5a-0ef06c6e64fb": {
-          "type": "socials_newsletter",
-          "settings": {
-            "title": "Follow us",
-            "show_socials": true,
-            "enable_follow_on_shop": true,
-            "show_newsletter": true,
-            "footer_button_style": "primary inv",
-            "enable_newsletter_terms_checkbox": false,
-            "newsletter_terms_text": ""
-          }
         }
       },
       "block_order": [
         "ee8cf9cf-0a8b-4986-b76c-1016a9510c5b",
-        "menu_EtyHQA",
-        "4300adc0-a530-4961-bb5a-0ef06c6e64fb"
+        "menu_EtyHQA"
       ],
       "custom_css": [],
       "settings": {

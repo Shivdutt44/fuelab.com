@@ -370,6 +370,34 @@
         "fix_zindex": 0
       }
     },
+    "section_featured_collection_YByJiQ": {
+      "type": "section-featured-collection",
+      "name": "t:sections.featured_collection.presets.name",
+      "settings": {
+        "collection": "253-series-universal-in-tank-brushless-kits",
+        "layout": "grid",
+        "limit": 4,
+        "number_of_items": 4,
+        "text_alignment": "center",
+        "width": "boxed",
+        "title": "<h2><strong>New Arrivals</strong></h2>",
+        "title_underline_style": "none",
+        "text": "<p>Complete in-tank brushless kits for maximum performance</p>",
+        "show_link": false,
+        "link_text": "Button",
+        "button_style": "primary plain",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": true,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": true,
+        "enable_quick_buy_compact": true,
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
     "17834479092ee3a42c": {
       "type": "_blocks",
       "blocks": {
@@ -384,7 +412,7 @@
       "settings": {
         "color_palette": "",
         "overlay_opacity": 100,
-        "width": "wide",
+        "width": "boxed",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_left": 0,
@@ -393,48 +421,6 @@
         "padding_bottom_mobile": 20,
         "padding_left_mobile": 0,
         "padding_right_mobile": 0,
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "section_featured_products_nGUMPh": {
-      "type": "section-featured-products",
-      "disabled": true,
-      "name": "t:sections.featured_products.presets.name",
-      "settings": {
-        "products": [
-          "10an-100-micron-short-in-line-fuel-filter-81823",
-          "1100lph-twin-screw-brushless-in-line-fuel-pump-47415",
-          "1100lph-twin-screw-brushless-in-tank-fuel-pump-kit-20815",
-          "1100lph-twin-screw-sae-flange-mount-in-tank-dc-brushless-fuel-pump-93905",
-          "12an-100-micron-ling-in-line-fuel-filter-82824",
-          "145gph-45psi-variable-speed-brushless-fuel-pump-41402",
-          "170gph-10psi-variable-speed-brushless-fuel-pump-40402",
-          "30-amp-dc-brushless-fuel-pump-controller-external-72006",
-          "400lph-twin-screw-brushless-in-line-fuel-pump-47412",
-          "5-0-gpm-variable-speed-brushless-spur-gear-fuel-pump-40500",
-          "500lph-3-8-sae-outlet-in-tank-brushless-fuel-pump-49613",
-          "500lph-3-8-sae-outlet-universal-in-tank-brushless-kit-25313"
-        ],
-        "layout": "slider",
-        "number_of_items": 5,
-        "text_alignment": "center",
-        "width": "wide",
-        "title": "<h2>Best Selling Fuel Pumps</h2>",
-        "title_underline_style": "none",
-        "text": "",
-        "show_link": false,
-        "link_text": "Button",
-        "link_url": "/",
-        "button_style": "primary plain",
-        "enable_quick_buy_desktop": false,
-        "enable_quick_buy_mobile": true,
-        "enable_quick_buy_drawer": false,
-        "enable_quick_buy_qty_selector": true,
-        "enable_color_picker": false,
-        "enable_quick_buy_compact": false,
-        "mobile_layout": "slider",
         "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
@@ -454,7 +440,7 @@
       "settings": {
         "color_palette": "",
         "overlay_opacity": 100,
-        "width": "wide",
+        "width": "boxed",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_left": 0,
@@ -463,135 +449,6 @@
         "padding_bottom_mobile": 20,
         "padding_left_mobile": 0,
         "padding_right_mobile": 0,
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "section_grid_TGhkGb": {
-      "type": "section-grid",
-      "blocks": {
-        "image_xLK3PG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Brushless_Fuel.png",
-            "overlay_opacity": 10,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 2,
-            "title": "<h2>Brushless Fuel Pump Controller</h2>",
-            "title_underline_style": "none",
-            "text": "<p>Compact controllers for precise, reliable brushless fuel pump operation<br/></p>",
-            "show_link": true,
-            "link_text": "SHOP CONTROLLERS",
-            "link_url": "shopify://collections/brushless-fuel-pump-controller",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://collections/brushless-fuel-pump-controller",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_wtBKWd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Billet_Aluminium.png",
-            "overlay_opacity": 10,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 2,
-            "title": "<h2>Billet Aluminum Bracket Systems</h2>",
-            "title_underline_style": "none",
-            "text": "<p>Precision-machined brackets built for strength and a clean installation<br/></p>",
-            "show_link": true,
-            "link_text": "SHOP CONTROLLERS",
-            "link_url": "shopify://collections/billet-aluminum-bracket-systems",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://collections/billet-aluminum-bracket-systems",
-            "show_look": false,
-            "product_list": [
-              "30-amp-dc-brushless-fuel-pump-controller-external-72006",
-              "can-bus-brushless-fuel-pump-controller-external-72007",
-              "25-amp-dc-brushless-fuel-pump-controller-external-72004"
-            ],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        }
-      },
-      "block_order": [
-        "image_xLK3PG",
-        "image_wtBKWd"
-      ],
-      "disabled": true,
-      "name": "t:sections.grid.presets.name",
-      "settings": {
-        "number_of_columns": "4",
-        "height": "size-l",
-        "width": "wide",
-        "space_between": 1,
-        "image_zoom": true,
-        "image_move": true,
-        "layout_mobile": "rows",
-        "mobile_height": "size-m",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "section_grid_NAgiXL": {
-      "type": "section-grid",
-      "blocks": {
-        "image_mMb4RA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/F198651253_3c065068-cc88-4084-bb22-3ea37fc2b1e3.png",
-            "overlay_opacity": 70,
-            "color_palette": "scheme-2",
-            "text_position": "text-center",
-            "cols": 6,
-            "rows": 2,
-            "title": "<h2><strong>Engineering That Keeps You Moving</strong></h2>",
-            "title_underline_style": "none",
-            "text": "<p><br/>Every FUELAB product is designed with one purpose. Deliver dependable fuel flow in demanding conditions. From brushless fuel pumps and precision regulators to complete fuel systems, every component is built to provide consistent performance, long service life, and confidence behind the wheel.</p>",
-            "show_link": true,
-            "link_text": "Discover More",
-            "link_url": "shopify://collections",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        }
-      },
-      "block_order": [
-        "image_mMb4RA"
-      ],
-      "disabled": true,
-      "name": "t:sections.grid.presets.name",
-      "settings": {
-        "number_of_columns": "6",
-        "height": "size-s",
-        "width": "wide",
-        "space_between": 0,
-        "image_zoom": true,
-        "image_move": true,
-        "layout_mobile": "rows",
-        "mobile_height": "size-m",
         "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
@@ -616,7 +473,7 @@
       "settings": {
         "color_palette": "",
         "overlay_opacity": 100,
-        "width": "wide",
+        "width": "boxed",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_left": 0,
@@ -637,10 +494,8 @@
     "section_grid_EUPGRd",
     "section_featured_collection_xeEerP",
     "17834479092ee3a42c",
-    "section_featured_products_nGUMPh",
+    "section_featured_collection_YByJiQ",
     "178344775174928417",
-    "section_grid_TGhkGb",
-    "section_grid_NAgiXL",
     "1782912292bb391f4e"
   ]
 }
