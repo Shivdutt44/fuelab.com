@@ -186,7 +186,7 @@
         "title_size_blocks": "h4",
         "layout_mobile": "rows",
         "height_mobile": "16/9",
-        "spacing_desktop": 0,
+        "spacing_desktop": 30,
         "spacing_mobile": 0,
         "fix_zindex": 0
       }
