@@ -12,7 +12,7 @@
   article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount {
     position: relative !important;
     flex-shrink: 0 !important;
-    width: 105px !important;              /* Clean compact width */
+    width: 90px !important;              /* Clean compact width */
     height: 41px !important;              /* Matches button height */
     border-radius: 8px !important;
     background-color: #f8f9fa !important; /* Soft light background */
