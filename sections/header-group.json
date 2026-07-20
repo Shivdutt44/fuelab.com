@@ -120,7 +120,7 @@
         "usp_typewriter_show_cursor": true,
         "searchbar_font_size": "13px",
         "searchbar_height": 40,
-        "searchbar_width": 450,
+        "searchbar_width": 560,
         "show_searchbar_border": true,
         "enable_sticky_header": true,
         "sticky": "sticky-menu",
