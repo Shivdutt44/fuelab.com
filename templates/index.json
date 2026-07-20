@@ -331,7 +331,7 @@
       "settings": {
         "number_of_columns": "6",
         "height": "size-m",
-        "width": "wide",
+        "width": "boxed",
         "space_between": 8,
         "image_zoom": true,
         "image_move": true,
@@ -352,7 +352,7 @@
         "number_of_items": 4,
         "text_alignment": "center",
         "width": "wide",
-        "title": "<h1><strong>Best Selling </strong></h1>",
+        "title": "<h1><strong>Best Selling Products </strong></h1>",
         "title_underline_style": "none",
         "text": "<p>Complete in-tank brushless kits for maximum performance</p>",
         "show_link": false,
