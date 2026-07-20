@@ -118,7 +118,7 @@
         "title_FwCjbP": {
           "type": "title",
           "settings": {
-            "title": "<h1><strong>Shop by Categories</strong></h1>",
+            "title": "<h2><strong>Shop by Categories</strong></h2>",
             "title_underline_style": "none"
           }
         },
@@ -347,12 +347,12 @@
       "name": "t:sections.featured_collection.presets.name",
       "settings": {
         "collection": "253-series-universal-in-tank-brushless-kits",
-        "layout": "slider",
+        "layout": "grid",
         "limit": 4,
         "number_of_items": 4,
         "text_alignment": "center",
-        "width": "wide",
-        "title": "<h1><strong>Best Selling Products </strong></h1>",
+        "width": "boxed",
+        "title": "<h2><strong>Best Selling Products </strong></h2>",
         "title_underline_style": "none",
         "text": "<p>Complete in-tank brushless kits for maximum performance</p>",
         "show_link": false,
@@ -393,234 +393,6 @@
         "padding_bottom_mobile": 20,
         "padding_left_mobile": 0,
         "padding_right_mobile": 0,
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "section_featured_collection_xYUWQA": {
-      "type": "section-featured-collection",
-      "name": "t:sections.featured_collection.presets.name",
-      "settings": {
-        "collection": "diesel-performance",
-        "layout": "slider",
-        "limit": 4,
-        "number_of_items": 4,
-        "text_alignment": "center",
-        "width": "wide",
-        "title": "<h1><strong>New Arrivals</strong></h1>",
-        "title_underline_style": "none",
-        "text": "<p>Engineered for dependable diesel power</p>",
-        "show_link": false,
-        "link_text": "Button",
-        "button_style": "primary plain",
-        "enable_quick_buy_desktop": true,
-        "enable_quick_buy_mobile": true,
-        "enable_quick_buy_drawer": true,
-        "enable_quick_buy_qty_selector": true,
-        "enable_color_picker": true,
-        "enable_quick_buy_compact": true,
-        "mobile_layout": "slider",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "section_grid_yyCXme": {
-      "type": "section-grid",
-      "blocks": {
-        "image_WaYnBX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/253_universal_Series.png",
-            "overlay_opacity": 25,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/253-series-universal-in-tank-brushless-kits\" title=\"253 Series Universal In-Tank Brushless Kits\">253 Series Universal In-Tank Brushless Kits</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "SHOP NOW",
-            "link_url": "shopify://collections/253-series-universal-in-tank-brushless-kits",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://collections/253-series-universal-in-tank-brushless-kits",
-            "show_look": false,
-            "product_list": [
-              "500lph-5-16-sae-outlet-universal-in-tank-brushless-kit-25312",
-              "500lph-9mm-3-8-barb-outlet-universal-in-tank-brushless-kit-25314",
-              "500lph-3-8-sae-outlet-universal-in-tank-brushless-kit-25313",
-              "500lph-6an-outlet-universal-in-tank-brushless-kit-25311"
-            ],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_UYpiHn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Quick_Service_surge_Tank.png",
-            "overlay_opacity": 25,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/quick-service-surge-tank-qsst-2-0\" title=\"Quick Service Surge Tank (QSST) 2.0\">Quick Service Surge Tank (QSST) 2.0</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "SHOP NOW",
-            "link_url": "shopify://collections/quick-service-surge-tank-qsst-2-0",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://collections/quick-service-surge-tank-qsst-2-0",
-            "show_look": false,
-            "product_list": [
-              "62810-0-quick-service-surge-tank-qsst-2-0-titanium",
-              "62820-0-quick-service-surge-tank-qsst-2-0-gold"
-            ],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_WGQmXK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Vehicle_Specific_Fuel_SYstem.png",
-            "overlay_opacity": 25,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/vehicle-specific-fuel-system-upgrades\" title=\"Vehicle Specific Fuel System Upgrades\">Vehicle Specific Fuel System Upgrades</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "SHOP NOW",
-            "link_url": "shopify://collections/vehicle-specific-fuel-system-upgrades",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://collections/vehicle-specific-fuel-system-upgrades",
-            "show_look": false,
-            "product_list": [
-              "69001-c6-corvette-fuel-pump-hanger-with-1100lph-brushless-twin-screw-pump",
-              "69002-c6-corvette-fuel-pump-hanger-with-1100lph-brushless-twin-screw-pump"
-            ],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_iqTX8E": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Velocity_Lift_Pump.png",
-            "overlay_opacity": 25,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h3><a href=\"/collections/velocity-lift-pumps\" title=\"Velocity Lift Pumps\">Velocity Lift Pumps</a></h3>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "SHOP NOW",
-            "link_url": "shopify://collections/velocity-lift-pumps",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://collections/velocity-lift-pumps",
-            "show_look": false,
-            "product_list": [
-              "velocity-100-lift-pump-1994-1998-dodge-cummins-10305",
-              "velocity-100-lift-pump-1998-5-2013-dodge-cummins-10301",
-              "velocity-100-lift-pump-2001-2010-gm-duramax-10303",
-              "velocity-100-lift-pump-2008-2010-ford-powerstroke-10304",
-              "velocity-200-lift-pump-10302"
-            ],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_kPVn8B": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Brushless_Fuel.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h2><a href=\"/collections/brushless-fuel-pump-controller\" title=\"Brushless Fuel Pump Controller\">Brushless Fuel Pump Controller</a></h2>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "SHOP NOW",
-            "link_url": "shopify://collections/brushless-fuel-pump-controller",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://collections/brushless-fuel-pump-controller",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
-        "image_BB3ki9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Billet_Aluminium.png",
-            "overlay_opacity": 0,
-            "color_palette": "scheme-2",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 1,
-            "title": "<h2>Billet Aluminum Bracket Systems</h2>",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "SHOP NOW",
-            "link_url": "shopify://collections/billet-aluminum-bracket-systems",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://collections/billet-aluminum-bracket-systems",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        }
-      },
-      "block_order": [
-        "image_WaYnBX",
-        "image_UYpiHn",
-        "image_WGQmXK",
-        "image_iqTX8E",
-        "image_kPVn8B",
-        "image_BB3ki9"
-      ],
-      "disabled": true,
-      "settings": {
-        "number_of_columns": "4",
-        "height": "size-l",
-        "width": "wide",
-        "space_between": 0,
-        "image_zoom": true,
-        "image_move": false,
-        "layout_mobile": "rows",
-        "mobile_height": "size-s",
         "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
@@ -865,8 +637,6 @@
     "section_grid_EUPGRd",
     "section_featured_collection_xeEerP",
     "17834479092ee3a42c",
-    "section_featured_collection_xYUWQA",
-    "section_grid_yyCXme",
     "section_featured_products_nGUMPh",
     "178344775174928417",
     "section_grid_TGhkGb",
