@@ -127,11 +127,18 @@ p.link-btn.wide.m10 {
 
 /* Absolute positioning reset karein aur full width karein */
 .overlay-buy_button {
-  position: relative !important; /* ya static */
+  position: relative !important;
   top: auto !important;
   left: auto !important;
   display: flex !important;
   justify-content: center;
-  align-content: center;
+  align-items: center; /* Vertical alignment ke liye */
   width: 100% !important;
+}
+
+/* --- SIRF CHECKOUT BUTTON KI HEIGHT BADHANE KE LIYE --- */
+button.overlay-buy_button[name="checkout"] {
+  padding-top: 16px !important;    /* Top aur Bottom padding se height badhegi */
+  padding-bottom: 16px !important; 
+  min-height: 52px !important;      /* Fixed minimum height dene ke liye */
 }
