@@ -46,13 +46,6 @@
             "show_tax": false
           }
         },
-        "codes_VhGUep": {
-          "type": "codes",
-          "settings": {
-            "show_sku": true,
-            "show_barcode": true
-          }
-        },
         "variant_selection": {
           "type": "variant_selection",
           "settings": {
@@ -64,24 +57,11 @@
             "enable_selling_plans": true
           }
         },
-        "urgency_ABM9H3": {
-          "type": "urgency",
+        "codes_VhGUep": {
+          "type": "codes",
           "settings": {
-            "min_stock": 5,
-            "min_stock_meta": "",
-            "show_level": true,
-            "show_bar_unavailable": true,
-            "show_bar_available_nostock": true,
-            "layout": "small",
-            "position_stock_message": "below",
-            "color_palette": "scheme-1",
-            "color_progressbar": "#121234",
-            "gradient_progressbar": "linear-gradient(98.88deg, rgba(232, 74, 147, 1) 44.11%, rgba(251, 195, 74, 1) 93.24%)",
-            "background_progress_bar": "#f0f0f0",
-            "tooltip_background": "#192733",
-            "tooltip_text_color": "#ffffff",
-            "message": "Be quick! Only <strong>*inventory*</strong> products left in stock!",
-            "outofstock_message": "Unfortunately, this product is out of stock"
+            "show_sku": true,
+            "show_barcode": true
           }
         },
         "short_description": {
@@ -117,6 +97,26 @@
             "textTransform": "none",
             "addToWishlistText": "Add To Wishlist",
             "removeFromWishlistText": "Remove From Wishlist"
+          }
+        },
+        "urgency_ABM9H3": {
+          "type": "urgency",
+          "settings": {
+            "min_stock": 5,
+            "min_stock_meta": "",
+            "show_level": true,
+            "show_bar_unavailable": true,
+            "show_bar_available_nostock": true,
+            "layout": "small",
+            "position_stock_message": "below",
+            "color_palette": "scheme-1",
+            "color_progressbar": "#121234",
+            "gradient_progressbar": "linear-gradient(98.88deg, rgba(232, 74, 147, 1) 44.11%, rgba(251, 195, 74, 1) 93.24%)",
+            "background_progress_bar": "#f0f0f0",
+            "tooltip_background": "#192733",
+            "tooltip_text_color": "#ffffff",
+            "message": "Be quick! Only <strong>*inventory*</strong> products left in stock!",
+            "outofstock_message": "Unfortunately, this product is out of stock"
           }
         },
         "beafbaf1-a0af-4326-b4de-6e78c472249c": {
@@ -196,13 +196,13 @@
         "c7259cb9-7235-4028-b6df-3a68077fed80",
         "ecom_reviews_expert_star_rating_bRqRbW",
         "price",
-        "codes_VhGUep",
         "variant_selection",
-        "urgency_ABM9H3",
+        "codes_VhGUep",
         "short_description",
         "inventory",
         "buy_button",
         "ecom_wishlist_expert_product_pzpyLL",
+        "urgency_ABM9H3",
         "beafbaf1-a0af-4326-b4de-6e78c472249c",
         "e55f9825-3e08-4f90-bd42-9d336323be89",
         "2e2d451c-7968-4d6b-a516-6f6e842c92ee",
