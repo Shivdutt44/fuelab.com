@@ -169,9 +169,9 @@
           "type": "complementary_products",
           "settings": {
             "enable_tab": true,
-            "collapse": true,
-            "title": "Complementary products",
-            "icon": "filters",
+            "collapse": false,
+            "title": "Frequently Bought Together",
+            "icon": "none",
             "header_image_svg": "shopify://collections/all",
             "header_image_width": 25,
             "layout": "list",
@@ -225,34 +225,6 @@
         "specifications": "",
         "product_description_mobile_collapse": false,
         "mobile_tabs_title_size": "h4"
-      }
-    },
-    "178344765871c18720": {
-      "type": "_blocks",
-      "blocks": {
-        "ecom_reviews_expert_reviews_widget_zbrTmD": {
-          "type": "shopify://apps/ecom-reviews-expert/blocks/reviews_widget/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "ecom_reviews_expert_reviews_widget_zbrTmD"
-      ],
-      "settings": {
-        "color_palette": "",
-        "overlay_opacity": 100,
-        "width": "wide",
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "padding_left": 0,
-        "padding_right": 0,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "padding_left_mobile": 0,
-        "padding_right_mobile": 0,
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
       }
     },
     "1655736197e3f3d938": {
@@ -310,12 +282,40 @@
         "1655736197d4a3dd1a-2"
       ],
       "settings": {
-        "alignment": "left",
-        "compact": false,
+        "alignment": "center",
+        "compact": true,
         "width": "boxed",
-        "title": "<h2>Returns & Delivery</h2>",
+        "title": "",
         "title_underline_style": "none",
         "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "178344765871c18720": {
+      "type": "_blocks",
+      "blocks": {
+        "ecom_reviews_expert_reviews_widget_zbrTmD": {
+          "type": "shopify://apps/ecom-reviews-expert/blocks/reviews_widget/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "ecom_reviews_expert_reviews_widget_zbrTmD"
+      ],
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "width": "wide",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "padding_left_mobile": 0,
+        "padding_right_mobile": 0,
+        "spacing_desktop": 0,
         "spacing_mobile": 30,
         "fix_zindex": 0
       }
@@ -327,7 +327,7 @@
         "number_of_items": 4,
         "text_alignment": "center",
         "width": "boxed",
-        "title": "<h1><strong>You may also like</strong></h1>",
+        "title": "<h2><strong>You may also like</strong></h2>",
         "title_underline_style": "none",
         "enable_quick_buy_desktop": true,
         "enable_quick_buy_mobile": true,
@@ -364,8 +364,8 @@
   "order": [
     "breadcrumbs",
     "main-product",
-    "178344765871c18720",
     "1655736197e3f3d938",
+    "178344765871c18720",
     "recommendations",
     "recently-viewed"
   ]
