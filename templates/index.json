@@ -12,32 +12,6 @@
     "section_grid_z4HzFQ": {
       "type": "section-grid",
       "blocks": {
-        "image_GEGtdy": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Velocity_Lift_Pump.png",
-            "overlay_opacity": 0,
-            "color_palette": "",
-            "text_position": "align-bottom text-start",
-            "cols": 2,
-            "rows": 1,
-            "title": "",
-            "title_underline_style": "none",
-            "text": "",
-            "show_link": true,
-            "link_text": "SHOP NOW",
-            "link_url": "shopify://products/10an-40-micron-high-flow-long-fuel-filter-with-check-valve-85812",
-            "button_style": "primary plain",
-            "show_overlay_link": true,
-            "overlay_url": "shopify://products/10an-40-micron-high-flow-long-fuel-filter-with-check-valve-85812",
-            "show_look": false,
-            "product_list": [],
-            "look_btn_style": "buy_button plain",
-            "look_position": "end",
-            "show_look_label": false,
-            "look_label_text": "Label"
-          }
-        },
         "image_tEAqG9": {
           "type": "image",
           "settings": {
@@ -46,7 +20,7 @@
             "overlay_opacity": 0,
             "color_palette": "",
             "text_position": "align-bottom text-start",
-            "cols": 2,
+            "cols": 3,
             "rows": 2,
             "title": "",
             "title_underline_style": "none",
@@ -54,9 +28,35 @@
             "show_link": true,
             "link_text": "SHOP NOW",
             "link_url": "shopify://products/30-amp-dc-brushless-fuel-pump-controller-external-72006",
-            "button_style": "primary plain",
+            "button_style": "tertiary link",
             "show_overlay_link": true,
             "overlay_url": "shopify://products/30-amp-dc-brushless-fuel-pump-controller-external-72006",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        },
+        "image_GEGtdy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Velocity_Lift_Pump.png",
+            "overlay_opacity": 0,
+            "color_palette": "",
+            "text_position": "align-bottom text-start",
+            "cols": 1,
+            "rows": 1,
+            "title": "",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": true,
+            "link_text": "SHOP NOW",
+            "link_url": "shopify://products/10an-40-micron-high-flow-long-fuel-filter-with-check-valve-85812",
+            "button_style": "tertiary link",
+            "show_overlay_link": true,
+            "overlay_url": "shopify://products/10an-40-micron-high-flow-long-fuel-filter-with-check-valve-85812",
             "show_look": false,
             "product_list": [],
             "look_btn_style": "buy_button plain",
@@ -72,7 +72,7 @@
             "overlay_opacity": 0,
             "color_palette": "",
             "text_position": "align-bottom text-start",
-            "cols": 2,
+            "cols": 1,
             "rows": 1,
             "title": "",
             "title_underline_style": "none",
@@ -80,7 +80,7 @@
             "show_link": true,
             "link_text": "SHOP NOW",
             "link_url": "shopify://products/69002-c6-corvette-fuel-pump-hanger-with-1100lph-brushless-twin-screw-pump",
-            "button_style": "primary plain",
+            "button_style": "tertiary link",
             "show_overlay_link": true,
             "overlay_url": "shopify://products/69002-c6-corvette-fuel-pump-hanger-with-1100lph-brushless-twin-screw-pump",
             "show_look": false,
@@ -93,8 +93,8 @@
         }
       },
       "block_order": [
-        "image_GEGtdy",
         "image_tEAqG9",
+        "image_GEGtdy",
         "image_NLiKpn"
       ],
       "name": "t:sections.grid.presets.name",
@@ -370,34 +370,6 @@
         "fix_zindex": 0
       }
     },
-    "section_featured_collection_YByJiQ": {
-      "type": "section-featured-collection",
-      "name": "t:sections.featured_collection.presets.name",
-      "settings": {
-        "collection": "253-series-universal-in-tank-brushless-kits",
-        "layout": "grid",
-        "limit": 4,
-        "number_of_items": 4,
-        "text_alignment": "center",
-        "width": "boxed",
-        "title": "<h2><strong>New Arrivals</strong></h2>",
-        "title_underline_style": "none",
-        "text": "<p>Complete in-tank brushless kits for maximum performance</p>",
-        "show_link": false,
-        "link_text": "Button",
-        "button_style": "primary plain",
-        "enable_quick_buy_desktop": true,
-        "enable_quick_buy_mobile": true,
-        "enable_quick_buy_drawer": true,
-        "enable_quick_buy_qty_selector": true,
-        "enable_color_picker": true,
-        "enable_quick_buy_compact": true,
-        "mobile_layout": "slider",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
     "17834479092ee3a42c": {
       "type": "_blocks",
       "blocks": {
@@ -421,6 +393,34 @@
         "padding_bottom_mobile": 20,
         "padding_left_mobile": 0,
         "padding_right_mobile": 0,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_featured_collection_YByJiQ": {
+      "type": "section-featured-collection",
+      "name": "t:sections.featured_collection.presets.name",
+      "settings": {
+        "collection": "253-series-universal-in-tank-brushless-kits",
+        "layout": "grid",
+        "limit": 4,
+        "number_of_items": 4,
+        "text_alignment": "center",
+        "width": "boxed",
+        "title": "<h2><strong>New Arrivals</strong></h2>",
+        "title_underline_style": "none",
+        "text": "<p>Complete in-tank brushless kits for maximum performance</p>",
+        "show_link": false,
+        "link_text": "Button",
+        "button_style": "primary plain",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": true,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": true,
+        "enable_quick_buy_compact": true,
+        "mobile_layout": "slider",
         "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
