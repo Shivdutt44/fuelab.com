@@ -1,0 +1,147 @@
+
+ {% style %}
+  /* 1. Main Submit Block Container (Supports unavailable/out-of-stock state) */
+  article#main-product[data-form-id] div.submit.m10 {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  /* 2. Modern Quantity Selector Card Styling */
+  article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount {
+    position: relative !important;
+    flex-shrink: 0 !important;
+    width: 90px !important;
+    height: 41px !important;
+    border-radius: 8px !important;
+    background-color: #f8f9fa !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    overflow: hidden !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+  }
+
+  article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount:hover {
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount > span.semantic-amount {
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  /* 3. Quantity Number Input - Horizontally Centered & Vertical Shift */
+  article#main-product[data-form-id] div.submit.m10 input[name="quantity"] {
+    width: 55px !important;
+    height: 100% !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    transform: translateY(-5px) !important;
+  }
+
+  /* 4. Increase / Decrease Buttons (+/-) Styling */
+  article#main-product[data-form-id] div.submit.m10 .semantic-amount a.incr,
+  article#main-product[data-form-id] div.submit.m10 .semantic-amount a.decr {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 24px !important;
+    height: 50% !important;
+    color: #475569 !important;
+    text-decoration: none !important;
+    transition: background-color 0.15s ease, color 0.15s ease !important;
+    cursor: pointer !important;
+  }
+
+  article#main-product[data-form-id] div.submit.m10 .semantic-amount a.incr:hover,
+  article#main-product[data-form-id] div.submit.m10 .semantic-amount a.decr:hover {
+    background-color: #e2e8f0 !important;
+    color: #0f172a !important;
+  }
+
+  /* 5. Add to Cart / Out of Stock Container */
+  article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  /* Target BOTH Normal button & Out-of-Stock button */
+  article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-buy_button,
+  article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-unavailable_buy_button {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: 41px !important; /* Matches Quantity Box Height */
+    
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    
+    border-radius: 8px !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+    line-height: 1 !important;
+  }
+
+  /* 6. Mobile Responsiveness */
+  @media only screen and (max-width: 480px) {
+    article#main-product[data-form-id] div.submit.m10 {
+      gap: 8px !important;
+    }
+
+    article#main-product[data-form-id] div.submit.m10 > span.input-amount.f8pr-amount {
+      width: 95px !important;
+      height: 40px !important;
+    }
+
+    article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-buy_button,
+    article#main-product[data-form-id] div.submit.m10 > div.f8pr-button.wide > button.overlay-unavailable_buy_button {
+      height: 40px !important;
+      font-size: 14px !important;
+    }
+  }
+{% endstyle %}
+
+
+/* After add to cart checkout problem code */
+/* Parent element ko Flexbox container banayein */
+p.link-btn.wide.m10 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important; /* Dono buttons ke beech ka gap */
+}
+
+/* Absolute positioning reset karein aur full width karein */
+.overlay-buy_button {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center; /* Vertical alignment ke liye */
+  width: 100% !important;
+}
+
+/* --- only for checkout button height --- */
+button.overlay-buy_button[name="checkout"] {
+  padding-top: 16px !important;    /* Top aur Bottom padding se height badhegi */
+  padding-bottom: 16px !important; 
+  min-height: 50px !important;      /* Fixed minimum height dene ke liye */
+}
