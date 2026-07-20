@@ -22,7 +22,7 @@
           "type": "title",
           "settings": {
             "layout": "title-right",
-            "title_size": "h2",
+            "title_size": "h1",
             "title": "",
             "show_vendor_brand": true,
             "show_vendor_name": true,
