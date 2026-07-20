@@ -117,3 +117,15 @@
     }
   }
 {% endstyle %}
+
+p.link-btn.wide.form-group {
+  display: flex !important;
+  flex-direction: column !important; /* Dono buttons ko ek ke niche ek rakhne ke liye */
+  gap: 10px !important; /* Dono buttons ke beech spacing ke liye */
+}
+
+/* Agar buttons par position: absolute lagi ho, toh use unset/static karein */
+.overlay-buy_button {
+  position: static !important;
+  width: 100% !important; /* Full width button ke liye */
+}
