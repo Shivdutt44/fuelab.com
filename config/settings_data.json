@@ -49,7 +49,7 @@
     "everything_rounded": true,
     "button_height": "size-m",
     "button_style": "solid",
-    "button_rounded": "rounded",
+    "button_rounded": "slightly-rounded",
     "button_font": "body",
     "enable_cart_drawer": true,
     "enable_cart_drawer_undo_remove": true,
