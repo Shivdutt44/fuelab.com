@@ -46,7 +46,7 @@
     "fill_product_images": true,
     "show_secondary_image": true,
     "multiply_collection_images": "multiply",
-    "everything_rounded": true,
+    "everything_rounded": false,
     "button_height": "size-s",
     "button_style": "plain",
     "button_rounded": "slightly-rounded",

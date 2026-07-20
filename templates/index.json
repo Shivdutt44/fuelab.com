@@ -102,7 +102,7 @@
         "number_of_columns": "4",
         "height": "size-s",
         "width": "wide",
-        "space_between": 1,
+        "space_between": 2,
         "image_zoom": true,
         "image_move": false,
         "layout_mobile": "rows",
@@ -118,7 +118,60 @@
         "image_K9kHjn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Artboard_1_1_123216ff-68da-41a3-853a-0d5f16725b12.png",
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-2",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "<strong>Promo banner</strong>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": false,
+            "overlay_url": ""
+          }
+        },
+        "image_w3PX4V": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-2",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "<strong>Promo banner</strong>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": false,
+            "overlay_url": ""
+          }
+        },
+        "image_pKTqWf": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-2",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "<strong>Promo banner</strong>",
+            "title_underline_style": "none",
+            "text": "",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": false,
+            "overlay_url": ""
+          }
+        },
+        "image_VQXY4M": {
+          "type": "image",
+          "settings": {
             "overlay_opacity_img": 0,
             "color_palette": "scheme-2",
             "overlay_opacity": 100,
@@ -136,14 +189,17 @@
         }
       },
       "block_order": [
-        "image_K9kHjn"
+        "image_K9kHjn",
+        "image_w3PX4V",
+        "image_pKTqWf",
+        "image_VQXY4M"
       ],
       "name": "t:sections.promo_gallery.presets.name",
       "settings": {
         "items_width": 4,
         "height": "1/1",
         "width": "wide",
-        "space_between": 0,
+        "space_between": 2,
         "image_zoom": false,
         "shadow": false,
         "title_size_blocks": "h4",
@@ -171,7 +227,7 @@
         "fill_images": false,
         "layout": "slider",
         "number_of_items": 5,
-        "text_alignment": "start",
+        "text_alignment": "center",
         "width": "boxed",
         "title": "<h2><strong>Shop By Categories </strong></h2>",
         "title_underline_style": "none",
