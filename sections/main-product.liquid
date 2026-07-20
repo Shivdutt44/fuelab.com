@@ -1891,39 +1891,62 @@
 
 
 {% style %}
-  /* Parent container ko Flexbox bana kar elements ko ek line mein space ke sath align karein */
+  /* 1. Main Container (Flexbox & Responsive Layout) */
   .submit.m10 {
     display: flex !important;
     align-items: center !important;
-    gap: 12px !important; /* Quantity aur Button ke beech distance */
+    gap: 12px !important; /* Quantity aur Button ke bich spacing */
     position: relative !important;
+    width: 100% !important;
   }
 
-  /* Quantity input section ko fix width aur flex-shrink se squeeze hone se bachayein */
+  /* 2. Quantity Box Styling (Border Radius & Fix Width) */
   .submit.m10 .f8pr-amount {
     position: relative !important;
     flex-shrink: 0 !important;
-    width: auto !important;
+    border-radius: 8px !important; /* Quantity box border radius */
+    overflow: hidden !important; /* Smooth rounded corners ke liye */
+    border: 1px solid #ccc; /* Agar border visible na ho to border-line */
   }
 
-  /* Add to Cart Button Div ki width ko dynamic karein */
+  .submit.m10 .semantic-amount {
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+  }
+
+  /* 3. Add to Cart Container & Button Text Center Alignment */
   .submit.m10 .f8pr-button.wide {
-    flex: 1 !important;
+    flex: 1 1 auto !important;
     width: auto !important;
+    margin: 0 !important;
   }
 
-  /* Main Button ki absolute overlay property ko fix karein */
   .submit.m10 .overlay-buy_button {
-    position: relative !important; /* Pehle yeh absolute overlapping kar raha tha */
+    position: relative !important; /* Overlay absolute issue fix */
     width: 100% !important;
-    left: auto !important;
-    top: auto !important;
+    height: 100% !important;
+    
+    /* Text ko exact center me align karne ke liye */
+    display: flex !important;
+    align-items: center !important;     /* Vertical Center */
+    justify-content: center !important;  /* Horizontal Center */
+    text-align: center !important;
+    
+    border-radius: 8px !important; /* Matches overall button style */
+    padding: 12px 20px !important; /* Good touch area for mobile */
+    box-sizing: border-box !important;
   }
 
-  /* Mobile responsiveness ke liye agar flex break karna ho */
+  /* 4. Responsive Rules (Small Screens / Mobile) */
   @media only screen and (max-width: 480px) {
     .submit.m10 {
-      flex-wrap: nowrap !important;
+      gap: 8px !important; /* Chhoti screen par kam space */
+    }
+
+    .submit.m10 .overlay-buy_button {
+      padding: 10px 12px !important;
+      font-size: 14px !important; /* Mobile friendly font size */
     }
   }
 {% endstyle %}
