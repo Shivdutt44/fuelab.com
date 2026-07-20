@@ -13,7 +13,7 @@
     position: relative !important;
     flex-shrink: 0 !important;
     width: 105px !important;              /* Clean compact width */
-    height: 40px !important;              /* Matches button height */
+    height: 41px !important;              /* Matches button height */
     border-radius: 8px !important;
     background-color: #f8f9fa !important; /* Soft light background */
     border: 1px solid #e2e8f0 !important;  /* Modern slate border */
