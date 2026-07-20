@@ -209,6 +209,9 @@
         "content_X4RWqV",
         "f2290434-741b-4731-a534-ad679331e164"
       ],
+      "custom_css": [
+        ".m5 {font-size: 25px; font-weight: 700; /* bold */}"
+      ],
       "settings": {
         "width": "wide",
         "show_thumbs_desktop": true,
