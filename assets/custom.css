@@ -140,5 +140,5 @@ p.link-btn.wide.m10 {
 button.overlay-buy_button[name="checkout"] {
   padding-top: 16px !important;    /* Top aur Bottom padding se height badhegi */
   padding-bottom: 16px !important; 
-  min-height: 52px !important;      /* Fixed minimum height dene ke liye */
+  min-height: 50px !important;      /* Fixed minimum height dene ke liye */
 }
