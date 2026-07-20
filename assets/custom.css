@@ -52,7 +52,7 @@
     box-shadow: none !important;
     
     /* Exactly 2px Up Shift */
-    transform: translateY(-2px) !important;
+    transform: translateY(-4px) !important;
   }
 
   /* 4. Increase / Decrease Buttons (+/-) Styling */
