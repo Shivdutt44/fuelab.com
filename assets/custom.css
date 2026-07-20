@@ -36,24 +36,23 @@
     position: relative !important;
   }
 
-  /* 3. Quantity Number Input - Shifted 2px Right & 1px Up */
+  /* 3. Quantity Number Input - Horizontally Centered */
   article#main-product[data-form-id] div.submit.m10 input[name="quantity"] {
     width: 55px !important;               /* Space for text */
     height: 100% !important;
-    text-align: center !important;
+    text-align: center !important;        /* Horizontally Center Alignment */
     font-size: 15px !important;
     font-weight: 600 !important;
     color: #1e293b !important;
     background: transparent !important;
     border: none !important;
     outline: none !important;
-    padding-left: 6px !important;
-    padding-right: 0 !important;
-    margin: 0 !important;
+    padding: 0 !important;                /* Padding zeroes for exact horizontal centering */
+    margin: 0 auto !important;            /* Margin auto for perfect center */
     box-shadow: none !important;
     
-    /* Precision Shift: 2px Right & 1px Up */
-    transform: translate(2px, -1px) !important;
+    /* 1px Up adjustment for clean vertical balance */
+    transform: translateY(-1px) !important;
   }
 
   /* 4. Increase / Decrease Buttons (+/-) Styling */
