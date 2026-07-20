@@ -165,7 +165,7 @@
         "disable_account_dropdown": false,
         "header_icons": false,
         "layout_mobile": "logo_center",
-        "mobile_menu_color": "",
+        "mobile_menu_color": "scheme-1",
         "menu_icon": "menu-left|e97f",
         "search_compact_mobile": true,
         "search_mobile_bd": "bd-b",
