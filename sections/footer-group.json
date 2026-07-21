@@ -13,6 +13,7 @@
   "sections": {
     "section_newsletter_jrXcx3": {
       "type": "section-newsletter",
+      "disabled": true,
       "name": "t:sections.newsletter.presets.name",
       "settings": {
         "image": "shopify://shop_images/Velocity_Lift_Pump.png",
@@ -38,17 +39,17 @@
         "ee8cf9cf-0a8b-4986-b76c-1016a9510c5b": {
           "type": "customer_support",
           "settings": {
-            "title": "CUSTOMER SUPPORT",
-            "title_underline_style": "none",
-            "customer_support_img_width": 220,
-            "customer_support_offset_right": 150,
+            "title": "<strong>CUSTOMER SUPPORT</strong>",
+            "title_underline_style": "accent",
+            "customer_support_img_width": 320,
+            "customer_support_offset_right": 0,
             "customer_support_offset_bottom": 0,
             "extra_customer_support": "<p><strong>Contact Us:</strong> <a href=\"tel:+1-618-344-3300\" title=\"Phone\">618-344-3300</a></p><p><strong>Mon - Fri 8:00am - 5:00pm (CST)</strong></p><p><strong>SALES:</strong> <a href=\"https://fuelab.com/ft-2433-shipping.html\" target=\"_blank\">sales@fuelab.com<br/></a><strong>SPONSORSHIPS:</strong> <a href=\"mailto:tanner.berg@fuelab.com\">tanner.berg@fuelab.com<br/></a><strong>Tech Support:</strong> <a href=\"mailto:info@fuelab.com\">info@fuelab.com</a></p><p>3443 Petroff Plaza<br/>Building A<br/>Pontoon Beach, IL 62040</p>",
             "show_phone_link": true,
             "show_mail_link": true,
             "show_whatsapp_link": true,
-            "customer_support_offset_right_mobile": 0,
-            "customer_support_offset_bottom_mobile": 0
+            "customer_support_offset_right_mobile": 150,
+            "customer_support_offset_bottom_mobile": 30
           }
         },
         "menu_EtyHQA": {
@@ -57,11 +58,24 @@
             "menu": "main-menu",
             "split_menu": true
           }
+        },
+        "socials_newsletter_PP6b4R": {
+          "type": "socials_newsletter",
+          "settings": {
+            "title": "Follow us",
+            "show_socials": true,
+            "enable_follow_on_shop": true,
+            "show_newsletter": true,
+            "footer_button_style": "primary plain",
+            "enable_newsletter_terms_checkbox": false,
+            "newsletter_terms_text": ""
+          }
         }
       },
       "block_order": [
         "ee8cf9cf-0a8b-4986-b76c-1016a9510c5b",
-        "menu_EtyHQA"
+        "menu_EtyHQA",
+        "socials_newsletter_PP6b4R"
       ],
       "custom_css": [],
       "settings": {
