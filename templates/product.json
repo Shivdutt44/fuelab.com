@@ -167,6 +167,7 @@
         },
         "f2290434-741b-4731-a534-ad679331e164": {
           "type": "complementary_products",
+          "disabled": true,
           "settings": {
             "enable_tab": true,
             "collapse": false,
