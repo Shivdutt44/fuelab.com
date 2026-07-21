@@ -86,7 +86,7 @@
         "bottom_color": "scheme-2",
         "bottom_img": "shopify://shop_images/fub__white.png",
         "bottom_img_width": 175,
-        "bottom_img_link": "",
+        "bottom_img_link": "/",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "enable_follow_on_shop": true,
