@@ -218,13 +218,13 @@
       "name": "t:sections.collection_list.presets.name",
       "settings": {
         "collections": [
-          "accessories",
-          "diesel-performance",
-          "fuel-filters",
           "fuel-pumps",
-          "fuel-systems",
-          "fuel-pump-bracket-kits",
+          "fuel-filters",
+          "accessories",
           "fuel-pressure-gauges",
+          "fuel-systems",
+          "diesel-performance",
+          "fuel-pump-bracket-kits",
           "diesel-fuel-filtration",
           "brushless-fuel-pump-controller",
           "fuel-filter-elements"
