@@ -307,7 +307,7 @@
       "name": "t:sections.video_with_text.presets.name",
       "settings": {
         "overlay_opacity": 0,
-        "color_palette": "scheme-6",
+        "color_palette": "scheme-2",
         "layout": "image-left",
         "text_position": "text-start",
         "width": "boxed",
@@ -539,8 +539,8 @@
         "padding_bottom_mobile": 0,
         "padding_left_mobile": 0,
         "padding_right_mobile": 0,
-        "spacing_desktop": 80,
-        "spacing_mobile": 50,
+        "spacing_desktop": 40,
+        "spacing_mobile": 20,
         "fix_zindex": 0
       }
     }
