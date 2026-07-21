@@ -197,14 +197,14 @@
       "name": "t:sections.promo_gallery.presets.name",
       "settings": {
         "items_width": 4,
-        "height": "1/1",
+        "height": "16/9",
         "width": "wide",
         "space_between": 0,
         "image_zoom": true,
         "shadow": true,
         "title_size_blocks": "h4",
         "layout_mobile": "compact",
-        "height_mobile": "16/9",
+        "height_mobile": "1/1",
         "spacing_desktop": 80,
         "spacing_mobile": 50,
         "fix_zindex": 0

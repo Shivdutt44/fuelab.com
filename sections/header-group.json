@@ -14,23 +14,39 @@
     "announcement": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_YWjW97": {
+          "type": "announcement",
+          "settings": {
+            "text": "Shout out your big announcement here!",
+            "image_height": 55
+          }
+        },
         "announcement-block-1": {
           "type": "announcement",
           "settings": {
             "text": "50% OFF ALL PRODUCTS",
             "image_height": 55
           }
+        },
+        "announcement_HyzCmL": {
+          "type": "announcement",
+          "settings": {
+            "text": "Shout out your big announcement here!",
+            "image_height": 55
+          }
         }
       },
       "block_order": [
-        "announcement-block-1"
+        "announcement_YWjW97",
+        "announcement-block-1",
+        "announcement_HyzCmL"
       ],
       "settings": {
         "text_alignment": "center",
-        "color_palette": "scheme-2",
+        "color_palette": "scheme-3",
         "padding": 10,
         "display_type": "none",
-        "allow_close": false,
+        "allow_close": true,
         "text_speed": "neutral",
         "show_cursor": true,
         "default_no_nav": true,
