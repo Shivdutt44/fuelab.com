@@ -212,7 +212,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "width": "wide",
+        "width": "boxed",
         "show_thumbs_desktop": true,
         "show_thumbs_mobile": true,
         "images_layout": "aside",
@@ -224,7 +224,7 @@
         "cons": "",
         "specs_title_size": "h3",
         "specifications": "",
-        "product_description_mobile_collapse": false,
+        "product_description_mobile_collapse": true,
         "mobile_tabs_title_size": "h4"
       }
     },
@@ -288,8 +288,8 @@
         "width": "boxed",
         "title": "",
         "title_underline_style": "none",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
         "fix_zindex": 0
       }
     },
@@ -316,8 +316,8 @@
         "padding_bottom_mobile": 20,
         "padding_left_mobile": 0,
         "padding_right_mobile": 0,
-        "spacing_desktop": 0,
-        "spacing_mobile": 30,
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
         "fix_zindex": 0
       }
     },
@@ -336,8 +336,8 @@
         "enable_quick_buy_qty_selector": true,
         "enable_color_picker": false,
         "enable_quick_buy_compact": false,
-        "spacing_desktop": 50,
-        "spacing_mobile": 0,
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
         "fix_zindex": 0,
         "mobile_collapse": false
       }
@@ -348,16 +348,16 @@
         "number_of_items": 4,
         "text_alignment": "center",
         "width": "boxed",
-        "title": "<h2>Recently viewed products</h2>",
-        "title_underline_style": "none",
+        "title": "<h2><strong>Recently viewed products</strong></h2>",
+        "title_underline_style": "accent",
         "enable_quick_buy_desktop": true,
         "enable_quick_buy_mobile": true,
-        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_drawer": true,
         "enable_quick_buy_qty_selector": true,
         "enable_color_picker": false,
         "enable_quick_buy_compact": false,
-        "spacing_desktop": 50,
-        "spacing_mobile": 30,
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
         "fix_zindex": 0
       }
     }
