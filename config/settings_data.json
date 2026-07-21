@@ -182,7 +182,7 @@
       },
       "14670819250224415090": {
         "type": "shopify://apps/ecom-verified-seller/blocks/main/019a4390-55cf-7736-92b4-7bcca0c8f196",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "enabled": true,
           "badge_size": "small",
@@ -303,7 +303,7 @@
       },
       "scheme-6": {
         "settings": {
-          "primary_bg": "#F4F4F4",
+          "primary_bg": "#f4f4f4",
           "primary_bg_gradient": "",
           "secondary_bg": "#ffffff",
           "title_color": "#0b1613",
