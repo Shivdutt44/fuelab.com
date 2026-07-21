@@ -166,7 +166,7 @@
         "menu_subs_font_weight": "400",
         "enable_menu_subs_font_size": false,
         "menu_subs_font_size": 16,
-        "custom_menu_items_per_columns": true,
+        "custom_menu_items_per_columns": false,
         "menu_items_limit": 6,
         "submenu_items_limit": 5,
         "main_menu_show_lines": true,
