@@ -28,7 +28,7 @@
         "enable_newsletter_terms_checkbox": false,
         "newsletter_terms_text": "",
         "spacing_desktop": 0,
-        "spacing_mobile": 30,
+        "spacing_mobile": 0,
         "fix_zindex": 0
       }
     },
@@ -66,12 +66,12 @@
       "custom_css": [],
       "settings": {
         "width": "boxed",
-        "footer_color": "scheme-2",
+        "footer_color": "scheme-3",
         "title_font": "primary",
         "title_size_blocks": "h4",
         "bottom_color": "scheme-2",
         "bottom_img": "shopify://shop_images/fub__white.png",
-        "bottom_img_width": 155,
+        "bottom_img_width": 175,
         "bottom_img_link": "",
         "enable_country_selector": true,
         "enable_language_selector": true,

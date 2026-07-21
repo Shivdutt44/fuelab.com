@@ -213,7 +213,7 @@
     "section_collection_list_4GjMHJ": {
       "type": "section-collection-list",
       "custom_css": [
-        "h5{text-align: center;}"
+        "h5 {text-align: center;}"
       ],
       "name": "t:sections.collection_list.presets.name",
       "settings": {
@@ -539,8 +539,8 @@
         "padding_bottom_mobile": 0,
         "padding_left_mobile": 0,
         "padding_right_mobile": 0,
-        "spacing_desktop": 0,
-        "spacing_mobile": 0,
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
         "fix_zindex": 0
       }
     }
