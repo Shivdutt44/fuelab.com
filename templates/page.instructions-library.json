@@ -86,6 +86,37 @@
         "fix_zindex": 0
       }
     },
+    "section_collection_list_GeXY4y": {
+      "type": "section-collection-list",
+      "name": "t:sections.collection_list.presets.name",
+      "settings": {
+        "collections": [
+          "fuel-pumps",
+          "fuel-filters",
+          "fuel-systems",
+          "diesel-performance",
+          "accessories",
+          "diesel-fuel-pressure-regulators"
+        ],
+        "image_ratio": "portrait",
+        "fill_images": false,
+        "layout": "rows",
+        "number_of_items": 6,
+        "text_alignment": "center",
+        "width": "boxed",
+        "title": "",
+        "title_underline_style": "none",
+        "show_link": false,
+        "link_text": "Button",
+        "link_url": "/",
+        "button_style": "primary plain",
+        "collection_title_size": "h5",
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
     "custom_pdf_download_wrJBd8": {
       "type": "custom-pdf-download",
       "blocks": {
@@ -286,6 +317,7 @@
     "breadcrumbs",
     "main-page",
     "section_slideshow_f8Vpfz",
+    "section_collection_list_GeXY4y",
     "custom_pdf_download_wrJBd8"
   ]
 }
