@@ -246,7 +246,7 @@
           "settings": {
             "video": "shopify://files/videos/Before Fuel Pump and After Fuel Pump Fuel Filters - FUELAB(720P_HD).mp4",
             "overlay_opacity_img": 0,
-            "color_palette": "scheme-2",
+            "color_palette": "scheme-1",
             "overlay_opacity": 100,
             "text_position": "text-center",
             "title": "<strong>Fuelab In-Line Fuel Filters</strong>",
