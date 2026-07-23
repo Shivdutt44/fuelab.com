@@ -196,16 +196,6 @@
         "disabled": false,
         "settings": {}
       },
-      "8903970442762518517": {
-        "type": "shopify://apps/ecom-reviews-expert/blocks/ai_reviews_embed/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
-        "disabled": true,
-        "settings": {}
-      },
-      "17585992559042263405": {
-        "type": "shopify://apps/ecom-reviews-expert/blocks/rich_snippets/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
-        "disabled": true,
-        "settings": {}
-      },
       "14670819250224415090": {
         "type": "shopify://apps/ecom-verified-seller/blocks/main/019a4390-55cf-7736-92b4-7bcca0c8f196",
         "disabled": true,
@@ -222,6 +212,16 @@
       },
       "12691944026889484271": {
         "type": "shopify://apps/snap-b2b/blocks/snap-b2b/4873aea5-77bc-44a0-badb-f9cfb804db54",
+        "disabled": false,
+        "settings": {}
+      },
+      "8903970442762518517": {
+        "type": "shopify://apps/ecom-reviews-expert/blocks/ai_reviews_embed/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
+        "disabled": false,
+        "settings": {}
+      },
+      "17585992559042263405": {
+        "type": "shopify://apps/ecom-reviews-expert/blocks/rich_snippets/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
         "disabled": false,
         "settings": {}
       }
