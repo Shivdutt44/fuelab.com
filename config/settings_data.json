@@ -238,7 +238,7 @@
           "input_bg": "#ffffff",
           "input_fg": "#1a3437",
           "primary_bd": "#e4e4e4",
-          "accent": "#e3bd33",
+          "accent": "#FBCD0B",
           "accent_gradient": "linear-gradient(320deg, rgba(232, 74, 147, 1) 4%, rgba(239, 179, 76, 1) 100%)"
         }
       },
