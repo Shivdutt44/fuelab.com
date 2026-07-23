@@ -43,7 +43,7 @@
       ],
       "settings": {
         "text_alignment": "center",
-        "color_palette": "scheme-3",
+        "color_palette": "scheme-2",
         "padding": 10,
         "display_type": "none",
         "allow_close": false,
