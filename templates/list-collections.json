@@ -18,10 +18,12 @@
     "main-list-collection": {
       "type": "main-list-collection",
       "settings": {
-        "image_ratio": "square",
+        "width": "boxed",
+        "title_size": "h1",
+        "image_ratio": "landscape",
         "fill_images": true,
-        "pagination_qty": 12,
-        "number_of_items": 4
+        "pagination_qty": 48,
+        "number_of_items": 5
       }
     }
   },
