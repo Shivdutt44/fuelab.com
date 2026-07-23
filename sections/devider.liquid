@@ -1,0 +1,380 @@
+
+{% assign ai_gen_id = section.id %}
+
+{% style %}
+
+  #shopify-block-{{ section.id }} {
+width:100%;
+}
+
+.premium-divider-{{ ai_gen_id }} {
+
+  display:block;
+  width:100%;
+  line-height:0;
+  overflow:hidden;
+
+  margin-top:{{ section.settings.margin_top }}px;
+  margin-bottom:{{ section.settings.margin_bottom }}px;
+  padding-top:{{ section.settings.padding_top }}px;
+  padding-bottom:{{ section.settings.padding_bottom }}px;
+
+  transform:
+    {% if section.settings.flip_horizontal == 'true' %}
+      scaleX(-1)
+    {% endif %}
+    {% if section.settings.flip_vertical == 'true' %}
+      scaleY(-1)
+    {% endif %};
+}
+
+
+  .premium-divider-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+    margin-top: {{ section.settings.margin_top }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    {% if section.settings.flip_divider == 'bottom' %}
+      transform: scaleY(-1);
+    {% endif %}
+  }
+
+  .premium-divider-{{ ai_gen_id }} svg {
+    display: block;
+    width: 100%;
+    height: {{ section.settings.divider_height }}px;
+  }
+
+  .premium-divider-{{ ai_gen_id }} svg path,
+  .premium-divider-{{ ai_gen_id }} svg polygon,
+  .premium-divider-{{ ai_gen_id }} svg ellipse {
+    fill: {{ section.settings.divider_color }};
+  }
+
+  @media screen and (max-width: 749px){
+
+.premium-divider-{{ ai_gen_id }} svg{
+    height: calc({{ section.settings.divider_height }}px * 0.65);
+}
+
+}
+
+.premium-divider-{{ ai_gen_id }} {
+
+  {% assign transform = '' %}
+
+  {% if section.settings.flip_horizontal == 'true' %}
+    {% assign transform = transform | append: ' scaleX(-1)' %}
+  {% endif %}
+
+  {% if section.settings.flip_vertical == 'true' %}
+    {% assign transform = transform | append: ' scaleY(-1)' %}
+  {% endif %}
+
+  {% unless transform == '' %}
+    transform: {{ transform }};
+  {% endunless %}
+
+}
+
+{% endstyle %}
+
+<div class="premium-divider-{{ ai_gen_id }}" >
+  {% case section.settings.divider_style %}
+    {% when 'elegant_wave' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C300,80 600,80 900,0 C1050,40 1150,40 1200,0 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'layered_wave' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,50 C150,80 350,0 600,50 C850,100 1050,20 1200,50 L1200,120 L0,120 Z" opacity="0.3"></path>
+        <path d="M0,70 C200,100 400,20 600,70 C800,120 1000,40 1200,70 L1200,120 L0,120 Z" opacity="0.5"></path>
+        <path d="M0,90 C250,120 450,40 600,90 C750,140 950,60 1200,90 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'luxury_curve' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 Q600,120 1200,0 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'soft_curve' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'smooth_arch' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120 C200,0 400,0 600,60 C800,120 1000,120 1200,0 L1200,120 Z"></path>
+      </svg>
+    {% when 'organic_blob' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,40 C100,80 200,20 300,50 C400,80 500,30 600,60 C700,90 800,40 900,70 C1000,100 1100,50 1200,80 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'fluid_shape' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'silk_flow' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,30 Q200,90 400,30 T800,30 Q1000,90 1200,30 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'premium_brush' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,50 C120,20 180,80 300,50 C420,20 480,80 600,50 C720,20 780,80 900,50 C1020,20 1080,80 1200,50 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'torn_paper' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,45 L50,50 L100,40 L150,55 L200,45 L250,50 L300,42 L350,48 L400,44 L450,52 L500,46 L550,50 L600,43 L650,49 L700,45 L750,51 L800,44 L850,48 L900,46 L950,50 L1000,44 L1050,49 L1100,46 L1150,50 L1200,45 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'minimal_hills' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,80 Q300,20 600,80 T1200,80 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'luxury_diagonal' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <polygon points="0,0 1200,120 1200,120 0,120"></polygon>
+      </svg>
+    {% when 'soft_zigzag' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 L200,20 L400,60 L600,20 L800,60 L1000,20 L1200,60 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'abstract_flow' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C200,120 400,0 600,80 C800,160 1000,40 1200,100 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'modern_mountain' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120 L300,20 L600,80 L900,10 L1200,70 L1200,120 Z"></path>
+      </svg>
+    {% when 'liquid_shape' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,50 C100,10 200,90 300,50 S500,10 600,50 S800,90 900,50 S1100,10 1200,50 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'cloud_curve' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,80 Q150,20 300,80 Q450,20 600,80 Q750,20 900,80 Q1050,20 1200,80 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'ribbon_divider' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C200,0 400,120 600,60 C800,0 1000,120 1200,60 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'premium_scallop' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 Q100,0 200,60 T400,60 T600,60 T800,60 T1000,60 T1200,60 L1200,120 L0,120 Z"></path>
+      </svg>
+    {% when 'luxury_organic' %}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,30 C150,90 250,10 400,60 C550,110 650,30 800,70 C950,110 1050,40 1200,80 L1200,120 L0,120 Z"></path>
+      </svg>
+  {% endcase %}
+</div>
+
+{% schema %}
+{
+  "name": "Premium section divider",
+  "settings": [
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "Divider style",
+      "options": [
+        {
+          "value": "elegant_wave",
+          "label": "Elegant wave"
+        },
+        {
+          "value": "layered_wave",
+          "label": "Layered wave"
+        },
+        {
+          "value": "luxury_curve",
+          "label": "Luxury curve"
+        },
+        {
+          "value": "soft_curve",
+          "label": "Soft curve"
+        },
+        {
+          "value": "smooth_arch",
+          "label": "Smooth arch"
+        },
+        {
+          "value": "organic_blob",
+          "label": "Organic blob"
+        },
+        {
+          "value": "fluid_shape",
+          "label": "Fluid shape"
+        },
+        {
+          "value": "silk_flow",
+          "label": "Silk flow"
+        },
+        {
+          "value": "premium_brush",
+          "label": "Premium brush stroke"
+        },
+        {
+          "value": "torn_paper",
+          "label": "Torn paper premium"
+        },
+        {
+          "value": "minimal_hills",
+          "label": "Minimal hills"
+        },
+        {
+          "value": "luxury_diagonal",
+          "label": "Luxury diagonal"
+        },
+        {
+          "value": "soft_zigzag",
+          "label": "Soft zigzag"
+        },
+        {
+          "value": "abstract_flow",
+          "label": "Abstract flow"
+        },
+        {
+          "value": "modern_mountain",
+          "label": "Modern mountain"
+        },
+        {
+          "value": "liquid_shape",
+          "label": "Liquid shape"
+        },
+        {
+          "value": "cloud_curve",
+          "label": "Cloud curve"
+        },
+        {
+          "value": "ribbon_divider",
+          "label": "Ribbon divider"
+        },
+        {
+          "value": "premium_scallop",
+          "label": "Premium scallop"
+        },
+        {
+          "value": "luxury_organic",
+          "label": "Luxury organic edge"
+        }
+      ],
+      "default": "elegant_wave"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider color",
+      "default": "#faf9f6"
+    },
+    {
+      "type": "range",
+      "id": "divider_height",
+      "label": "Height",
+      "min": 40,
+      "max": 180,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+  "type": "select",
+  "id": "flip_horizontal",
+  "label": "Flip Horizontal",
+  "options": [
+    {
+      "value": "false",
+      "label": "No"
+    },
+    {
+      "value": "true",
+      "label": "Yes"
+    }
+  ],
+  "default": "false"
+},
+{
+  "type": "select",
+  "id": "flip_vertical",
+  "label": "Flip Vertical",
+  "options": [
+    {
+      "value": "false",
+      "label": "No"
+    },
+    {
+      "value": "true",
+      "label": "Yes"
+    }
+  ],
+  "default": "false"
+},
+    {
+      "type": "select",
+      "id": "flip_divider",
+      "label": "Flip divider",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "top"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Premium section divider"
+    }
+  ]
+}
+{% endschema %}
