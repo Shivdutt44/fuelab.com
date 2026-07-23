@@ -137,7 +137,7 @@
           "type": "image",
           "settings": {
             "overlay_opacity_img": 0,
-            "color_palette": "scheme-3",
+            "color_palette": "scheme-4",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
             "title": "<strong>KEEP THE PRESSURE</strong>",
@@ -173,7 +173,7 @@
           "type": "image",
           "settings": {
             "overlay_opacity_img": 0,
-            "color_palette": "scheme-3",
+            "color_palette": "scheme-4",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
             "title": "<strong>FUEL THE DRIVE</strong>",
