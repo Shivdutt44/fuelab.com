@@ -137,7 +137,7 @@
           "type": "image",
           "settings": {
             "overlay_opacity_img": 0,
-            "color_palette": "scheme-4",
+            "color_palette": "scheme-3",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
             "title": "<strong>KEEP THE PRESSURE</strong>",
@@ -173,7 +173,7 @@
           "type": "image",
           "settings": {
             "overlay_opacity_img": 0,
-            "color_palette": "scheme-4",
+            "color_palette": "scheme-3",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
             "title": "<strong>FUEL THE DRIVE</strong>",
@@ -231,8 +231,8 @@
         ],
         "image_ratio": "square",
         "fill_images": false,
-        "layout": "rows",
-        "number_of_items": 5,
+        "layout": "slider",
+        "number_of_items": 6,
         "text_alignment": "center",
         "width": "boxed",
         "title": "<h2><span style=\"text-decoration:underline\"><strong>Shop By Categories </strong></span></h2>",
@@ -241,7 +241,7 @@
         "link_text": "Shop All",
         "link_url": "shopify://collections",
         "button_style": "primary plain",
-        "collection_title_size": "h4",
+        "collection_title_size": "h5",
         "mobile_layout": "grid",
         "spacing_desktop": 80,
         "spacing_mobile": 50,
@@ -352,7 +352,6 @@
       "blocks": {
         "hotspot_MkQNxJ": {
           "type": "hotspot",
-          "disabled": true,
           "settings": {
             "product": "10an-100-micron-in-tank-fuel-straining-filter-83801",
             "text_position": "text-start",
@@ -366,9 +365,8 @@
         },
         "hotspot_VwRnpB": {
           "type": "hotspot",
-          "disabled": true,
           "settings": {
-            "product": "",
+            "product": "12an-6-micron-long-in-line-fuel-filter-82834",
             "text_position": "text-start",
             "title": "Image hotspot",
             "text": "<p>Highlight a new collection and share details about products related to this image</p>",
@@ -380,9 +378,8 @@
         },
         "hotspot_mC4EAL": {
           "type": "hotspot",
-          "disabled": true,
           "settings": {
-            "product": "",
+            "product": "5-0-gpm-variable-speed-brushless-spur-gear-fuel-pump-40500",
             "text_position": "text-start",
             "title": "Image hotspot",
             "text": "<p>Highlight a new collection and share details about products related to this image</p>",
