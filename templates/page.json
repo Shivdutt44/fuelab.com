@@ -34,9 +34,12 @@
         "content"
       ],
       "settings": {
+        "max_width": 1000,
+        "content_alignment": "center",
         "text_alignment": "start",
         "spacing_desktop": 50,
-        "spacing_mobile": 30
+        "spacing_mobile": 30,
+        "fix_zindex": 0
       }
     }
   },
