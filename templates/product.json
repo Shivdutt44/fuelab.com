@@ -303,6 +303,7 @@
       "block_order": [
         "ecom_reviews_expert_reviews_widget_zbrTmD"
       ],
+      "disabled": true,
       "settings": {
         "color_palette": "",
         "overlay_opacity": 100,
