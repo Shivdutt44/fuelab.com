@@ -70,10 +70,6 @@
             "show_read_more": true
           }
         },
-        "inventory": {
-          "type": "inventory",
-          "settings": {}
-        },
         "buy_button": {
           "type": "buy_button",
           "settings": {
@@ -89,6 +85,10 @@
             "show_gift_card_recipient": false
           }
         },
+        "shipping_timer_AVw3RW": {
+          "type": "shipping_timer",
+          "settings": {}
+        },
         "ecom_wishlist_expert_product_pzpyLL": {
           "type": "shopify://apps/ecom-wishlist-expert/blocks/product/fddae014-89f9-460d-9ae7-9289a9e26890",
           "settings": {
@@ -97,6 +97,12 @@
             "textTransform": "none",
             "addToWishlistText": "Add To Wishlist",
             "removeFromWishlistText": "Remove From Wishlist"
+          }
+        },
+        "beafbaf1-a0af-4326-b4de-6e78c472249c": {
+          "type": "spacer",
+          "settings": {
+            "height": 20
           }
         },
         "urgency_ABM9H3": {
@@ -117,12 +123,6 @@
             "tooltip_text_color": "#ffffff",
             "message": "Be quick! Only <strong>*inventory*</strong> products left in stock!",
             "outofstock_message": "Unfortunately, this product is out of stock"
-          }
-        },
-        "beafbaf1-a0af-4326-b4de-6e78c472249c": {
-          "type": "spacer",
-          "settings": {
-            "height": 20
           }
         },
         "e55f9825-3e08-4f90-bd42-9d336323be89": {
@@ -167,6 +167,7 @@
         },
         "f2290434-741b-4731-a534-ad679331e164": {
           "type": "complementary_products",
+          "disabled": true,
           "settings": {
             "enable_tab": true,
             "collapse": false,
@@ -199,11 +200,11 @@
         "variant_selection",
         "codes_VhGUep",
         "short_description",
-        "inventory",
         "buy_button",
+        "shipping_timer_AVw3RW",
         "ecom_wishlist_expert_product_pzpyLL",
-        "urgency_ABM9H3",
         "beafbaf1-a0af-4326-b4de-6e78c472249c",
+        "urgency_ABM9H3",
         "e55f9825-3e08-4f90-bd42-9d336323be89",
         "2e2d451c-7968-4d6b-a516-6f6e842c92ee",
         "content_X4RWqV",
