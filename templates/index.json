@@ -213,7 +213,7 @@
     "section_collection_list_4GjMHJ": {
       "type": "section-collection-list",
       "custom_css": [
-        "h4 {text-align: center;}"
+        "h5 {text-align: center;}"
       ],
       "name": "t:sections.collection_list.presets.name",
       "settings": {
