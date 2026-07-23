@@ -122,7 +122,7 @@
             "color_palette": "scheme-2",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
-            "title": "<strong>Promo banner</strong>",
+            "title": "<strong>PUSH THE LIMIT</strong>",
             "title_underline_style": "none",
             "text": "",
             "show_link": false,
@@ -140,7 +140,7 @@
             "color_palette": "scheme-3",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
-            "title": "<strong>Promo banner</strong>",
+            "title": "<strong>KEEP THE PRESSURE</strong>",
             "title_underline_style": "none",
             "text": "",
             "show_link": false,
@@ -158,7 +158,7 @@
             "color_palette": "scheme-2",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
-            "title": "<strong>Promo banner</strong>",
+            "title": "<strong>OWN THE BUILD</strong>",
             "title_underline_style": "none",
             "text": "",
             "show_link": false,
@@ -176,7 +176,7 @@
             "color_palette": "scheme-3",
             "overlay_opacity": 100,
             "text_position": "text-center align-middle",
-            "title": "<strong>Promo banner</strong>",
+            "title": "<strong>FUEL THE DRIVE</strong>",
             "title_underline_style": "none",
             "text": "",
             "show_link": false,
@@ -254,44 +254,44 @@
         "title_QEr6cK": {
           "type": "title",
           "settings": {
-            "title": "<h2><strong>Video with text</strong></h2>",
+            "title": "<h2><strong>See What Drives FUELAB</strong></h2>",
             "title_underline_style": "accent"
           }
         },
         "text_3jfiQk": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with a video and tell your customers something about this product, collection, blogpost or a promotion.</p>"
+            "text": "<p>From product development to real-world testing, see how FUELAB engineers fuel delivery solutions trusted by builders, racers, and performance enthusiasts.</p>"
           }
         },
         "usp_WrtjWg": {
           "type": "usp",
           "settings": {
-            "usp": "<p>Tell a unique detail about this video</p>"
+            "usp": "<p>Designed for demanding street and race applications</p>"
           }
         },
         "usp_xnn7n6": {
           "type": "usp",
           "settings": {
-            "usp": "<p>Tell a unique detail about this video</p>"
+            "usp": "<p>Engineered with performance and reliability in mind</p>"
           }
         },
         "usp_8y6tXi": {
           "type": "usp",
           "settings": {
-            "usp": "<p>Tell a unique detail about this video</p>"
+            "usp": "<p>Built by a team passionate about fuel system innovation</p>"
           }
         },
         "buttons_KQbyDR": {
           "type": "buttons",
           "settings": {
             "show_first_link": true,
-            "first_link_text": "Button",
-            "first_link_url": "/",
+            "first_link_text": "Explore Products",
+            "first_link_url": "shopify://collections/all",
             "first_button_style": "secondary plain",
             "show_second_link": true,
-            "second_link_text": "Button",
-            "second_link_url": "/",
+            "second_link_text": "About FUELAB",
+            "second_link_url": "shopify://pages/about-us",
             "second_button_style": "primary plain"
           }
         }
@@ -409,12 +409,12 @@
         "width_banner": "boxed",
         "width": "boxed",
         "text_position": "align-start text-start",
-        "title": "<h2><span style=\"text-decoration:underline\"><strong>Image hotspot banner</strong></span></h2>",
+        "title": "<h2><strong>Explore the System Up Close</strong></h2>",
         "title_underline_style": "accent",
-        "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+        "text": "<p>See how FUELAB components come together to create a complete fuel delivery solution. Click the hotspots to learn more about each featured product and its role in the system.</p>",
         "show_link": true,
-        "link_text": "Explore All",
-        "link_url": "/",
+        "link_text": "Explore Collections",
+        "link_url": "shopify://collections",
         "button_style": "secondary inv",
         "height_mobile": "1/1",
         "spacing_desktop": 80,
@@ -456,11 +456,11 @@
         "text_9BaHwT": {
           "type": "text",
           "settings": {
-            "faq_question": "Collapsible row",
+            "faq_question": "<strong>What fuel types are FUELAB products compatible with?</strong>",
             "icon": "none",
             "header_image_svg": "",
             "header_image_width": 25,
-            "faq_answer": "<p>Row content</p>",
+            "faq_answer": "<p>Many FUELAB fuel system components are designed to support a variety of fuel types, including gasoline, ethanol blends, methanol, and diesel, depending on the product. Always check the product specifications to ensure compatibility with your application.</p>",
             "page": "",
             "image_width": 465,
             "liquid": "",
@@ -471,11 +471,11 @@
         "text_9ELpAf": {
           "type": "text",
           "settings": {
-            "faq_question": "Collapsible row",
+            "faq_question": "<strong>Are FUELAB products suitable for both street and race applications?</strong>",
             "icon": "none",
             "header_image_svg": "",
             "header_image_width": 25,
-            "faq_answer": "<p>Row content</p>",
+            "faq_answer": "<p>Yes. FUELAB designs fuel delivery solutions for a wide range of applications, including street performance, motorsports, off-road vehicles, and diesel performance. Product specifications will indicate the intended use and compatibility.</p>",
             "page": "",
             "image_width": 465,
             "liquid": "",
@@ -486,11 +486,11 @@
         "text_yggBBN": {
           "type": "text",
           "settings": {
-            "faq_question": "Collapsible row",
+            "faq_question": "<strong>Can I build a complete fuel system with FUELAB components?</strong>",
             "icon": "none",
             "header_image_svg": "",
             "header_image_width": 25,
-            "faq_answer": "<p>Row content</p>",
+            "faq_answer": "<p>Yes. FUELAB offers fuel pumps, pressure regulators, filters, surge tanks, controllers, fittings, and accessories that work together as a complete fuel delivery solution for a wide range of performance applications.</p>",
             "page": "",
             "image_width": 465,
             "liquid": "",
