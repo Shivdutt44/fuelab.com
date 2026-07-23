@@ -352,6 +352,7 @@
       "blocks": {
         "hotspot_MkQNxJ": {
           "type": "hotspot",
+          "disabled": true,
           "settings": {
             "product": "10an-100-micron-in-tank-fuel-straining-filter-83801",
             "text_position": "text-start",
@@ -365,6 +366,7 @@
         },
         "hotspot_VwRnpB": {
           "type": "hotspot",
+          "disabled": true,
           "settings": {
             "product": "",
             "text_position": "text-start",
@@ -378,6 +380,7 @@
         },
         "hotspot_mC4EAL": {
           "type": "hotspot",
+          "disabled": true,
           "settings": {
             "product": "",
             "text_position": "text-start",
