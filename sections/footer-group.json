@@ -11,12 +11,40 @@
   "type": "footer",
   "name": "t:static_sections.footer.name",
   "sections": {
+    "1784833183d38af775": {
+      "type": "_blocks",
+      "blocks": {
+        "ecom_reviews_expert_rating_badge_8CirBF": {
+          "type": "shopify://apps/ecom-reviews-expert/blocks/rating_badge/68936b0d-e80f-4e68-bd5d-8ca0f3afbc5c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "ecom_reviews_expert_rating_badge_8CirBF"
+      ],
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "width": "wide",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "padding_left_mobile": 0,
+        "padding_right_mobile": 0,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
     "devider_d4bKPE": {
       "type": "devider",
       "name": "Premium section divider",
       "settings": {
         "divider_style": "minimal_hills",
-        "divider_color": "#E3BD33",
+        "divider_color": "#e3bd33",
         "divider_height": 40,
         "flip_horizontal": "false",
         "flip_vertical": "false",
@@ -113,6 +141,7 @@
     }
   },
   "order": [
+    "1784833183d38af775",
     "devider_d4bKPE",
     "section_newsletter_jrXcx3",
     "footer"
