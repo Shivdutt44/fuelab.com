@@ -176,7 +176,17 @@
         {%- if block.settings.title != blank -%}
           {{ block.settings.title }}
         {%- endif -%}
-        {%- if block.settings.text -%}{{ block.settings.text }}{%- endif -%}
+        {%- if block.settings.text != blank -%}
+          <div class="slideshow-text-wrapper">
+            <div class="slideshow-text-content is-clamped">
+              {{ block.settings.text }}
+            </div>
+            <a href="#" class="slideshow-read-more-link" role="button" aria-expanded="false" style="display: none;">
+              <span class="read-more-text">Read more</span>
+              <span class="read-less-text" style="display: none;">Read less</span>
+            </a>
+          </div>
+        {%- endif -%}
         {%- liquid
           assign first_link = false
           assign first_show_link = false
@@ -262,6 +272,157 @@
     }
   }
 </style>
+
+<style>
+  .slideshow-text-wrapper {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .slideshow-text-content {
+    position: relative;
+  }
+  .slideshow-text-content.is-clamped {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  @media only screen and (max-width: 767px) {
+    .slideshow-text-content.is-clamped {
+      -webkit-line-clamp: 3;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .slideshow-text-content.is-clamped {
+      -webkit-line-clamp: 5;
+    }
+  }
+  .slideshow-read-more-link {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin-top: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.3;
+    opacity: 0.85;
+    transition: opacity 0.15s ease;
+    z-index: 2;
+    position: relative;
+  }
+  .slideshow-read-more-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .m6fr.wide,
+  #shopify-section-{{ section.id }}:has(> .section-width-wide),
+  #shopify-section-{{ section.id }}:has(> .wide) {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  #root #shopify-section-{{ section.id }} .m6fr.wide article > figure,
+  #root #shopify-section-{{ section.id }} .m6fr.wide article.aside figure {
+    right: 0 !important;
+  }
+  #root #shopify-section-{{ section.id }} .m6fr.wide article.aside.inv figure {
+    left: 0 !important;
+  }
+</style>
+
+<script>
+  (function() {
+    function initSlideshowReadMore() {
+      const wrappers = document.querySelectorAll('.slideshow-text-wrapper');
+      if (!wrappers.length) return;
+
+      wrappers.forEach(function(wrapper) {
+        const content = wrapper.querySelector('.slideshow-text-content');
+        const btn = wrapper.querySelector('.slideshow-read-more-link');
+        if (!content || !btn) return;
+
+        const readMoreSpan = btn.querySelector('.read-more-text');
+        const readLessSpan = btn.querySelector('.read-less-text');
+
+        function checkOverflow() {
+          const isExpanded = !content.classList.contains('is-clamped');
+          if (isExpanded) {
+            content.classList.add('is-clamped');
+          }
+
+          if (content.clientHeight === 0) {
+            if (isExpanded) content.classList.remove('is-clamped');
+            return;
+          }
+
+          const hasOverflow = content.scrollHeight > content.clientHeight + 2;
+
+          if (isExpanded) {
+            content.classList.remove('is-clamped');
+          }
+
+          if (hasOverflow) {
+            btn.style.display = 'inline-block';
+          } else {
+            if (!isExpanded) {
+              btn.style.display = 'none';
+            }
+          }
+        }
+
+        checkOverflow();
+
+        if (window.ResizeObserver && !wrapper._roBound) {
+          wrapper._roBound = true;
+          const ro = new ResizeObserver(function() {
+            checkOverflow();
+          });
+          ro.observe(content);
+        }
+
+        if (!btn.dataset.bound) {
+          btn.dataset.bound = 'true';
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const isClamped = content.classList.contains('is-clamped');
+            if (isClamped) {
+              content.classList.remove('is-clamped');
+              btn.setAttribute('aria-expanded', 'true');
+              if (readMoreSpan) readMoreSpan.style.display = 'none';
+              if (readLessSpan) readLessSpan.style.display = 'inline';
+            } else {
+              content.classList.add('is-clamped');
+              btn.setAttribute('aria-expanded', 'false');
+              if (readMoreSpan) readMoreSpan.style.display = 'inline';
+              if (readLessSpan) readLessSpan.style.display = 'none';
+            }
+          });
+        }
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSlideshowReadMore);
+    } else {
+      initSlideshowReadMore();
+    }
+
+    window.addEventListener('resize', initSlideshowReadMore);
+    document.addEventListener('shopify:section:load', initSlideshowReadMore);
+  })();
+</script>
 
 {% schema %}
 {

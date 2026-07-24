@@ -2651,3 +2651,85 @@ const custom_async_js = fp('js/custom-async.js', 'custom_async_js');
 runWhenIdle(() => {
 	loadRes(custom_async_js, () => {}, 'custom-async-loaded');
 });
+
+/* Slideshow Description Read More / Read Less Initializer */
+function initSlideshowReadMore() {
+  const wrappers = document.querySelectorAll('.slideshow-text-wrapper');
+  if (!wrappers.length) return;
+
+  wrappers.forEach(function(wrapper) {
+    const content = wrapper.querySelector('.slideshow-text-content');
+    const btn = wrapper.querySelector('.slideshow-read-more-link');
+    if (!content || !btn) return;
+
+    const readMoreSpan = btn.querySelector('.read-more-text');
+    const readLessSpan = btn.querySelector('.read-less-text');
+
+    function checkOverflow() {
+      const isExpanded = !content.classList.contains('is-clamped');
+      if (isExpanded) {
+        content.classList.add('is-clamped');
+      }
+
+      if (content.clientHeight === 0) {
+        if (isExpanded) content.classList.remove('is-clamped');
+        return;
+      }
+
+      const hasOverflow = content.scrollHeight > content.clientHeight + 2;
+
+      if (isExpanded) {
+        content.classList.remove('is-clamped');
+      }
+
+      if (hasOverflow) {
+        btn.style.display = 'inline-block';
+      } else {
+        if (!isExpanded) {
+          btn.style.display = 'none';
+        }
+      }
+    }
+
+    checkOverflow();
+
+    if (window.ResizeObserver && !wrapper._roBound) {
+      wrapper._roBound = true;
+      const ro = new ResizeObserver(function() {
+        checkOverflow();
+      });
+      ro.observe(content);
+    }
+
+    if (!btn.dataset.bound) {
+      btn.dataset.bound = 'true';
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const isClamped = content.classList.contains('is-clamped');
+        if (isClamped) {
+          content.classList.remove('is-clamped');
+          btn.setAttribute('aria-expanded', 'true');
+          if (readMoreSpan) readMoreSpan.style.display = 'none';
+          if (readLessSpan) readLessSpan.style.display = 'inline';
+        } else {
+          content.classList.add('is-clamped');
+          btn.setAttribute('aria-expanded', 'false');
+          if (readMoreSpan) readMoreSpan.style.display = 'inline';
+          if (readLessSpan) readLessSpan.style.display = 'none';
+        }
+      });
+    }
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initSlideshowReadMore);
+} else {
+  initSlideshowReadMore();
+}
+
+window.addEventListener('resize', initSlideshowReadMore);
+document.addEventListener('shopify:section:load', initSlideshowReadMore);
+

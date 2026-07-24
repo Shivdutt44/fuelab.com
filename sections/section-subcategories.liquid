@@ -1,0 +1,718 @@
+{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+{%- liquid
+  assign selected_menu = section.settings.menu
+  assign sub_links = nil
+  assign parent_category_name = ""
+
+  if section.blocks.size == 0
+    if selected_menu != blank and linklists[selected_menu].links.size > 0
+      assign current_col_handle = collection.handle
+
+      for link in linklists[selected_menu].links
+        assign is_current_1st_level = false
+
+        if link.type == 'collection_link' and link.object.handle == current_col_handle
+          assign is_current_1st_level = true
+        elsif link.url == collection.url
+          assign is_current_1st_level = true
+        elsif link.active or link.child_active
+          assign is_current_1st_level = true
+        endif
+
+        if is_current_1st_level
+          if link.links.size > 0
+            assign sub_links = link.links
+            assign parent_category_name = link.title
+          endif
+          break
+        else
+          for child_link in link.links
+            if child_link.type == 'collection_link' and child_link.object.handle == current_col_handle
+              assign sub_links = link.links
+              assign parent_category_name = link.title
+              break
+            elsif child_link.url == collection.url
+              assign sub_links = link.links
+              assign parent_category_name = link.title
+              break
+            endif
+          endfor
+        endif
+        if sub_links != nil
+          break
+        endif
+      endfor
+
+      # Fallback for Theme Editor preview or homepage if no collection matched
+      if sub_links == nil
+        if request.design_mode or collection == blank
+          for link in linklists[selected_menu].links
+            if link.links.size > 0
+              assign sub_links = link.links
+              assign parent_category_name = link.title
+              break
+            endif
+          endfor
+          if sub_links == nil
+            assign sub_links = linklists[selected_menu].links
+          endif
+        endif
+      endif
+    endif
+  endif
+
+  assign limit = section.settings.number_of_items
+  case limit
+    when 2
+      assign width_class = 'w50'
+    when 3
+      assign width_class = 'w33'
+    when 4
+      assign width_class = 'w25'
+    when 5
+      assign width_class = 'w20'
+    when 6
+      assign width_class = 'w16'
+    else
+      assign width_class = 'w25'
+  endcase
+-%}
+
+{%- if sub_links != nil and sub_links.size > 0 or section.blocks.size > 0 or request.design_mode -%}
+  <div
+    class="
+      module-color-palette
+      palette-{{ section.settings.color_palette }}
+      section-subcategories-wrapper
+      section-width-{{ section.settings.width }}
+    "
+    style="
+      --spacing-desktop: {{ section.settings.spacing_desktop }}px;
+      --spacing-mobile: {{ section.settings.spacing_mobile }}px;
+      --items-per-row: {{ section.settings.number_of_items }};
+    "
+  >
+    {%- if section.settings.title != blank or section.settings.layout == 'slider' -%}
+      <header class="subcategories-header">
+        {%- if section.settings.title != blank -%}
+          <div class="title-styling subcategories-title text-{{ section.settings.text_alignment }}">
+            {{ section.settings.title }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.layout == 'slider' -%}
+          <div class="subcategories-slider-nav">
+            <button type="button" class="subcategory-nav-btn prev" aria-label="Previous">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button type="button" class="subcategory-nav-btn next" aria-label="Next">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
+
+    <div class="subcategories-slider-container">
+      <ul class="l4cl category orientation-{{ section.settings.image_ratio }} {{ width_class }} {% if section.settings.layout == 'slider' %}is-slider{% endif %} {% if section.settings.mobile_layout == 'grid' %} mobile-scroll w50-mobile{% endif %} subcategories-grid">
+        {%- if section.blocks.size > 0 -%}
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign block_col = block.settings.collection
+              assign sub_image = block.settings.image
+
+              if sub_image == blank and block_col != blank
+                if block_col.products.first.featured_media != blank
+                  assign sub_image = block_col.products.first.featured_media.preview_image
+                elsif block_col.products.first.featured_image != blank
+                  assign sub_image = block_col.products.first.featured_image
+                elsif block_col.products.first.images.first != blank
+                  assign sub_image = block_col.products.first.images.first
+                elsif block_col.featured_image != blank
+                  assign sub_image = block_col.featured_image
+                elsif block_col.image != blank
+                  assign sub_image = block_col.image
+                endif
+              endif
+
+              assign sub_title = block.settings.title | default: block_col.title | default: "Subcategory"
+              assign sub_url = block.settings.link | default: block_col.url | default: "#"
+
+              capture current
+                cycle 1, 2, 3, 4, 5, 6
+              endcapture
+            -%}
+            <li class="subcategory-card-item" {{ block.shopify_attributes }}>
+              <a href="{{ sub_url }}" class="subcategory-card-link">
+                <figure class="subcategory-card-figure {% if settings.multiply_collection_images == 'multiply' %}img-multiply{% elsif settings.multiply_collection_images == 'multiply-bg' %}img-multiply-bg{% endif %}">
+                  <picture>
+                    {%- if sub_image != blank -%}
+                      <img
+                        src="{{ sub_image | image_url: width: 600, height: 600 }}"
+                        srcset="{% render 'image-srcset', image: sub_image %}"
+                        sizes="(min-width: 768px) 25vw, 50vw"
+                        loading="lazy"
+                        alt="{{ sub_title | escape }}"
+                        width="300"
+                        height="300"
+                        class="subcategory-img"
+                      >
+                    {%- else -%}
+                      {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </picture>
+                </figure>
+                <div class="subcategory-card-info">
+                  <{{ section.settings.collection_title_size }} class="subcategory-card-title">
+                    <span>{{ sub_title }}</span>
+                    <i aria-hidden="true" class="icon-chevron-right mobile-hide"></i>
+                  </{{ section.settings.collection_title_size }}>
+                  {%- if section.settings.show_product_count -%}
+                    {%- assign p_count = block_col.all_products_count | default: block_col.products_count | default: 0 -%}
+                    {%- if p_count > 0 -%}
+                      <span class="subcategory-card-count">
+                        {{ p_count }} {% if p_count == 1 %}product{% else %}products{% endif %}
+                      </span>
+                    {%- endif -%}
+                  {%- endif -%}
+                </div>
+              </a>
+            </li>
+          {%- endfor -%}
+        {%- elsif sub_links != nil and sub_links.size > 0 -%}
+          {%- for link in sub_links -%}
+            {%- liquid
+              assign sub_collection = nil
+              if link.type == 'collection_link' and link.object
+                assign sub_collection = link.object
+              endif
+
+              if sub_collection == blank
+                assign handle_from_url = link.url | split: '/collections/' | last | split: '?' | first | split: '/' | first
+                if handle_from_url != blank
+                  assign sub_collection = collections[handle_from_url]
+                endif
+              endif
+
+              if sub_collection == blank and link.handle != blank
+                assign sub_collection = collections[link.handle]
+              endif
+
+              assign sub_image = nil
+
+              # 1. First Product Featured Image
+              if sub_collection != blank and sub_collection.products.first != blank
+                assign first_product = sub_collection.products.first
+                if first_product.featured_media != blank
+                  assign sub_image = first_product.featured_media.preview_image
+                elsif first_product.featured_image != blank
+                  assign sub_image = first_product.featured_image
+                elsif first_product.images.first != blank
+                  assign sub_image = first_product.images.first
+                endif
+              endif
+
+              # 2. Fallback to Collection Image
+              if sub_image == blank and sub_collection != blank
+                if sub_collection.featured_image != blank
+                  assign sub_image = sub_collection.featured_image
+                elsif sub_collection.image != blank
+                  assign sub_image = sub_collection.image
+                endif
+              endif
+
+              # 3. Fallback to Link Object Image
+              if sub_image == blank and link.object != blank
+                if link.object.featured_image != blank
+                  assign sub_image = link.object.featured_image
+                elsif link.object.image != blank
+                  assign sub_image = link.object.image
+                endif
+              endif
+
+              assign sub_title = link.title
+              if sub_title == blank and sub_collection != blank
+                assign sub_title = sub_collection.title
+              endif
+
+              assign sub_url = link.url
+              if sub_url == blank and sub_collection != blank
+                assign sub_url = sub_collection.url
+              endif
+
+              capture current
+                cycle 1, 2, 3, 4, 5, 6
+              endcapture
+            -%}
+            <li class="subcategory-card-item">
+              <a href="{{ sub_url }}" class="subcategory-card-link">
+                <figure class="subcategory-card-figure {% if settings.multiply_collection_images == 'multiply' %}img-multiply{% elsif settings.multiply_collection_images == 'multiply-bg' %}img-multiply-bg{% endif %}">
+                  <picture>
+                    {%- if sub_image != blank -%}
+                      <img
+                        src="{{ sub_image | image_url: width: 600, height: 600 }}"
+                        srcset="{% render 'image-srcset', image: sub_image %}"
+                        sizes="(min-width: 768px) 25vw, 50vw"
+                        loading="lazy"
+                        alt="{{ sub_title | escape }}"
+                        width="300"
+                        height="300"
+                        class="subcategory-img"
+                      >
+                    {%- else -%}
+                      {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </picture>
+                </figure>
+                <div class="subcategory-card-info">
+                  <{{ section.settings.collection_title_size }} class="subcategory-card-title">
+                    <span>{{ sub_title }}</span>
+                    <i aria-hidden="true" class="icon-chevron-right mobile-hide"></i>
+                  </{{ section.settings.collection_title_size }}>
+                  {%- if section.settings.show_product_count -%}
+                    {%- assign p_count = sub_collection.all_products_count | default: sub_collection.products_count | default: 0 -%}
+                    {%- if p_count > 0 -%}
+                      <span class="subcategory-card-count">
+                        {{ p_count }} {% if p_count == 1 %}product{% else %}products{% endif %}
+                      </span>
+                    {%- endif -%}
+                  {%- endif -%}
+                </div>
+              </a>
+            </li>
+          {%- endfor -%}
+        {%- else -%}
+          {%- for i in (1..limit) -%}
+            {%- liquid
+              capture current
+                cycle 1, 2, 3, 4
+              endcapture
+            -%}
+            <li class="subcategory-card-item">
+              <a href="#" class="subcategory-card-link">
+                <figure class="subcategory-card-figure">
+                  <picture>
+                    {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                  </picture>
+                </figure>
+                <div class="subcategory-card-info">
+                  <{{ section.settings.collection_title_size }} class="subcategory-card-title">
+                    <span>Subcategory Title {{ i }}</span>
+                  </{{ section.settings.collection_title_size }}>
+                </div>
+              </a>
+            </li>
+          {%- endfor -%}
+        {%- endif -%}
+      </ul>
+    </div>
+  </div>
+{%- endif -%}
+
+<style>
+  .section-subcategories-wrapper {
+    margin-top: var(--spacing-desktop);
+    margin-bottom: var(--spacing-desktop);
+  }
+  @media only screen and (max-width: 767px) {
+    .section-subcategories-wrapper {
+      margin-top: var(--spacing-mobile);
+      margin-bottom: var(--spacing-mobile);
+    }
+  }
+
+  .subcategories-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-bottom: 20px !important;
+    gap: 12px !important;
+  }
+
+  .subcategories-title {
+    margin: 0 !important;
+    flex: 1 1 auto !important;
+  }
+  .subcategories-title h1,
+  .subcategories-title h2,
+  .subcategories-title h3,
+  .subcategories-title h4,
+  .subcategories-title p {
+    margin: 0 !important;
+  }
+
+  .subcategories-slider-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .subcategories-grid.is-slider {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 14px;
+    scrollbar-width: thin;
+    margin: 0;
+  }
+
+  .subcategories-grid.is-slider::-webkit-scrollbar {
+    height: 5px;
+  }
+  .subcategories-grid.is-slider::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+  }
+  .subcategories-grid.is-slider::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .subcategories-grid.is-slider .subcategory-card-item {
+    flex: 0 0 calc((100% - (16px * (var(--items-per-row) - 1))) / var(--items-per-row)) !important;
+    min-width: 180px;
+    scroll-snap-align: start;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .subcategories-grid.is-slider .subcategory-card-item {
+      flex: 0 0 calc(46% - 8px) !important;
+      min-width: 135px;
+    }
+  }
+
+  .subcategories-slider-nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  .subcategory-nav-btn::before,
+  .subcategory-nav-btn::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .subcategory-nav-btn {
+    background: transparent !important;
+    border: 1.5px solid rgba(0, 0, 0, 0.2) !important;
+    border-radius: 50% !important;
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    color: inherit !important;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, border-color 0.2s ease, background-color 0.2s ease !important;
+    box-shadow: none !important;
+    outline: none !important;
+    user-select: none;
+    position: relative;
+    z-index: 1;
+  }
+
+  .subcategory-nav-btn:hover {
+    background: rgba(0, 0, 0, 0.06) !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    opacity: 1 !important;
+    color: inherit !important;
+    box-shadow: none !important;
+  }
+
+  .subcategory-nav-btn svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .subcategories-header {
+      margin-bottom: 12px !important;
+    }
+    .subcategories-slider-nav {
+      gap: 6px !important;
+    }
+    .subcategory-nav-btn {
+      width: 28px !important;
+      height: 28px !important;
+      min-width: 28px !important;
+      min-height: 28px !important;
+    }
+    .subcategory-nav-btn svg {
+      width: 13px !important;
+      height: 13px !important;
+    }
+  }
+
+  .subcategories-grid .subcategory-card-item {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .subcategories-grid .subcategory-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+  }
+  .subcategories-grid .subcategory-card-figure {
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--b2p, 8px);
+    margin-bottom: 12px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .subcategories-grid .subcategory-card-figure picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .subcategories-grid .subcategory-img {
+    transition: transform 0.35s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .subcategories-grid .subcategory-card-figure svg.placeholder-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .subcategories-grid .subcategory-card-item:hover .subcategory-img {
+    transform: scale(1.06);
+  }
+  .subcategories-grid .subcategory-card-title {
+    font-weight: 600;
+    margin: 4px 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .subcategories-grid .subcategory-card-count {
+    font-size: 0.85em;
+    opacity: 0.75;
+    display: block;
+  }
+</style>
+
+<script>
+  (function() {
+    function initSubcategoriesSlider() {
+      const wrappers = document.querySelectorAll('.section-subcategories-wrapper');
+      wrappers.forEach(function(wrapper) {
+        const grid = wrapper.querySelector('.subcategories-grid.is-slider');
+        const prevBtn = wrapper.querySelector('.subcategory-nav-btn.prev');
+        const nextBtn = wrapper.querySelector('.subcategory-nav-btn.next');
+        if (!grid) return;
+
+        function scrollNext() {
+          const item = grid.querySelector('.subcategory-card-item');
+          const step = item ? (item.offsetWidth + 16) * 2 : grid.clientWidth * 0.75;
+          grid.scrollBy({ left: step, behavior: 'smooth' });
+        }
+
+        function scrollPrev() {
+          const item = grid.querySelector('.subcategory-card-item');
+          const step = item ? (item.offsetWidth + 16) * 2 : grid.clientWidth * 0.75;
+          grid.scrollBy({ left: -step, behavior: 'smooth' });
+        }
+
+        if (prevBtn && !prevBtn._bound) {
+          prevBtn._bound = true;
+          prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            scrollPrev();
+          });
+        }
+
+        if (nextBtn && !nextBtn._bound) {
+          nextBtn._bound = true;
+          nextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            scrollNext();
+          });
+        }
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSubcategoriesSlider);
+    } else {
+      initSubcategoriesSlider();
+    }
+    document.addEventListener('shopify:section:load', initSubcategoriesSlider);
+    window.addEventListener('resize', initSubcategoriesSlider);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Subcategories",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Navigation Menu",
+      "info": "Select a multilevel menu. On a 1st-level collection page, its 2nd-level subcategories will be displayed automatically."
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "<h2>Subcategories</h2>"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout style",
+      "options": [
+        { "value": "slider", "label": "Horizontal Slider / Scroll" },
+        { "value": "grid", "label": "Grid" }
+      ],
+      "default": "slider"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Heading alignment",
+      "options": [
+        { "value": "start", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "end", "label": "Right" }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image ratio",
+      "options": [
+        { "value": "square", "label": "Square (1:1)" },
+        { "value": "portrait", "label": "Portrait (4:5)" },
+        { "value": "landscape", "label": "Landscape (4:3)" }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "range",
+      "id": "number_of_items",
+      "label": "Visible items in slider / row",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_count",
+      "label": "Show product count",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "collection_title_size",
+      "label": "Title size",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "p", "label": "Paragraph" }
+      ],
+      "default": "h3"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Section width",
+      "options": [
+        { "value": "boxed", "label": "Boxed" },
+        { "value": "wide", "label": "Wide" }
+      ],
+      "default": "boxed"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "spacing_desktop",
+      "label": "Desktop spacing",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "spacing_mobile",
+      "label": "Mobile spacing",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    }
+  ],
+  "blocks": [
+    {
+      "type": "subcategory",
+      "name": "Subcategory Card",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Custom Image",
+          "info": "Optional custom image. If blank, uses the first product image of the collection."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Custom Title",
+          "info": "Optional custom title."
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Custom Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Subcategories",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}

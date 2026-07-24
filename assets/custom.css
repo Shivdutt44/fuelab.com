@@ -147,3 +147,93 @@ button.overlay-buy_button[name="checkout"] {
 }
 
 /* css for footer email */
+
+/* Slideshow Description Read More / Read Less Truncation */
+.slideshow-text-wrapper {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.slideshow-text-content {
+  position: relative;
+}
+
+.slideshow-text-content.is-clamped {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .slideshow-text-content.is-clamped {
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slideshow-text-content.is-clamped {
+    -webkit-line-clamp: 5;
+  }
+}
+
+.slideshow-read-more-link {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin-top: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.3;
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.slideshow-read-more-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Full Width Sections - Remove Extra Left & Right Padding / Margins */
+.shopify-section:has(> .section-width-wide),
+.shopify-section:has(> [class*="section-width-wide"]),
+.shopify-section:has(> .wide),
+.section-width-wide,
+[class*="section-width-wide"] {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.m6fr.wide,
+.l4ft.fullwidth,
+.f8nw.wide,
+.m6bx.wide {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Ensure outer figure/images in wide slideshows span edge to edge */
+#root .m6fr.wide article > figure,
+#root .m6fr.wide article.aside figure {
+  right: 0 !important;
+}
+
+#root .m6fr.wide article.aside.inv figure {
+  left: 0 !important;
+}
+
